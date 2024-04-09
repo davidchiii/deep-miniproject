@@ -2,7 +2,6 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import torch.nn.functional as F
 import torch.backends.cudnn as cudnn
 
 import torchvision
@@ -12,7 +11,7 @@ from torchsummary import summary
 import os
 import argparse
 
-from models.resnet import ResNet18 
+from models.modifiedresnet import ModifiedResNet18 
 
 
 # Training
@@ -113,7 +112,8 @@ if __name__ == '__main__':
     # Model
     print('==> Building model..')
     # net = VGG('VGG19')
-    net = ResNet18()
+    # net = ResNet18()
+    net = ModifiedResNet18()
     # net = PreActResNet18()
     # net = GoogLeNet()
     # net = DenseNet121()
