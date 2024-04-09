@@ -7,6 +7,7 @@ import torch.backends.cudnn as cudnn
 
 import torchvision
 import torchvision.transforms as transforms
+from torchsummary import summary
 
 import os
 import argparse
@@ -144,6 +145,8 @@ if __name__ == '__main__':
     optimizer = optim.SGD(net.parameters(), lr=args.lr,
                         momentum=0.9, weight_decay=5e-4)
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+    summary(net, (3,32,32))
+
     for epoch in range(start_epoch, start_epoch+200):
         train(epoch)
         test(epoch)
