@@ -10,8 +10,12 @@ from torchsummary import summary
 
 import os
 import argparse
+# import sys
+# parent_path = os.path.abspath("../models")
+# sys.path.append(parent_path)
 
 from models.modifiedresnet import ModifiedResNet18 
+
 
 
 # Training
@@ -38,7 +42,7 @@ def train(epoch):
                      % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
 
-def test(epoch):
+def test(epoch, value):
     global best_acc
     net.eval()
     test_loss = 0
@@ -67,9 +71,9 @@ def test(epoch):
             'acc': acc,
             'epoch': epoch,
         }
-        if not os.path.isdir('../../checkpoint'):
-            os.mkdir('../../checkpoint')
-        torch.save(state, '../../checkpoint/checkpoint_f1.pth')
+        if not os.path.isdir('./checkpoint'):
+            os.mkdir('./checkpoint')
+        torch.save(state, f'./checkpoint/ckpt_f_{value}.pth')
         best_acc = acc
 
 if __name__ == '__main__':
@@ -97,12 +101,12 @@ if __name__ == '__main__':
         transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
     ])
     trainset = torchvision.datasets.CIFAR10(
-        root='../../deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=True, download=True, transform=transform_train)
+        root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=True, download=True, transform=transform_train)
     trainloader = torch.utils.data.DataLoader(
         trainset, batch_size=128, shuffle=True, num_workers=2)
 
     testset = torchvision.datasets.CIFAR10(
-        root='../../deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=False, download=True, transform=transform_test)
+        root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=False, download=True, transform=transform_test)
     testloader = torch.utils.data.DataLoader(
         testset, batch_size=100, shuffle=False, num_workers=2)
 
@@ -113,41 +117,45 @@ if __name__ == '__main__':
     print('==> Building model..')
     # net = VGG('VGG19')
     # net = ResNet18()
-    net = ModifiedResNet18()
-    # net = PreActResNet18()
-    # net = GoogLeNet()
-    # net = DenseNet121()
-    # net = ResNeXt29_2x64d()
-    # net = MobileNet()
-    # net = MobileNetV2()
-    # net = DPN92()
-    # net = ShuffleNetG2()
-    # net = SENet18()
-    # net = ShuffleNetV2(1)
-    # net = EfficientNetB0()
-    # net = RegNetX_200MF()
-    # net = SimpleDLA()
-    net = net.to(device)
-    if device == 'cuda':
-        net = torch.nn.DataParallel(net)
-        cudnn.benchmark = True
 
-    if args.resume:
-        # Load checkpoint.
-        print('==> Resuming from checkpoint..')
-        assert os.path.isdir('../../checkpoint'), 'Error: no checkpoint directory found!'
-        checkpoint = torch.load('../../checkpoint/checkpoint_f1.pth')
-        net.load_state_dict(checkpoint['net'])
-        best_acc = checkpoint['acc']
-        start_epoch = checkpoint['epoch']
+    f = [1, 5, 7]
 
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr,
-                        momentum=0.9, weight_decay=5e-4)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
-    summary(net, (3,32,32))
+    for i in f:
+        net = ModifiedResNet18(c=[64,128,256], f=i, k=1)
+        # net = PreActResNet18()
+        # net = GoogLeNet()
+        # net = DenseNet121()
+        # net = ResNeXt29_2x64d()
+        # net = MobileNet()
+        # net = MobileNetV2()
+        # net = DPN92()
+        # net = ShuffleNetG2()
+        # net = SENet18()
+        # net = ShuffleNetV2(1)
+        # net = EfficientNetB0()
+        # net = RegNetX_200MF()
+        # net = SimpleDLA()
+        net = net.to(device)
+        if device == 'cuda':
+            net = torch.nn.DataParallel(net)
+            cudnn.benchmark = True
 
-    for epoch in range(start_epoch, start_epoch+200):
-        train(epoch)
-        test(epoch)
-        scheduler.step()
+        if args.resume:
+            # Load checkpoint.
+            print('==> Resuming from checkpoint..')
+            assert os.path.isdir('./checkpoint'), 'Error: no checkpoint directory found!'
+            checkpoint = torch.load(f'./checkpoint/ckpt_f_{i}.pth')
+            net.load_state_dict(checkpoint['net'])
+            best_acc = checkpoint['acc']
+            start_epoch = checkpoint['epoch']
+
+        criterion = nn.CrossEntropyLoss()
+        optimizer = optim.SGD(net.parameters(), lr=args.lr,
+                            momentum=0.9, weight_decay=5e-4)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+        summary(net, (3,32,32))
+
+        for epoch in range(start_epoch, start_epoch+200):
+            train(epoch)
+            test(epoch, i)
+            scheduler.step()
