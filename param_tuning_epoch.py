@@ -42,7 +42,7 @@ def train(epoch):
                     % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
 
-def test(epoch, iteration):
+def test(epoch):
     global best_acc
     net.eval()
     test_loss = 0
