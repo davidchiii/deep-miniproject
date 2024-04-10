@@ -159,13 +159,13 @@ if __name__ == '__main__':
             scheduler = torch.optim.lr_scheduler.LinearLR(optimizer)
             val = "LinearLR"
         else:
-            scheduler = torch.optim.lr_scheduler.PolynominalLR(optimizer)
+            scheduler = torch.optim.lr_scheduler.PolynomialLR(optimizer)
             val = "PolynomialLR"
 
 
         summary(net, (3,32,32))
 
-        for epoch in range(start_epoch, start_epoch+1):
+        for epoch in range(start_epoch, start_epoch+200):
             train(epoch)
             test(epoch, val)
             scheduler.step()
