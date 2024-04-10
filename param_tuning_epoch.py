@@ -42,7 +42,7 @@ def train(epoch):
                     % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
 
-def test(epoch):
+def test(epoch, iteration):
     global best_acc
     net.eval()
     test_loss = 0
@@ -157,5 +157,5 @@ if __name__ == '__main__':
 
         for epoch in range(start_epoch, start_epoch+i):
             train(epoch)
-            test(epoch)
+            test(epoch, i)
             scheduler.step()
