@@ -4,12 +4,12 @@ import torch.nn.functional as F
 class ModifiedBasicBlock(nn.Module):
     expansion = 1
 
-    def __init__(self, in_planes, planes, stride=1):
+    def __init__(self, in_planes, planes, stride=1, f=3, k=1):
         super(ModifiedBasicBlock, self).__init__()
         self.conv1 = nn.Conv2d(
-            in_planes, planes, kernel_size=3, stride=stride, padding=1, bias=False)
+            in_planes, planes, kernel_size=f, stride=stride, padding=1, bias=False)
         self.bn1 = nn.BatchNorm2d(planes)
-        self.conv2 = nn.Conv2d(planes, planes, kernel_size=3,
+        self.conv2 = nn.Conv2d(planes, planes, kernel_size=f,
                                stride=1, padding=1, bias=False)
         self.bn2 = nn.BatchNorm2d(planes)
 
@@ -17,7 +17,7 @@ class ModifiedBasicBlock(nn.Module):
         if stride != 1 or in_planes != self.expansion*planes:
             self.shortcut = nn.Sequential(
                 nn.Conv2d(in_planes, self.expansion*planes,
-                          kernel_size=1, stride=stride, bias=False),
+                          kernel_size=k, stride=stride, bias=False),
                 nn.BatchNorm2d(self.expansion*planes)
             )
 
@@ -30,23 +30,23 @@ class ModifiedBasicBlock(nn.Module):
     
     
 class ModifiedResNet(nn.Module):
-    def __init__(self, block, num_blocks, num_classes=10):
+    def __init__(self, block, num_blocks, num_classes=10, c=[64,128,256], f=3, k=1):
         super(ModifiedResNet, self).__init__()
-        self.in_planes = 64
+        self.in_planes = c[0]
 
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=3,
+        self.conv1 = nn.Conv2d(3, c[0], kernel_size=f,
                                stride=1, padding=1, bias=False)
-        self.bn1 = nn.BatchNorm2d(64)
-        self.layer1 = self._make_layer(block, 64, num_blocks[0], stride=1)
-        self.layer2 = self._make_layer(block, 128, num_blocks[1], stride=2)
-        self.layer3 = self._make_layer(block, 256, num_blocks[2], stride=2)
-        self.linear = nn.Linear(256*block.expansion, num_classes)
+        self.bn1 = nn.BatchNorm2d(c[0])
+        self.layer1 = self._make_layer(block, c[0], num_blocks[0], stride=1, f=f, k=k)
+        self.layer2 = self._make_layer(block, c[1], num_blocks[1], stride=2, f=f, k=k)
+        self.layer3 = self._make_layer(block, c[2], num_blocks[2], stride=2, f=f, k=k)
+        self.linear = nn.Linear(c[2]*block.expansion, num_classes)
 
-    def _make_layer(self, block, planes, num_blocks, stride):
+    def _make_layer(self, block, planes, num_blocks, stride, f=3, k=1):
         strides = [stride] + [1]*(num_blocks-1)
         layers = []
         for stride in strides:
-            layers.append(block(self.in_planes, planes, stride))
+            layers.append(block(self.in_planes, planes, stride, f=f, k=k))
             self.in_planes = planes * block.expansion
         return nn.Sequential(*layers)
 
@@ -61,5 +61,5 @@ class ModifiedResNet(nn.Module):
         return out
     
     
-def ModifiedResNet18():
-    return  ModifiedResNet(ModifiedBasicBlock, [4,4,3])
+def ModifiedResNet18(c, f, k):
+    return  ModifiedResNet(ModifiedBasicBlock, [4,4,3], c=c, f=f, k=k)

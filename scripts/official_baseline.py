@@ -67,9 +67,9 @@ def test(epoch):
             'acc': acc,
             'epoch': epoch,
         }
-        if not os.path.isdir('checkpoint'):
-            os.mkdir('checkpoint')
-        torch.save(state, './checkpoint/ckpt.pth')
+        if not os.path.isdir('../checkpoint'):
+            os.mkdir('../checkpoint')
+        torch.save(state, '../checkpoint/baseline_ckpt_params.pth')
         best_acc = acc
 
 if __name__ == '__main__':
@@ -97,12 +97,12 @@ if __name__ == '__main__':
         transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
     ])
     trainset = torchvision.datasets.CIFAR10(
-        root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=True, download=True, transform=transform_train)
+        root='../deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=True, download=True, transform=transform_train)
     trainloader = torch.utils.data.DataLoader(
         trainset, batch_size=128, shuffle=True, num_workers=2)
 
     testset = torchvision.datasets.CIFAR10(
-        root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=False, download=True, transform=transform_test)
+        root='../deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=False, download=True, transform=transform_test)
     testloader = torch.utils.data.DataLoader(
         testset, batch_size=100, shuffle=False, num_workers=2)
 
@@ -113,7 +113,7 @@ if __name__ == '__main__':
     print('==> Building model..')
     # net = VGG('VGG19')
     # net = ResNet18()
-    net = ModifiedResNet18()
+    net = ModifiedResNet18(c=[64,128,256], f=3, k=1)
     # net = PreActResNet18()
     # net = GoogLeNet()
     # net = DenseNet121()
@@ -135,8 +135,8 @@ if __name__ == '__main__':
     if args.resume:
         # Load checkpoint.
         print('==> Resuming from checkpoint..')
-        assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
-        checkpoint = torch.load('./checkpoint/ckpt.pth')
+        assert os.path.isdir('../checkpoint'), 'Error: no checkpoint directory found!'
+        checkpoint = torch.load('../checkpoint/baseline_ckpt_params.pth')
         net.load_state_dict(checkpoint['net'])
         best_acc = checkpoint['acc']
         start_epoch = checkpoint['epoch']
