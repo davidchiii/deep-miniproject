@@ -118,7 +118,7 @@ if __name__ == '__main__':
     # net = VGG('VGG19')
     # net = ResNet18()
 
-    net = ModifiedResNet18(c=[64,128,256], f=1, k=1)
+    net = ModifiedResNet18(c=[64,128,256], f=3, k=1)
     # net = PreActResNet18()
     # net = GoogLeNet()
     # net = DenseNet121()
