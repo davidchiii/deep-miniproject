@@ -118,44 +118,83 @@ if __name__ == '__main__':
     # net = VGG('VGG19')
     # net = ResNet18()
 
-    f = [1, 5, 7]
+    # f = [1, 5, 7]
 
-    for i in f:
-        net = ModifiedResNet18(c=[64,128,256], f=i, k=1)
-        # net = PreActResNet18()
-        # net = GoogLeNet()
-        # net = DenseNet121()
-        # net = ResNeXt29_2x64d()
-        # net = MobileNet()
-        # net = MobileNetV2()
-        # net = DPN92()
-        # net = ShuffleNetG2()
-        # net = SENet18()
-        # net = ShuffleNetV2(1)
-        # net = EfficientNetB0()
-        # net = RegNetX_200MF()
-        # net = SimpleDLA()
-        net = net.to(device)
-        if device == 'cuda':
-            net = torch.nn.DataParallel(net)
-            cudnn.benchmark = True
+    # for i in f:
+    #     net = ModifiedResNet18(c=[64,128,256], f=i, k=1)
+    #     # net = PreActResNet18()
+    #     # net = GoogLeNet()
+    #     # net = DenseNet121()
+    #     # net = ResNeXt29_2x64d()
+    #     # net = MobileNet()
+    #     # net = MobileNetV2()
+    #     # net = DPN92()
+    #     # net = ShuffleNetG2()
+    #     # net = SENet18()
+    #     # net = ShuffleNetV2(1)
+    #     # net = EfficientNetB0()
+    #     # net = RegNetX_200MF()
+    #     # net = SimpleDLA()
+    #     net = net.to(device)
+    #     if device == 'cuda':
+    #         net = torch.nn.DataParallel(net)
+    #         cudnn.benchmark = True
 
-        if args.resume:
-            # Load checkpoint.
-            print('==> Resuming from checkpoint..')
-            assert os.path.isdir('./checkpoint'), 'Error: no checkpoint directory found!'
-            checkpoint = torch.load(f'./checkpoint/ckpt_f_{i}.pth')
-            net.load_state_dict(checkpoint['net'])
-            best_acc = checkpoint['acc']
-            start_epoch = checkpoint['epoch']
+    #     if args.resume:
+    #         # Load checkpoint.
+    #         print('==> Resuming from checkpoint..')
+    #         assert os.path.isdir('./checkpoint'), 'Error: no checkpoint directory found!'
+    #         checkpoint = torch.load(f'./checkpoint/ckpt_f_{i}.pth')
+    #         net.load_state_dict(checkpoint['net'])
+    #         best_acc = checkpoint['acc']
+    #         start_epoch = checkpoint['epoch']
 
-        criterion = nn.CrossEntropyLoss()
-        optimizer = optim.SGD(net.parameters(), lr=args.lr,
-                            momentum=0.9, weight_decay=5e-4)
-        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
-        summary(net, (3,32,32))
+    #     criterion = nn.CrossEntropyLoss()
+    #     optimizer = optim.SGD(net.parameters(), lr=args.lr,
+    #                         momentum=0.9, weight_decay=5e-4)
+    #     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+    #     summary(net, (3,32,32))
 
-        for epoch in range(start_epoch, start_epoch+200):
-            train(epoch)
-            test(epoch, i)
-            scheduler.step()
+    #     for epoch in range(start_epoch, start_epoch+200):
+    #         train(epoch)
+    #         test(epoch, i)
+    #         scheduler.step()
+
+    net = ModifiedResNet18(c=[64,128,256], f=1, k=1)
+    # net = PreActResNet18()
+    # net = GoogLeNet()
+    # net = DenseNet121()
+    # net = ResNeXt29_2x64d()
+    # net = MobileNet()
+    # net = MobileNetV2()
+    # net = DPN92()
+    # net = ShuffleNetG2()
+    # net = SENet18()
+    # net = ShuffleNetV2(1)
+    # net = EfficientNetB0()
+    # net = RegNetX_200MF()
+    # net = SimpleDLA()
+    net = net.to(device)
+    if device == 'cuda':
+        net = torch.nn.DataParallel(net)
+        cudnn.benchmark = True
+
+    if args.resume:
+        # Load checkpoint.
+        print('==> Resuming from checkpoint..')
+        assert os.path.isdir('./checkpoint'), 'Error: no checkpoint directory found!'
+        checkpoint = torch.load(f'./checkpoint/ckpt_f_{i}.pth')
+        net.load_state_dict(checkpoint['net'])
+        best_acc = checkpoint['acc']
+        start_epoch = checkpoint['epoch']
+
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.SGD(net.parameters(), lr=args.lr,
+                        momentum=0.9, weight_decay=5e-4)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+    summary(net, (3,32,32))
+
+    for epoch in range(start_epoch, start_epoch+200):
+        train(epoch)
+        test(epoch, i)
+        scheduler.step()
