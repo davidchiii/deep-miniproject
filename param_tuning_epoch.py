@@ -39,10 +39,10 @@ def train(epoch):
         correct += predicted.eq(targets).sum().item()
 
         print('Loss: %.3f | Acc: %.3f%% (%d/%d)'
-                     % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
+                    % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
 
-def test(epoch):
+def test(epoch, iteration):
     global best_acc
     net.eval()
     test_loss = 0
@@ -73,7 +73,7 @@ def test(epoch):
         }
         if not os.path.isdir('./checkpoint'):
             os.mkdir('./checkpoint')
-        torch.save(state, f'./checkpoint/ckpt_f_1.pth')
+        torch.save(state, f'./checkpoint/ckpt_f_{iteration}.pth')
         best_acc = acc
 
 if __name__ == '__main__':
@@ -118,41 +118,44 @@ if __name__ == '__main__':
     # net = VGG('VGG19')
     # net = ResNet18()
 
-    net = ModifiedResNet18(c=[64,128,256], f=3, k=1)
-    # net = PreActResNet18()
-    # net = GoogLeNet()
-    # net = DenseNet121()
-    # net = ResNeXt29_2x64d()
-    # net = MobileNet()
-    # net = MobileNetV2()
-    # net = DPN92()
-    # net = ShuffleNetG2()
-    # net = SENet18()
-    # net = ShuffleNetV2(1)
-    # net = EfficientNetB0()
-    # net = RegNetX_200MF()
-    # net = SimpleDLA()
-    net = net.to(device)
-    if device == 'cuda':
-        net = torch.nn.DataParallel(net)
-        cudnn.benchmark = True
+    epochs = [1, 2, 3]
 
-    if args.resume:
-        # Load checkpoint.
-        print('==> Resuming from checkpoint..')
-        assert os.path.isdir('./checkpoint'), 'Error: no checkpoint directory found!'
-        checkpoint = torch.load(f'./checkpoint/ckpt_f_1.pth')
-        net.load_state_dict(checkpoint['net'])
-        best_acc = checkpoint['acc']
-        start_epoch = checkpoint['epoch']
+    for i in epochs:
+        net = ModifiedResNet18(c=[64,128,256], f=3, k=1)
+        # net = PreActResNet18()
+        # net = GoogLeNet()
+        # net = DenseNet121()
+        # net = ResNeXt29_2x64d()
+        # net = MobileNet()
+        # net = MobileNetV2()
+        # net = DPN92()
+        # net = ShuffleNetG2()
+        # net = SENet18()
+        # net = ShuffleNetV2(1)
+        # net = EfficientNetB0()
+        # net = RegNetX_200MF()
+        # net = SimpleDLA()
+        net = net.to(device)
+        if device == 'cuda':
+            net = torch.nn.DataParallel(net)
+            cudnn.benchmark = True
 
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr,
-                        momentum=0.9, weight_decay=5e-4)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
-    # summary(net, (3,32,32))
+        if args.resume:
+            # Load checkpoint.
+            print('==> Resuming from checkpoint..')
+            assert os.path.isdir('./checkpoint'), 'Error: no checkpoint directory found!'
+            checkpoint = torch.load(f'./checkpoint/ckpt_f_{i}.pth')
+            net.load_state_dict(checkpoint['net'])
+            best_acc = checkpoint['acc']
+            start_epoch = checkpoint['epoch']
 
-    for epoch in range(start_epoch, start_epoch+200):
-        train(epoch)
-        test(epoch)
-        scheduler.step()
+        criterion = nn.CrossEntropyLoss()
+        optimizer = optim.SGD(net.parameters(), lr=args.lr,
+                            momentum=0.9, weight_decay=5e-4)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+        summary(net, (3,32,32))
+
+        for epoch in range(start_epoch, start_epoch+i):
+            train(epoch)
+            test(epoch)
+            scheduler.step()
