@@ -10,8 +10,12 @@ from torchsummary import summary
 
 import os
 import argparse
+# import sys
+# parent_path = os.path.abspath("../models")
+# sys.path.append(parent_path)
 
-from models.modifiedresnet import ModifiedResNet18 
+from ..models.modifiedresnet import ModifiedResNet18 
+
 
 
 # Training
