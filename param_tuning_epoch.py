@@ -118,7 +118,7 @@ if __name__ == '__main__':
     # net = VGG('VGG19')
     # net = ResNet18()
 
-    epochs = [1, 2, 3]
+    epochs = [100, 300, 400]
 
     for i in epochs:
         net = ModifiedResNet18(c=[64,128,256], f=3, k=1)
