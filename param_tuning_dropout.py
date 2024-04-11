@@ -11,7 +11,7 @@ from torchsummary import summary
 import os
 import argparse
 
-from models.modifiedresnet import ModifiedResNet18 
+from models.dropoutresnet import DropoutResNet18
 
 
 # Training
@@ -34,11 +34,11 @@ def train(epoch):
         total += targets.size(0)
         correct += predicted.eq(targets).sum().item()
 
-        print('Loss: %.3f | Acc: %.3f%% (%d/%d)'
-                     % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
+    print('Loss: %.3f | Acc: %.3f%% (%d/%d)' % (train_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
 
-def test(epoch):
+def test(epoch, iteration):
+    print(f"Using augment: {iteration}")
     global best_acc
     net.eval()
     test_loss = 0
@@ -57,7 +57,7 @@ def test(epoch):
 
         print('Loss: %.3f | Acc: %.3f%% (%d/%d)' % (test_loss/(batch_idx+1), 100.*correct/total, correct, total))
 
-    # Save checkpoint.
+   # Save checkpoint.
     acc = 100.*correct/total
     print('Saving..')
     state = {
@@ -67,11 +67,10 @@ def test(epoch):
     }
     if not os.path.isdir('checkpoint'):
         os.mkdir('checkpoint')
-    torch.save(state, './checkpoint/ckpt.pth')
+    torch.save(state, f'./checkpoint/ckpt_dropout_{iteration}.pth')
     if acc > best_acc:
         best_acc = acc
         print('BEST ACCURACY: ' + str(best_acc) + ' ON EPOCH ' + str(epoch))
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
@@ -111,29 +110,38 @@ if __name__ == '__main__':
             'dog', 'frog', 'horse', 'ship', 'truck')
 
     # Model
-    print('==> Building model..')
-    net = ModifiedResNet18()
-    net = net.to(device)
-    if device == 'cuda':
-        net = torch.nn.DataParallel(net)
-        cudnn.benchmark = True
+    for i in range(4):
+        if i == 0:
+            p = 0.2
+        elif i == 1:
+            p = 0.3
+        elif i == 2:
+            p = 0.4
+        elif i == 3:
+            p = 0.5
+        print('==> Building model..')
+        net = DropoutResNet18(p)
+        net = net.to(device)
+        if device == 'cuda':
+            net = torch.nn.DataParallel(net)
+            cudnn.benchmark = True
 
-    if args.resume:
-        # Load checkpoint.
-        print('==> Resuming from checkpoint..')
-        assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
-        checkpoint = torch.load('./checkpoint/ckpt.pth')
-        net.load_state_dict(checkpoint['net'])
-        best_acc = checkpoint['acc']
-        start_epoch = checkpoint['epoch']
+        if args.resume:
+            # Load checkpoint.
+            print('==> Resuming from checkpoint..')
+            assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
+            checkpoint = torch.load('./checkpoint/ckpt.pth')
+            net.load_state_dict(checkpoint['net'])
+            best_acc = checkpoint['acc']
+            start_epoch = checkpoint['epoch']
 
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.SGD(net.parameters(), lr=args.lr,
-                        momentum=0.9, weight_decay=5e-4)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
-    summary(net, (3,32,32))
+        criterion = nn.CrossEntropyLoss()
+        optimizer = optim.SGD(net.parameters(), lr=args.lr,
+                            momentum=0.9, weight_decay=5e-4)
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=200)
+        summary(net, (3,32,32))
 
-    for epoch in range(start_epoch, start_epoch+200):
-        train(epoch)
-        test(epoch)
-        scheduler.step()
+        for epoch in range(start_epoch, start_epoch+200):
+            train(epoch)
+            test(epoch, str(p))
+            scheduler.step()

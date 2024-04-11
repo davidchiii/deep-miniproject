@@ -38,7 +38,7 @@ def train(epoch):
 
 
 def test(epoch, iteration):
-    print(f"Using augment: {iteration}")
+    print(f"Using batch size: {iteration}")
     global best_acc
     net.eval()
     test_loss = 0
@@ -67,7 +67,7 @@ def test(epoch, iteration):
     }
     if not os.path.isdir('checkpoint'):
         os.mkdir('checkpoint')
-    torch.save(state, f'./checkpoint/ckpt_f_{iteration}.pth')
+    torch.save(state, f'./checkpoint/ckpt_bs_{iteration}.pth')
     if acc > best_acc:
         best_acc = acc
         print('BEST ACCURACY: ' + str(best_acc) + ' ON EPOCH ' + str(epoch))
@@ -88,62 +88,33 @@ if __name__ == '__main__':
     for i in range(5):
         # Data
         print('==> Preparing data..')
+        
+        transform_train = transforms.Compose([
+            transforms.RandomCrop(32, padding=4),
+            transforms.RandomHorizontalFlip(),
+            transforms.ToTensor(),
+            transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+        ])
+
+        transform_test = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+        ])
         if i == 0:
-            val = "None"        
-            transform_train = transforms.Compose([
-                transforms.ToTensor(),
-            ])
-
-            transform_test = transforms.Compose([
-                transforms.ToTensor(),
-            ])
+            bs = 16
         elif i == 1:
-            val = "RandomCrop"        
-            transform_train = transforms.Compose([
-                transforms.RandomCrop(32, padding=4),
-                transforms.ToTensor(),
-            ])
-
-            transform_test = transforms.Compose([
-                transforms.ToTensor(),
-            ])
+            bs = 32
         elif i == 2:
-            val = "HorizontalFlip"        
-            transform_train = transforms.Compose([
-                transforms.RandomHorizontalFlip(),
-                transforms.ToTensor(),
-            ])
-
-            transform_test = transforms.Compose([
-                transforms.ToTensor(),
-            ])
+            bs = 64
         elif i == 3:
-            val = "Normalization_0.49"        
-            transform_train = transforms.Compose([
-                transforms.ToTensor(),
-                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
-            ])
-
-            transform_test = transforms.Compose([
-                transforms.ToTensor(),
-                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
-            ])
+            bs = 256
         elif i == 4:
-            val = "Normalization_0.5"        
-            transform_train = transforms.Compose([
-                transforms.ToTensor(),
-                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
-            ])
-
-            transform_test = transforms.Compose([
-                transforms.ToTensor(),
-                transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
-            ])
+            bs = 512
             
         trainset = torchvision.datasets.CIFAR10(
             root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=True, download=True, transform=transform_train)
         trainloader = torch.utils.data.DataLoader(
-            trainset, batch_size=128, shuffle=True, num_workers=2)
+            trainset, batch_size=bs, shuffle=True, num_workers=2)
 
         testset = torchvision.datasets.CIFAR10(
             root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=False, download=True, transform=transform_test)
@@ -175,5 +146,5 @@ if __name__ == '__main__':
 
         for epoch in range(start_epoch, start_epoch+200):
             train(epoch)
-            test(epoch, val)
+            test(epoch, str(bs))
             scheduler.step()
