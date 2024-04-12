@@ -67,7 +67,7 @@ def test(epoch, iteration):
     }
     if not os.path.isdir('checkpoint'):
         os.mkdir('checkpoint')
-    torch.save(state, f'./checkpoint/ckpt_f_{iteration}.pth')
+    torch.save(state, f'./checkpoint/ckpt_f_{iteration}_2.pth')
     if acc > best_acc:
         best_acc = acc
         print('BEST ACCURACY: ' + str(best_acc) + ' ON EPOCH ' + str(epoch))
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     
     classes = ('plane', 'car', 'bird', 'cat', 'deer',
             'dog', 'frog', 'horse', 'ship', 'truck')
-    for i in range(5):
+    for i in range(5,9):
         # Data
         print('==> Preparing data..')
         if i == 0:
@@ -138,6 +138,54 @@ if __name__ == '__main__':
             transform_test = transforms.Compose([
                 transforms.ToTensor(),
                 transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5)),
+            ])
+        if i == 5:
+            val = "Crop+Flip"        
+            transform_train = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.RandomHorizontalFlip(),
+                transforms.ToTensor(),
+            ])
+
+            transform_test = transforms.Compose([
+                transforms.ToTensor(),
+            ])
+        elif i == 6:
+            val = "Crop+Norm"        
+            transform_train = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
+            ])
+
+            transform_test = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
+            ])
+        elif i == 7:
+            val = "Flip+Norm"        
+            transform_train = transforms.Compose([
+                transforms.RandomHorizontalFlip(),
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
+            ])
+
+            transform_test = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
+            ])
+        elif i == 8:
+            val = "All"        
+            transform_train = transforms.Compose([
+                transforms.RandomCrop(32, padding=4),
+                transforms.RandomHorizontalFlip(),
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
+            ])
+
+            transform_test = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
             ])
             
         trainset = torchvision.datasets.CIFAR10(

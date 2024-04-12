@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import os
 import pickle
 from models.modifiedresnet import ModifiedResNet18 
+from models.dropoutresnet import DropoutResNet18
 import torch
 import torchvision
 import torch.nn.parallel
@@ -30,14 +31,20 @@ images = transform_test(images)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-net = ModifiedResNet18()
+net = DropoutResNet18(0.4)
+# net = ModifiedResNet18()
 net = net.to(device)
 if device == 'cuda':
     net = torch.nn.DataParallel(net)
     cudnn.benchmark = True
 
 assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
-checkpoint = torch.load('./checkpoint/baseline_ckpt.pth', map_location=device)
+checkpoint = torch.load('./checkpoint/best_epoch_4.pth', map_location=device)
+# print(checkpoint['acc'])
+# checkpoint = torch.load('./checkpoint/ckpt_dropout_0.4.pth', map_location=device)
+# checkpoint = torch.load('./checkpoint/pool.pth', map_location=device)
+
+
 
 net.load_state_dict(checkpoint['net'])
 

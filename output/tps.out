@@ -1,0 +1,1272 @@
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 16, 32, 32]             432
+       BatchNorm2d-2           [-1, 16, 32, 32]              32
+            Conv2d-3           [-1, 32, 32, 32]           4,608
+       BatchNorm2d-4           [-1, 32, 32, 32]              64
+            Conv2d-5           [-1, 32, 32, 32]           9,216
+       BatchNorm2d-6           [-1, 32, 32, 32]              64
+            Conv2d-7           [-1, 32, 32, 32]             512
+       BatchNorm2d-8           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-9           [-1, 32, 32, 32]               0
+           Conv2d-10           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-11           [-1, 32, 32, 32]              64
+           Conv2d-12           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-13           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-14           [-1, 32, 32, 32]               0
+           Conv2d-15           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-16           [-1, 32, 32, 32]              64
+           Conv2d-17           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-18           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-19           [-1, 32, 32, 32]               0
+           Conv2d-20           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-21           [-1, 32, 32, 32]              64
+           Conv2d-22           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-23           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-24           [-1, 32, 32, 32]               0
+           Conv2d-25           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-26           [-1, 32, 32, 32]              64
+           Conv2d-27           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-28           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-29           [-1, 32, 32, 32]               0
+           Conv2d-30           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-31           [-1, 32, 32, 32]              64
+           Conv2d-32           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-33           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-34           [-1, 32, 32, 32]               0
+           Conv2d-35           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-36           [-1, 32, 32, 32]              64
+           Conv2d-37           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-38           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-39           [-1, 32, 32, 32]               0
+           Conv2d-40           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-41           [-1, 32, 32, 32]              64
+           Conv2d-42           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-43           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-44           [-1, 32, 32, 32]               0
+           Conv2d-45           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-46           [-1, 32, 32, 32]              64
+           Conv2d-47           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-48           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-49           [-1, 32, 32, 32]               0
+           Conv2d-50           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-51           [-1, 32, 32, 32]              64
+           Conv2d-52           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-53           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-54           [-1, 32, 32, 32]               0
+           Conv2d-55           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-56           [-1, 32, 32, 32]              64
+           Conv2d-57           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-58           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-59           [-1, 32, 32, 32]               0
+           Conv2d-60           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-61           [-1, 32, 32, 32]              64
+           Conv2d-62           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-63           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-64           [-1, 32, 32, 32]               0
+           Conv2d-65           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-66           [-1, 32, 32, 32]              64
+           Conv2d-67           [-1, 32, 32, 32]           9,216
+      BatchNorm2d-68           [-1, 32, 32, 32]              64
+ModifiedBasicBlock-69           [-1, 32, 32, 32]               0
+           Conv2d-70           [-1, 64, 16, 16]          18,432
+      BatchNorm2d-71           [-1, 64, 16, 16]             128
+           Conv2d-72           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-73           [-1, 64, 16, 16]             128
+           Conv2d-74           [-1, 64, 16, 16]           2,048
+      BatchNorm2d-75           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-76           [-1, 64, 16, 16]               0
+           Conv2d-77           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-78           [-1, 64, 16, 16]             128
+           Conv2d-79           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-80           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-81           [-1, 64, 16, 16]               0
+           Conv2d-82           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-83           [-1, 64, 16, 16]             128
+           Conv2d-84           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-85           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-86           [-1, 64, 16, 16]               0
+           Conv2d-87           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-88           [-1, 64, 16, 16]             128
+           Conv2d-89           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-90           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-91           [-1, 64, 16, 16]               0
+           Conv2d-92           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-93           [-1, 64, 16, 16]             128
+           Conv2d-94           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-95           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-96           [-1, 64, 16, 16]               0
+           Conv2d-97           [-1, 64, 16, 16]          36,864
+      BatchNorm2d-98           [-1, 64, 16, 16]             128
+           Conv2d-99           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-100           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-101           [-1, 64, 16, 16]               0
+          Conv2d-102           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-103           [-1, 64, 16, 16]             128
+          Conv2d-104           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-105           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-106           [-1, 64, 16, 16]               0
+          Conv2d-107           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-108           [-1, 64, 16, 16]             128
+          Conv2d-109           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-110           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-111           [-1, 64, 16, 16]               0
+          Conv2d-112           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-113           [-1, 64, 16, 16]             128
+          Conv2d-114           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-115           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-116           [-1, 64, 16, 16]               0
+          Conv2d-117           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-118           [-1, 64, 16, 16]             128
+          Conv2d-119           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-120           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-121           [-1, 64, 16, 16]               0
+          Conv2d-122           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-123           [-1, 64, 16, 16]             128
+          Conv2d-124           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-125           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-126           [-1, 64, 16, 16]               0
+          Conv2d-127           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-128           [-1, 64, 16, 16]             128
+          Conv2d-129           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-130           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-131           [-1, 64, 16, 16]               0
+          Conv2d-132           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-133           [-1, 64, 16, 16]             128
+          Conv2d-134           [-1, 64, 16, 16]          36,864
+     BatchNorm2d-135           [-1, 64, 16, 16]             128
+ModifiedBasicBlock-136           [-1, 64, 16, 16]               0
+          Conv2d-137            [-1, 128, 8, 8]          73,728
+     BatchNorm2d-138            [-1, 128, 8, 8]             256
+          Conv2d-139            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-140            [-1, 128, 8, 8]             256
+          Conv2d-141            [-1, 128, 8, 8]           8,192
+     BatchNorm2d-142            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-143            [-1, 128, 8, 8]               0
+          Conv2d-144            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-145            [-1, 128, 8, 8]             256
+          Conv2d-146            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-147            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-148            [-1, 128, 8, 8]               0
+          Conv2d-149            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-150            [-1, 128, 8, 8]             256
+          Conv2d-151            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-152            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-153            [-1, 128, 8, 8]               0
+          Conv2d-154            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-155            [-1, 128, 8, 8]             256
+          Conv2d-156            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-157            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-158            [-1, 128, 8, 8]               0
+          Conv2d-159            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-160            [-1, 128, 8, 8]             256
+          Conv2d-161            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-162            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-163            [-1, 128, 8, 8]               0
+          Conv2d-164            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-165            [-1, 128, 8, 8]             256
+          Conv2d-166            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-167            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-168            [-1, 128, 8, 8]               0
+          Conv2d-169            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-170            [-1, 128, 8, 8]             256
+          Conv2d-171            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-172            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-173            [-1, 128, 8, 8]               0
+          Conv2d-174            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-175            [-1, 128, 8, 8]             256
+          Conv2d-176            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-177            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-178            [-1, 128, 8, 8]               0
+          Conv2d-179            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-180            [-1, 128, 8, 8]             256
+          Conv2d-181            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-182            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-183            [-1, 128, 8, 8]               0
+          Conv2d-184            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-185            [-1, 128, 8, 8]             256
+          Conv2d-186            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-187            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-188            [-1, 128, 8, 8]               0
+          Conv2d-189            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-190            [-1, 128, 8, 8]             256
+          Conv2d-191            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-192            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-193            [-1, 128, 8, 8]               0
+          Conv2d-194            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-195            [-1, 128, 8, 8]             256
+          Conv2d-196            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-197            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-198            [-1, 128, 8, 8]               0
+          Conv2d-199            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-200            [-1, 128, 8, 8]             256
+          Conv2d-201            [-1, 128, 8, 8]         147,456
+     BatchNorm2d-202            [-1, 128, 8, 8]             256
+ModifiedBasicBlock-203            [-1, 128, 8, 8]               0
+          Linear-204                   [-1, 10]           1,290
+          TPSNet-205                   [-1, 10]               0
+================================================================
+Total params: 4,959,770
+Trainable params: 4,959,770
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 29.56
+Params size (MB): 18.92
+Estimated Total Size (MB): 48.49
+----------------------------------------------------------------
+
+Epoch: 0
+Loss: 2.471 | Acc: 11.524% (5762/50000)
+Loss: 2.233 | Acc: 17.600% (1760/10000)
+Saving..
+BEST ACCURACY: 17.6 ON EPOCH 0
+
+Epoch: 1
+Loss: 1.982 | Acc: 24.970% (12485/50000)
+Loss: 1.771 | Acc: 33.310% (3331/10000)
+Saving..
+BEST ACCURACY: 33.31 ON EPOCH 1
+
+Epoch: 2
+Loss: 1.696 | Acc: 36.746% (18373/50000)
+Loss: 1.537 | Acc: 43.460% (4346/10000)
+Saving..
+BEST ACCURACY: 43.46 ON EPOCH 2
+
+Epoch: 3
+Loss: 1.454 | Acc: 46.602% (23301/50000)
+Loss: 1.641 | Acc: 43.710% (4371/10000)
+Saving..
+BEST ACCURACY: 43.71 ON EPOCH 3
+
+Epoch: 4
+Loss: 1.155 | Acc: 58.668% (29334/50000)
+Loss: 1.096 | Acc: 60.670% (6067/10000)
+Saving..
+BEST ACCURACY: 60.67 ON EPOCH 4
+
+Epoch: 5
+Loss: 0.927 | Acc: 67.052% (33526/50000)
+Loss: 0.977 | Acc: 65.450% (6545/10000)
+Saving..
+BEST ACCURACY: 65.45 ON EPOCH 5
+
+Epoch: 6
+Loss: 0.770 | Acc: 72.888% (36444/50000)
+Loss: 0.944 | Acc: 68.670% (6867/10000)
+Saving..
+BEST ACCURACY: 68.67 ON EPOCH 6
+
+Epoch: 7
+Loss: 0.684 | Acc: 76.410% (38205/50000)
+Loss: 0.822 | Acc: 71.240% (7124/10000)
+Saving..
+BEST ACCURACY: 71.24 ON EPOCH 7
+
+Epoch: 8
+Loss: 0.622 | Acc: 78.530% (39265/50000)
+Loss: 1.090 | Acc: 66.200% (6620/10000)
+Saving..
+
+Epoch: 9
+Loss: 0.589 | Acc: 79.568% (39784/50000)
+Loss: 0.568 | Acc: 80.560% (8056/10000)
+Saving..
+BEST ACCURACY: 80.56 ON EPOCH 9
+
+Epoch: 10
+Loss: 0.551 | Acc: 81.036% (40518/50000)
+Loss: 0.718 | Acc: 75.070% (7507/10000)
+Saving..
+
+Epoch: 11
+Loss: 0.527 | Acc: 81.878% (40939/50000)
+Loss: 0.800 | Acc: 74.590% (7459/10000)
+Saving..
+
+Epoch: 12
+Loss: 0.504 | Acc: 82.754% (41377/50000)
+Loss: 0.725 | Acc: 75.840% (7584/10000)
+Saving..
+
+Epoch: 13
+Loss: 0.492 | Acc: 83.014% (41507/50000)
+Loss: 0.605 | Acc: 80.180% (8018/10000)
+Saving..
+
+Epoch: 14
+Loss: 0.483 | Acc: 83.344% (41672/50000)
+Loss: 0.735 | Acc: 76.870% (7687/10000)
+Saving..
+
+Epoch: 15
+Loss: 0.462 | Acc: 84.076% (42038/50000)
+Loss: 1.295 | Acc: 65.610% (6561/10000)
+Saving..
+
+Epoch: 16
+Loss: 0.452 | Acc: 84.386% (42193/50000)
+Loss: 0.530 | Acc: 82.590% (8259/10000)
+Saving..
+BEST ACCURACY: 82.59 ON EPOCH 16
+
+Epoch: 17
+Loss: 0.442 | Acc: 84.918% (42459/50000)
+Loss: 0.717 | Acc: 76.950% (7695/10000)
+Saving..
+
+Epoch: 18
+Loss: 0.435 | Acc: 85.110% (42555/50000)
+Loss: 0.548 | Acc: 82.020% (8202/10000)
+Saving..
+
+Epoch: 19
+Loss: 0.422 | Acc: 85.530% (42765/50000)
+Loss: 0.600 | Acc: 79.910% (7991/10000)
+Saving..
+
+Epoch: 20
+Loss: 0.421 | Acc: 85.602% (42801/50000)
+Loss: 0.543 | Acc: 82.440% (8244/10000)
+Saving..
+
+Epoch: 21
+Loss: 0.408 | Acc: 86.160% (43080/50000)
+Loss: 0.528 | Acc: 82.040% (8204/10000)
+Saving..
+
+Epoch: 22
+Loss: 0.402 | Acc: 86.062% (43031/50000)
+Loss: 0.533 | Acc: 82.010% (8201/10000)
+Saving..
+
+Epoch: 23
+Loss: 0.399 | Acc: 86.428% (43214/50000)
+Loss: 0.776 | Acc: 76.390% (7639/10000)
+Saving..
+
+Epoch: 24
+Loss: 0.389 | Acc: 86.710% (43355/50000)
+Loss: 0.560 | Acc: 81.830% (8183/10000)
+Saving..
+
+Epoch: 25
+Loss: 0.390 | Acc: 86.594% (43297/50000)
+Loss: 0.536 | Acc: 81.630% (8163/10000)
+Saving..
+
+Epoch: 26
+Loss: 0.383 | Acc: 86.888% (43444/50000)
+Loss: 0.662 | Acc: 79.460% (7946/10000)
+Saving..
+
+Epoch: 27
+Loss: 0.376 | Acc: 87.110% (43555/50000)
+Loss: 0.527 | Acc: 82.890% (8289/10000)
+Saving..
+BEST ACCURACY: 82.89 ON EPOCH 27
+
+Epoch: 28
+Loss: 0.378 | Acc: 86.892% (43446/50000)
+Loss: 0.529 | Acc: 82.240% (8224/10000)
+Saving..
+
+Epoch: 29
+Loss: 0.372 | Acc: 87.236% (43618/50000)
+Loss: 0.634 | Acc: 80.430% (8043/10000)
+Saving..
+
+Epoch: 30
+Loss: 0.365 | Acc: 87.608% (43804/50000)
+Loss: 0.493 | Acc: 83.350% (8335/10000)
+Saving..
+BEST ACCURACY: 83.35 ON EPOCH 30
+
+Epoch: 31
+Loss: 0.364 | Acc: 87.590% (43795/50000)
+Loss: 0.670 | Acc: 79.150% (7915/10000)
+Saving..
+
+Epoch: 32
+Loss: 0.360 | Acc: 87.728% (43864/50000)
+Loss: 0.484 | Acc: 83.940% (8394/10000)
+Saving..
+BEST ACCURACY: 83.94 ON EPOCH 32
+
+Epoch: 33
+Loss: 0.353 | Acc: 87.936% (43968/50000)
+Loss: 0.444 | Acc: 85.360% (8536/10000)
+Saving..
+BEST ACCURACY: 85.36 ON EPOCH 33
+
+Epoch: 34
+Loss: 0.355 | Acc: 87.906% (43953/50000)
+Loss: 0.703 | Acc: 78.670% (7867/10000)
+Saving..
+
+Epoch: 35
+Loss: 0.354 | Acc: 87.920% (43960/50000)
+Loss: 0.535 | Acc: 82.230% (8223/10000)
+Saving..
+
+Epoch: 36
+Loss: 0.343 | Acc: 88.156% (44078/50000)
+Loss: 0.911 | Acc: 75.040% (7504/10000)
+Saving..
+
+Epoch: 37
+Loss: 0.350 | Acc: 88.078% (44039/50000)
+Loss: 0.562 | Acc: 81.350% (8135/10000)
+Saving..
+
+Epoch: 38
+Loss: 0.343 | Acc: 88.134% (44067/50000)
+Loss: 0.453 | Acc: 85.040% (8504/10000)
+Saving..
+
+Epoch: 39
+Loss: 0.341 | Acc: 88.368% (44184/50000)
+Loss: 0.641 | Acc: 80.150% (8015/10000)
+Saving..
+
+Epoch: 40
+Loss: 0.336 | Acc: 88.536% (44268/50000)
+Loss: 0.610 | Acc: 80.680% (8068/10000)
+Saving..
+
+Epoch: 41
+Loss: 0.335 | Acc: 88.550% (44275/50000)
+Loss: 0.492 | Acc: 83.120% (8312/10000)
+Saving..
+
+Epoch: 42
+Loss: 0.331 | Acc: 88.838% (44419/50000)
+Loss: 0.490 | Acc: 84.050% (8405/10000)
+Saving..
+
+Epoch: 43
+Loss: 0.329 | Acc: 88.534% (44267/50000)
+Loss: 0.479 | Acc: 85.000% (8500/10000)
+Saving..
+
+Epoch: 44
+Loss: 0.330 | Acc: 88.650% (44325/50000)
+Loss: 0.522 | Acc: 82.860% (8286/10000)
+Saving..
+
+Epoch: 45
+Loss: 0.318 | Acc: 89.050% (44525/50000)
+Loss: 0.536 | Acc: 82.350% (8235/10000)
+Saving..
+
+Epoch: 46
+Loss: 0.324 | Acc: 88.830% (44415/50000)
+Loss: 0.451 | Acc: 85.310% (8531/10000)
+Saving..
+
+Epoch: 47
+Loss: 0.322 | Acc: 88.880% (44440/50000)
+Loss: 0.466 | Acc: 84.300% (8430/10000)
+Saving..
+
+Epoch: 48
+Loss: 0.314 | Acc: 89.154% (44577/50000)
+Loss: 0.432 | Acc: 84.950% (8495/10000)
+Saving..
+
+Epoch: 49
+Loss: 0.317 | Acc: 88.908% (44454/50000)
+Loss: 0.554 | Acc: 82.390% (8239/10000)
+Saving..
+
+Epoch: 50
+Loss: 0.312 | Acc: 89.294% (44647/50000)
+Loss: 0.554 | Acc: 81.790% (8179/10000)
+Saving..
+
+Epoch: 51
+Loss: 0.313 | Acc: 89.378% (44689/50000)
+Loss: 0.469 | Acc: 84.880% (8488/10000)
+Saving..
+
+Epoch: 52
+Loss: 0.306 | Acc: 89.454% (44727/50000)
+Loss: 0.440 | Acc: 86.240% (8624/10000)
+Saving..
+BEST ACCURACY: 86.24 ON EPOCH 52
+
+Epoch: 53
+Loss: 0.311 | Acc: 89.338% (44669/50000)
+Loss: 0.556 | Acc: 82.130% (8213/10000)
+Saving..
+
+Epoch: 54
+Loss: 0.303 | Acc: 89.522% (44761/50000)
+Loss: 0.469 | Acc: 84.310% (8431/10000)
+Saving..
+
+Epoch: 55
+Loss: 0.305 | Acc: 89.474% (44737/50000)
+Loss: 0.395 | Acc: 86.850% (8685/10000)
+Saving..
+BEST ACCURACY: 86.85 ON EPOCH 55
+
+Epoch: 56
+Loss: 0.293 | Acc: 89.894% (44947/50000)
+Loss: 0.439 | Acc: 85.640% (8564/10000)
+Saving..
+
+Epoch: 57
+Loss: 0.294 | Acc: 89.934% (44967/50000)
+Loss: 0.521 | Acc: 83.330% (8333/10000)
+Saving..
+
+Epoch: 58
+Loss: 0.296 | Acc: 89.738% (44869/50000)
+Loss: 0.592 | Acc: 81.730% (8173/10000)
+Saving..
+
+Epoch: 59
+Loss: 0.292 | Acc: 89.942% (44971/50000)
+Loss: 0.507 | Acc: 83.470% (8347/10000)
+Saving..
+
+Epoch: 60
+Loss: 0.291 | Acc: 89.952% (44976/50000)
+Loss: 0.512 | Acc: 84.520% (8452/10000)
+Saving..
+
+Epoch: 61
+Loss: 0.289 | Acc: 90.030% (45015/50000)
+Loss: 0.480 | Acc: 85.210% (8521/10000)
+Saving..
+
+Epoch: 62
+Loss: 0.286 | Acc: 90.148% (45074/50000)
+Loss: 0.450 | Acc: 85.100% (8510/10000)
+Saving..
+
+Epoch: 63
+Loss: 0.283 | Acc: 90.262% (45131/50000)
+Loss: 0.426 | Acc: 86.230% (8623/10000)
+Saving..
+
+Epoch: 64
+Loss: 0.280 | Acc: 90.342% (45171/50000)
+Loss: 0.412 | Acc: 86.270% (8627/10000)
+Saving..
+
+Epoch: 65
+Loss: 0.279 | Acc: 90.444% (45222/50000)
+Loss: 0.431 | Acc: 86.220% (8622/10000)
+Saving..
+
+Epoch: 66
+Loss: 0.271 | Acc: 90.630% (45315/50000)
+Loss: 0.413 | Acc: 86.880% (8688/10000)
+Saving..
+BEST ACCURACY: 86.88 ON EPOCH 66
+
+Epoch: 67
+Loss: 0.276 | Acc: 90.442% (45221/50000)
+Loss: 0.517 | Acc: 83.410% (8341/10000)
+Saving..
+
+Epoch: 68
+Loss: 0.267 | Acc: 90.810% (45405/50000)
+Loss: 0.506 | Acc: 84.140% (8414/10000)
+Saving..
+
+Epoch: 69
+Loss: 0.275 | Acc: 90.628% (45314/50000)
+Loss: 0.415 | Acc: 86.660% (8666/10000)
+Saving..
+
+Epoch: 70
+Loss: 0.266 | Acc: 90.874% (45437/50000)
+Loss: 0.508 | Acc: 83.320% (8332/10000)
+Saving..
+
+Epoch: 71
+Loss: 0.264 | Acc: 90.970% (45485/50000)
+Loss: 0.426 | Acc: 86.030% (8603/10000)
+Saving..
+
+Epoch: 72
+Loss: 0.258 | Acc: 91.078% (45539/50000)
+Loss: 0.448 | Acc: 85.340% (8534/10000)
+Saving..
+
+Epoch: 73
+Loss: 0.264 | Acc: 91.086% (45543/50000)
+Loss: 0.339 | Acc: 88.680% (8868/10000)
+Saving..
+BEST ACCURACY: 88.68 ON EPOCH 73
+
+Epoch: 74
+Loss: 0.255 | Acc: 91.234% (45617/50000)
+Loss: 0.605 | Acc: 80.190% (8019/10000)
+Saving..
+
+Epoch: 75
+Loss: 0.259 | Acc: 91.068% (45534/50000)
+Loss: 0.553 | Acc: 82.980% (8298/10000)
+Saving..
+
+Epoch: 76
+Loss: 0.254 | Acc: 91.246% (45623/50000)
+Loss: 0.455 | Acc: 85.050% (8505/10000)
+Saving..
+
+Epoch: 77
+Loss: 0.251 | Acc: 91.316% (45658/50000)
+Loss: 0.339 | Acc: 88.850% (8885/10000)
+Saving..
+BEST ACCURACY: 88.85 ON EPOCH 77
+
+Epoch: 78
+Loss: 0.247 | Acc: 91.562% (45781/50000)
+Loss: 0.414 | Acc: 86.330% (8633/10000)
+Saving..
+
+Epoch: 79
+Loss: 0.248 | Acc: 91.512% (45756/50000)
+Loss: 0.450 | Acc: 85.530% (8553/10000)
+Saving..
+
+Epoch: 80
+Loss: 0.247 | Acc: 91.412% (45706/50000)
+Loss: 0.491 | Acc: 84.720% (8472/10000)
+Saving..
+
+Epoch: 81
+Loss: 0.245 | Acc: 91.488% (45744/50000)
+Loss: 0.376 | Acc: 87.240% (8724/10000)
+Saving..
+
+Epoch: 82
+Loss: 0.244 | Acc: 91.534% (45767/50000)
+Loss: 0.415 | Acc: 86.890% (8689/10000)
+Saving..
+
+Epoch: 83
+Loss: 0.239 | Acc: 91.826% (45913/50000)
+Loss: 0.395 | Acc: 87.240% (8724/10000)
+Saving..
+
+Epoch: 84
+Loss: 0.237 | Acc: 91.778% (45889/50000)
+Loss: 0.396 | Acc: 87.080% (8708/10000)
+Saving..
+
+Epoch: 85
+Loss: 0.236 | Acc: 91.858% (45929/50000)
+Loss: 0.351 | Acc: 88.500% (8850/10000)
+Saving..
+
+Epoch: 86
+Loss: 0.229 | Acc: 92.118% (46059/50000)
+Loss: 0.366 | Acc: 87.740% (8774/10000)
+Saving..
+
+Epoch: 87
+Loss: 0.230 | Acc: 92.020% (46010/50000)
+Loss: 0.443 | Acc: 85.490% (8549/10000)
+Saving..
+
+Epoch: 88
+Loss: 0.224 | Acc: 92.388% (46194/50000)
+Loss: 0.382 | Acc: 87.210% (8721/10000)
+Saving..
+
+Epoch: 89
+Loss: 0.225 | Acc: 92.182% (46091/50000)
+Loss: 0.396 | Acc: 87.500% (8750/10000)
+Saving..
+
+Epoch: 90
+Loss: 0.220 | Acc: 92.462% (46231/50000)
+Loss: 0.544 | Acc: 82.580% (8258/10000)
+Saving..
+
+Epoch: 91
+Loss: 0.223 | Acc: 92.402% (46201/50000)
+Loss: 0.396 | Acc: 87.090% (8709/10000)
+Saving..
+
+Epoch: 92
+Loss: 0.217 | Acc: 92.506% (46253/50000)
+Loss: 0.451 | Acc: 86.030% (8603/10000)
+Saving..
+
+Epoch: 93
+Loss: 0.213 | Acc: 92.634% (46317/50000)
+Loss: 0.463 | Acc: 86.040% (8604/10000)
+Saving..
+
+Epoch: 94
+Loss: 0.213 | Acc: 92.662% (46331/50000)
+Loss: 0.371 | Acc: 88.390% (8839/10000)
+Saving..
+
+Epoch: 95
+Loss: 0.210 | Acc: 92.774% (46387/50000)
+Loss: 0.371 | Acc: 88.090% (8809/10000)
+Saving..
+
+Epoch: 96
+Loss: 0.207 | Acc: 92.910% (46455/50000)
+Loss: 0.382 | Acc: 87.530% (8753/10000)
+Saving..
+
+Epoch: 97
+Loss: 0.211 | Acc: 92.720% (46360/50000)
+Loss: 0.383 | Acc: 87.710% (8771/10000)
+Saving..
+
+Epoch: 98
+Loss: 0.197 | Acc: 93.276% (46638/50000)
+Loss: 0.387 | Acc: 87.930% (8793/10000)
+Saving..
+
+Epoch: 99
+Loss: 0.197 | Acc: 93.178% (46589/50000)
+Loss: 0.343 | Acc: 88.720% (8872/10000)
+Saving..
+
+Epoch: 100
+Loss: 0.197 | Acc: 93.254% (46627/50000)
+Loss: 0.346 | Acc: 88.990% (8899/10000)
+Saving..
+BEST ACCURACY: 88.99 ON EPOCH 100
+
+Epoch: 101
+Loss: 0.192 | Acc: 93.430% (46715/50000)
+Loss: 0.370 | Acc: 88.090% (8809/10000)
+Saving..
+
+Epoch: 102
+Loss: 0.192 | Acc: 93.466% (46733/50000)
+Loss: 0.394 | Acc: 87.800% (8780/10000)
+Saving..
+
+Epoch: 103
+Loss: 0.183 | Acc: 93.660% (46830/50000)
+Loss: 0.347 | Acc: 89.240% (8924/10000)
+Saving..
+BEST ACCURACY: 89.24 ON EPOCH 103
+
+Epoch: 104
+Loss: 0.187 | Acc: 93.580% (46790/50000)
+Loss: 0.389 | Acc: 87.510% (8751/10000)
+Saving..
+
+Epoch: 105
+Loss: 0.184 | Acc: 93.736% (46868/50000)
+Loss: 0.360 | Acc: 88.160% (8816/10000)
+Saving..
+
+Epoch: 106
+Loss: 0.176 | Acc: 93.912% (46956/50000)
+Loss: 0.436 | Acc: 86.740% (8674/10000)
+Saving..
+
+Epoch: 107
+Loss: 0.171 | Acc: 94.188% (47094/50000)
+Loss: 0.426 | Acc: 86.980% (8698/10000)
+Saving..
+
+Epoch: 108
+Loss: 0.180 | Acc: 93.778% (46889/50000)
+Loss: 0.436 | Acc: 86.490% (8649/10000)
+Saving..
+
+Epoch: 109
+Loss: 0.170 | Acc: 94.170% (47085/50000)
+Loss: 0.328 | Acc: 89.670% (8967/10000)
+Saving..
+BEST ACCURACY: 89.67 ON EPOCH 109
+
+Epoch: 110
+Loss: 0.169 | Acc: 94.202% (47101/50000)
+Loss: 0.453 | Acc: 86.060% (8606/10000)
+Saving..
+
+Epoch: 111
+Loss: 0.162 | Acc: 94.502% (47251/50000)
+Loss: 0.376 | Acc: 88.450% (8845/10000)
+Saving..
+
+Epoch: 112
+Loss: 0.157 | Acc: 94.738% (47369/50000)
+Loss: 0.306 | Acc: 90.360% (9036/10000)
+Saving..
+BEST ACCURACY: 90.36 ON EPOCH 112
+
+Epoch: 113
+Loss: 0.161 | Acc: 94.404% (47202/50000)
+Loss: 0.329 | Acc: 89.520% (8952/10000)
+Saving..
+
+Epoch: 114
+Loss: 0.160 | Acc: 94.552% (47276/50000)
+Loss: 0.313 | Acc: 90.260% (9026/10000)
+Saving..
+
+Epoch: 115
+Loss: 0.149 | Acc: 94.984% (47492/50000)
+Loss: 0.366 | Acc: 88.600% (8860/10000)
+Saving..
+
+Epoch: 116
+Loss: 0.151 | Acc: 94.800% (47400/50000)
+Loss: 0.349 | Acc: 88.850% (8885/10000)
+Saving..
+
+Epoch: 117
+Loss: 0.150 | Acc: 94.742% (47371/50000)
+Loss: 0.335 | Acc: 89.730% (8973/10000)
+Saving..
+
+Epoch: 118
+Loss: 0.149 | Acc: 94.878% (47439/50000)
+Loss: 0.307 | Acc: 90.430% (9043/10000)
+Saving..
+BEST ACCURACY: 90.43 ON EPOCH 118
+
+Epoch: 119
+Loss: 0.141 | Acc: 95.216% (47608/50000)
+Loss: 0.410 | Acc: 87.830% (8783/10000)
+Saving..
+
+Epoch: 120
+Loss: 0.134 | Acc: 95.378% (47689/50000)
+Loss: 0.319 | Acc: 89.930% (8993/10000)
+Saving..
+
+Epoch: 121
+Loss: 0.139 | Acc: 95.236% (47618/50000)
+Loss: 0.377 | Acc: 88.330% (8833/10000)
+Saving..
+
+Epoch: 122
+Loss: 0.129 | Acc: 95.628% (47814/50000)
+Loss: 0.330 | Acc: 89.800% (8980/10000)
+Saving..
+
+Epoch: 123
+Loss: 0.132 | Acc: 95.524% (47762/50000)
+Loss: 0.289 | Acc: 91.060% (9106/10000)
+Saving..
+BEST ACCURACY: 91.06 ON EPOCH 123
+
+Epoch: 124
+Loss: 0.130 | Acc: 95.564% (47782/50000)
+Loss: 0.362 | Acc: 88.800% (8880/10000)
+Saving..
+
+Epoch: 125
+Loss: 0.118 | Acc: 95.994% (47997/50000)
+Loss: 0.293 | Acc: 90.710% (9071/10000)
+Saving..
+
+Epoch: 126
+Loss: 0.119 | Acc: 96.038% (48019/50000)
+Loss: 0.291 | Acc: 91.000% (9100/10000)
+Saving..
+
+Epoch: 127
+Loss: 0.119 | Acc: 95.972% (47986/50000)
+Loss: 0.329 | Acc: 90.020% (9002/10000)
+Saving..
+
+Epoch: 128
+Loss: 0.111 | Acc: 96.192% (48096/50000)
+Loss: 0.349 | Acc: 89.820% (8982/10000)
+Saving..
+
+Epoch: 129
+Loss: 0.112 | Acc: 96.184% (48092/50000)
+Loss: 0.301 | Acc: 91.100% (9110/10000)
+Saving..
+BEST ACCURACY: 91.1 ON EPOCH 129
+
+Epoch: 130
+Loss: 0.111 | Acc: 96.148% (48074/50000)
+Loss: 0.301 | Acc: 90.910% (9091/10000)
+Saving..
+
+Epoch: 131
+Loss: 0.105 | Acc: 96.474% (48237/50000)
+Loss: 0.307 | Acc: 90.830% (9083/10000)
+Saving..
+
+Epoch: 132
+Loss: 0.097 | Acc: 96.688% (48344/50000)
+Loss: 0.326 | Acc: 90.740% (9074/10000)
+Saving..
+
+Epoch: 133
+Loss: 0.097 | Acc: 96.670% (48335/50000)
+Loss: 0.304 | Acc: 90.730% (9073/10000)
+Saving..
+
+Epoch: 134
+Loss: 0.094 | Acc: 96.780% (48390/50000)
+Loss: 0.312 | Acc: 90.530% (9053/10000)
+Saving..
+
+Epoch: 135
+Loss: 0.092 | Acc: 96.892% (48446/50000)
+Loss: 0.322 | Acc: 90.660% (9066/10000)
+Saving..
+
+Epoch: 136
+Loss: 0.090 | Acc: 97.020% (48510/50000)
+Loss: 0.322 | Acc: 90.840% (9084/10000)
+Saving..
+
+Epoch: 137
+Loss: 0.087 | Acc: 97.028% (48514/50000)
+Loss: 0.354 | Acc: 90.090% (9009/10000)
+Saving..
+
+Epoch: 138
+Loss: 0.082 | Acc: 97.256% (48628/50000)
+Loss: 0.308 | Acc: 91.090% (9109/10000)
+Saving..
+
+Epoch: 139
+Loss: 0.081 | Acc: 97.298% (48649/50000)
+Loss: 0.294 | Acc: 91.370% (9137/10000)
+Saving..
+BEST ACCURACY: 91.37 ON EPOCH 139
+
+Epoch: 140
+Loss: 0.078 | Acc: 97.392% (48696/50000)
+Loss: 0.281 | Acc: 92.180% (9218/10000)
+Saving..
+BEST ACCURACY: 92.18 ON EPOCH 140
+
+Epoch: 141
+Loss: 0.074 | Acc: 97.582% (48791/50000)
+Loss: 0.286 | Acc: 91.580% (9158/10000)
+Saving..
+
+Epoch: 142
+Loss: 0.071 | Acc: 97.594% (48797/50000)
+Loss: 0.324 | Acc: 90.740% (9074/10000)
+Saving..
+
+Epoch: 143
+Loss: 0.069 | Acc: 97.712% (48856/50000)
+Loss: 0.262 | Acc: 92.250% (9225/10000)
+Saving..
+BEST ACCURACY: 92.25 ON EPOCH 143
+
+Epoch: 144
+Loss: 0.070 | Acc: 97.646% (48823/50000)
+Loss: 0.271 | Acc: 92.170% (9217/10000)
+Saving..
+
+Epoch: 145
+Loss: 0.063 | Acc: 97.860% (48930/50000)
+Loss: 0.275 | Acc: 92.100% (9210/10000)
+Saving..
+
+Epoch: 146
+Loss: 0.059 | Acc: 98.002% (49001/50000)
+Loss: 0.339 | Acc: 90.820% (9082/10000)
+Saving..
+
+Epoch: 147
+Loss: 0.054 | Acc: 98.290% (49145/50000)
+Loss: 0.247 | Acc: 93.100% (9310/10000)
+Saving..
+BEST ACCURACY: 93.1 ON EPOCH 147
+
+Epoch: 148
+Loss: 0.053 | Acc: 98.296% (49148/50000)
+Loss: 0.259 | Acc: 92.780% (9278/10000)
+Saving..
+
+Epoch: 149
+Loss: 0.051 | Acc: 98.302% (49151/50000)
+Loss: 0.273 | Acc: 92.300% (9230/10000)
+Saving..
+
+Epoch: 150
+Loss: 0.046 | Acc: 98.524% (49262/50000)
+Loss: 0.323 | Acc: 91.440% (9144/10000)
+Saving..
+
+Epoch: 151
+Loss: 0.044 | Acc: 98.532% (49266/50000)
+Loss: 0.286 | Acc: 92.290% (9229/10000)
+Saving..
+
+Epoch: 152
+Loss: 0.044 | Acc: 98.598% (49299/50000)
+Loss: 0.251 | Acc: 92.790% (9279/10000)
+Saving..
+
+Epoch: 153
+Loss: 0.039 | Acc: 98.758% (49379/50000)
+Loss: 0.284 | Acc: 92.410% (9241/10000)
+Saving..
+
+Epoch: 154
+Loss: 0.038 | Acc: 98.770% (49385/50000)
+Loss: 0.261 | Acc: 93.130% (9313/10000)
+Saving..
+BEST ACCURACY: 93.13 ON EPOCH 154
+
+Epoch: 155
+Loss: 0.038 | Acc: 98.806% (49403/50000)
+Loss: 0.259 | Acc: 93.130% (9313/10000)
+Saving..
+
+Epoch: 156
+Loss: 0.035 | Acc: 98.918% (49459/50000)
+Loss: 0.254 | Acc: 93.270% (9327/10000)
+Saving..
+BEST ACCURACY: 93.27 ON EPOCH 156
+
+Epoch: 157
+Loss: 0.028 | Acc: 99.160% (49580/50000)
+Loss: 0.239 | Acc: 93.680% (9368/10000)
+Saving..
+BEST ACCURACY: 93.68 ON EPOCH 157
+
+Epoch: 158
+Loss: 0.029 | Acc: 99.100% (49550/50000)
+Loss: 0.245 | Acc: 93.700% (9370/10000)
+Saving..
+BEST ACCURACY: 93.7 ON EPOCH 158
+
+Epoch: 159
+Loss: 0.020 | Acc: 99.412% (49706/50000)
+Loss: 0.250 | Acc: 93.550% (9355/10000)
+Saving..
+
+Epoch: 160
+Loss: 0.022 | Acc: 99.374% (49687/50000)
+Loss: 0.229 | Acc: 94.190% (9419/10000)
+Saving..
+BEST ACCURACY: 94.19 ON EPOCH 160
+
+Epoch: 161
+Loss: 0.014 | Acc: 99.622% (49811/50000)
+Loss: 0.255 | Acc: 93.760% (9376/10000)
+Saving..
+
+Epoch: 162
+Loss: 0.016 | Acc: 99.554% (49777/50000)
+Loss: 0.240 | Acc: 94.150% (9415/10000)
+Saving..
+
+Epoch: 163
+Loss: 0.017 | Acc: 99.492% (49746/50000)
+Loss: 0.229 | Acc: 94.090% (9409/10000)
+Saving..
+
+Epoch: 164
+Loss: 0.016 | Acc: 99.532% (49766/50000)
+Loss: 0.218 | Acc: 94.550% (9455/10000)
+Saving..
+BEST ACCURACY: 94.55 ON EPOCH 164
+
+Epoch: 165
+Loss: 0.012 | Acc: 99.676% (49838/50000)
+Loss: 0.213 | Acc: 94.640% (9464/10000)
+Saving..
+BEST ACCURACY: 94.64 ON EPOCH 165
+
+Epoch: 166
+Loss: 0.010 | Acc: 99.732% (49866/50000)
+Loss: 0.223 | Acc: 94.350% (9435/10000)
+Saving..
+
+Epoch: 167
+Loss: 0.008 | Acc: 99.828% (49914/50000)
+Loss: 0.218 | Acc: 94.440% (9444/10000)
+Saving..
+
+Epoch: 168
+Loss: 0.007 | Acc: 99.844% (49922/50000)
+Loss: 0.225 | Acc: 94.500% (9450/10000)
+Saving..
+
+Epoch: 169
+Loss: 0.006 | Acc: 99.880% (49940/50000)
+Loss: 0.217 | Acc: 94.570% (9457/10000)
+Saving..
+
+Epoch: 170
+Loss: 0.006 | Acc: 99.868% (49934/50000)
+Loss: 0.220 | Acc: 94.700% (9470/10000)
+Saving..
+BEST ACCURACY: 94.7 ON EPOCH 170
+
+Epoch: 171
+Loss: 0.006 | Acc: 99.880% (49940/50000)
+Loss: 0.209 | Acc: 94.650% (9465/10000)
+Saving..
+
+Epoch: 172
+Loss: 0.004 | Acc: 99.934% (49967/50000)
+Loss: 0.209 | Acc: 94.820% (9482/10000)
+Saving..
+BEST ACCURACY: 94.82 ON EPOCH 172
+
+Epoch: 173
+Loss: 0.004 | Acc: 99.940% (49970/50000)
+Loss: 0.213 | Acc: 94.780% (9478/10000)
+Saving..
+
+Epoch: 174
+Loss: 0.004 | Acc: 99.934% (49967/50000)
+Loss: 0.205 | Acc: 94.990% (9499/10000)
+Saving..
+BEST ACCURACY: 94.99 ON EPOCH 174
+
+Epoch: 175
+Loss: 0.004 | Acc: 99.910% (49955/50000)
+Loss: 0.203 | Acc: 95.010% (9501/10000)
+Saving..
+BEST ACCURACY: 95.01 ON EPOCH 175
+
+Epoch: 176
+Loss: 0.003 | Acc: 99.956% (49978/50000)
+Loss: 0.206 | Acc: 94.980% (9498/10000)
+Saving..
+
+Epoch: 177
+Loss: 0.003 | Acc: 99.962% (49981/50000)
+Loss: 0.200 | Acc: 95.100% (9510/10000)
+Saving..
+BEST ACCURACY: 95.1 ON EPOCH 177
+
+Epoch: 178
+Loss: 0.002 | Acc: 99.986% (49993/50000)
+Loss: 0.197 | Acc: 95.140% (9514/10000)
+Saving..
+BEST ACCURACY: 95.14 ON EPOCH 178
+
+Epoch: 179
+Loss: 0.002 | Acc: 99.982% (49991/50000)
+Loss: 0.194 | Acc: 95.190% (9519/10000)
+Saving..
+BEST ACCURACY: 95.19 ON EPOCH 179
+
+Epoch: 180
+Loss: 0.002 | Acc: 99.980% (49990/50000)
+Loss: 0.199 | Acc: 94.990% (9499/10000)
+Saving..
+
+Epoch: 181
+Loss: 0.002 | Acc: 99.986% (49993/50000)
+Loss: 0.196 | Acc: 95.110% (9511/10000)
+Saving..
+
+Epoch: 182
+Loss: 0.002 | Acc: 99.974% (49987/50000)
+Loss: 0.193 | Acc: 95.250% (9525/10000)
+Saving..
+BEST ACCURACY: 95.25 ON EPOCH 182
+
+Epoch: 183
+Loss: 0.002 | Acc: 99.988% (49994/50000)
+Loss: 0.189 | Acc: 95.350% (9535/10000)
+Saving..
+BEST ACCURACY: 95.35 ON EPOCH 183
+
+Epoch: 184
+Loss: 0.002 | Acc: 99.988% (49994/50000)
+Loss: 0.189 | Acc: 95.300% (9530/10000)
+Saving..
+
+Epoch: 185
+Loss: 0.002 | Acc: 99.988% (49994/50000)
+Loss: 0.189 | Acc: 95.360% (9536/10000)
+Saving..
+BEST ACCURACY: 95.36 ON EPOCH 185
+
+Epoch: 186
+Loss: 0.002 | Acc: 99.994% (49997/50000)
+Loss: 0.191 | Acc: 95.290% (9529/10000)
+Saving..
+
+Epoch: 187
+Loss: 0.002 | Acc: 99.996% (49998/50000)
+Loss: 0.191 | Acc: 95.390% (9539/10000)
+Saving..
+BEST ACCURACY: 95.39 ON EPOCH 187
+
+Epoch: 188
+Loss: 0.002 | Acc: 99.996% (49998/50000)
+Loss: 0.190 | Acc: 95.290% (9529/10000)
+Saving..
+
+Epoch: 189
+Loss: 0.002 | Acc: 99.990% (49995/50000)
+Loss: 0.191 | Acc: 95.390% (9539/10000)
+Saving..
+
+Epoch: 190
+Loss: 0.002 | Acc: 99.994% (49997/50000)
+Loss: 0.188 | Acc: 95.340% (9534/10000)
+Saving..
+
+Epoch: 191
+Loss: 0.002 | Acc: 99.982% (49991/50000)
+Loss: 0.189 | Acc: 95.410% (9541/10000)
+Saving..
+BEST ACCURACY: 95.41 ON EPOCH 191
+
+Epoch: 192
+Loss: 0.002 | Acc: 99.992% (49996/50000)
+Loss: 0.189 | Acc: 95.310% (9531/10000)
+Saving..
+
+Epoch: 193
+Loss: 0.002 | Acc: 99.996% (49998/50000)
+Loss: 0.188 | Acc: 95.370% (9537/10000)
+Saving..
+
+Epoch: 194
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Loss: 0.188 | Acc: 95.320% (9532/10000)
+Saving..
+
+Epoch: 195
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Loss: 0.189 | Acc: 95.480% (9548/10000)
+Saving..
+BEST ACCURACY: 95.48 ON EPOCH 195
+
+Epoch: 196
+Loss: 0.002 | Acc: 99.992% (49996/50000)
+Loss: 0.188 | Acc: 95.370% (9537/10000)
+Saving..
+
+Epoch: 197
+Loss: 0.001 | Acc: 99.996% (49998/50000)
+Loss: 0.188 | Acc: 95.310% (9531/10000)
+Saving..
+
+Epoch: 198
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Loss: 0.188 | Acc: 95.310% (9531/10000)
+Saving..
+
+Epoch: 199
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Loss: 0.187 | Acc: 95.390% (9539/10000)
+Saving..

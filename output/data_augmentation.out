@@ -1,0 +1,6446 @@
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-14           [-1, 64, 32, 32]             128
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-17           [-1, 64, 32, 32]               0
+           Conv2d-18           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-19           [-1, 64, 32, 32]             128
+           Conv2d-20           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-21           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-22           [-1, 64, 32, 32]               0
+           Conv2d-23          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-24          [-1, 128, 16, 16]             256
+           Conv2d-25          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-26          [-1, 128, 16, 16]             256
+           Conv2d-27          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-28          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-29          [-1, 128, 16, 16]               0
+           Conv2d-30          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-31          [-1, 128, 16, 16]             256
+           Conv2d-32          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-33          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-36          [-1, 128, 16, 16]             256
+           Conv2d-37          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-38          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-39          [-1, 128, 16, 16]               0
+           Conv2d-40          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-41          [-1, 128, 16, 16]             256
+           Conv2d-42          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-43          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-44          [-1, 128, 16, 16]               0
+           Conv2d-45            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-46            [-1, 256, 8, 8]             512
+           Conv2d-47            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-48            [-1, 256, 8, 8]             512
+           Conv2d-49            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-50            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-51            [-1, 256, 8, 8]               0
+           Conv2d-52            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-53            [-1, 256, 8, 8]             512
+           Conv2d-54            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-55            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-56            [-1, 256, 8, 8]               0
+           Conv2d-57            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-58            [-1, 256, 8, 8]             512
+           Conv2d-59            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-60            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-61            [-1, 256, 8, 8]               0
+           Linear-62                   [-1, 10]           2,570
+   ModifiedResNet-63                   [-1, 10]               0
+================================================================
+Total params: 4,697,162
+Trainable params: 4,697,162
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 18.63
+Params size (MB): 17.92
+Estimated Total Size (MB): 36.56
+----------------------------------------------------------------
+
+Epoch: 0
+Loss: 1.641 | Acc: 40.014% (20007/50000)
+Using augment:None
+Loss: 2.238 | Acc: 36.800% (3680/10000)
+Saving..
+BEST ACCURACY: 36.8ON EPOCH0
+
+Epoch: 1
+Loss: 1.074 | Acc: 61.522% (30761/50000)
+Using augment:None
+Loss: 1.024 | Acc: 63.870% (6387/10000)
+Saving..
+BEST ACCURACY: 63.87ON EPOCH1
+
+Epoch: 2
+Loss: 0.787 | Acc: 72.250% (36125/50000)
+Using augment:None
+Loss: 0.890 | Acc: 70.100% (7010/10000)
+Saving..
+BEST ACCURACY: 70.1ON EPOCH2
+
+Epoch: 3
+Loss: 0.620 | Acc: 78.368% (39184/50000)
+Using augment:None
+Loss: 0.763 | Acc: 73.980% (7398/10000)
+Saving..
+BEST ACCURACY: 73.98ON EPOCH3
+
+Epoch: 4
+Loss: 0.525 | Acc: 81.872% (40936/50000)
+Using augment:None
+Loss: 0.693 | Acc: 76.160% (7616/10000)
+Saving..
+BEST ACCURACY: 76.16ON EPOCH4
+
+Epoch: 5
+Loss: 0.461 | Acc: 84.196% (42098/50000)
+Using augment:None
+Loss: 0.796 | Acc: 73.670% (7367/10000)
+Saving..
+
+Epoch: 6
+Loss: 0.414 | Acc: 85.600% (42800/50000)
+Using augment:None
+Loss: 0.638 | Acc: 79.050% (7905/10000)
+Saving..
+BEST ACCURACY: 79.05ON EPOCH6
+
+Epoch: 7
+Loss: 0.380 | Acc: 86.912% (43456/50000)
+Using augment:None
+Loss: 0.740 | Acc: 75.320% (7532/10000)
+Saving..
+
+Epoch: 8
+Loss: 0.354 | Acc: 87.814% (43907/50000)
+Using augment:None
+Loss: 0.693 | Acc: 78.430% (7843/10000)
+Saving..
+
+Epoch: 9
+Loss: 0.324 | Acc: 88.756% (44378/50000)
+Using augment:None
+Loss: 0.538 | Acc: 82.070% (8207/10000)
+Saving..
+BEST ACCURACY: 82.07ON EPOCH9
+
+Epoch: 10
+Loss: 0.310 | Acc: 89.312% (44656/50000)
+Using augment:None
+Loss: 0.672 | Acc: 76.830% (7683/10000)
+Saving..
+
+Epoch: 11
+Loss: 0.287 | Acc: 90.086% (45043/50000)
+Using augment:None
+Loss: 0.668 | Acc: 79.400% (7940/10000)
+Saving..
+
+Epoch: 12
+Loss: 0.274 | Acc: 90.514% (45257/50000)
+Using augment:None
+Loss: 0.571 | Acc: 82.070% (8207/10000)
+Saving..
+
+Epoch: 13
+Loss: 0.269 | Acc: 90.680% (45340/50000)
+Using augment:None
+Loss: 0.670 | Acc: 78.120% (7812/10000)
+Saving..
+
+Epoch: 14
+Loss: 0.252 | Acc: 91.276% (45638/50000)
+Using augment:None
+Loss: 0.626 | Acc: 80.450% (8045/10000)
+Saving..
+
+Epoch: 15
+Loss: 0.248 | Acc: 91.424% (45712/50000)
+Using augment:None
+Loss: 0.818 | Acc: 76.760% (7676/10000)
+Saving..
+
+Epoch: 16
+Loss: 0.234 | Acc: 91.874% (45937/50000)
+Using augment:None
+Loss: 0.659 | Acc: 79.590% (7959/10000)
+Saving..
+
+Epoch: 17
+Loss: 0.229 | Acc: 92.106% (46053/50000)
+Using augment:None
+Loss: 0.619 | Acc: 80.810% (8081/10000)
+Saving..
+
+Epoch: 18
+Loss: 0.224 | Acc: 92.218% (46109/50000)
+Using augment:None
+Loss: 0.639 | Acc: 81.580% (8158/10000)
+Saving..
+
+Epoch: 19
+Loss: 0.214 | Acc: 92.696% (46348/50000)
+Using augment:None
+Loss: 0.724 | Acc: 79.180% (7918/10000)
+Saving..
+
+Epoch: 20
+Loss: 0.216 | Acc: 92.472% (46236/50000)
+Using augment:None
+Loss: 0.878 | Acc: 75.150% (7515/10000)
+Saving..
+
+Epoch: 21
+Loss: 0.206 | Acc: 92.910% (46455/50000)
+Using augment:None
+Loss: 0.653 | Acc: 80.700% (8070/10000)
+Saving..
+
+Epoch: 22
+Loss: 0.212 | Acc: 92.502% (46251/50000)
+Using augment:None
+Loss: 0.824 | Acc: 76.990% (7699/10000)
+Saving..
+
+Epoch: 23
+Loss: 0.201 | Acc: 93.030% (46515/50000)
+Using augment:None
+Loss: 0.573 | Acc: 81.540% (8154/10000)
+Saving..
+
+Epoch: 24
+Loss: 0.205 | Acc: 92.910% (46455/50000)
+Using augment:None
+Loss: 0.633 | Acc: 81.240% (8124/10000)
+Saving..
+
+Epoch: 25
+Loss: 0.198 | Acc: 93.268% (46634/50000)
+Using augment:None
+Loss: 0.629 | Acc: 81.250% (8125/10000)
+Saving..
+
+Epoch: 26
+Loss: 0.203 | Acc: 92.926% (46463/50000)
+Using augment:None
+Loss: 0.668 | Acc: 79.490% (7949/10000)
+Saving..
+
+Epoch: 27
+Loss: 0.188 | Acc: 93.506% (46753/50000)
+Using augment:None
+Loss: 0.572 | Acc: 82.480% (8248/10000)
+Saving..
+BEST ACCURACY: 82.48ON EPOCH27
+
+Epoch: 28
+Loss: 0.190 | Acc: 93.556% (46778/50000)
+Using augment:None
+Loss: 0.702 | Acc: 79.170% (7917/10000)
+Saving..
+
+Epoch: 29
+Loss: 0.199 | Acc: 93.244% (46622/50000)
+Using augment:None
+Loss: 0.561 | Acc: 82.280% (8228/10000)
+Saving..
+
+Epoch: 30
+Loss: 0.189 | Acc: 93.490% (46745/50000)
+Using augment:None
+Loss: 0.749 | Acc: 78.270% (7827/10000)
+Saving..
+
+Epoch: 31
+Loss: 0.194 | Acc: 93.432% (46716/50000)
+Using augment:None
+Loss: 0.561 | Acc: 82.260% (8226/10000)
+Saving..
+
+Epoch: 32
+Loss: 0.187 | Acc: 93.544% (46772/50000)
+Using augment:None
+Loss: 0.778 | Acc: 78.560% (7856/10000)
+Saving..
+
+Epoch: 33
+Loss: 0.184 | Acc: 93.688% (46844/50000)
+Using augment:None
+Loss: 0.790 | Acc: 78.710% (7871/10000)
+Saving..
+
+Epoch: 34
+Loss: 0.174 | Acc: 93.948% (46974/50000)
+Using augment:None
+Loss: 0.608 | Acc: 80.890% (8089/10000)
+Saving..
+
+Epoch: 35
+Loss: 0.177 | Acc: 93.988% (46994/50000)
+Using augment:None
+Loss: 0.615 | Acc: 81.630% (8163/10000)
+Saving..
+
+Epoch: 36
+Loss: 0.181 | Acc: 93.774% (46887/50000)
+Using augment:None
+Loss: 0.853 | Acc: 76.050% (7605/10000)
+Saving..
+
+Epoch: 37
+Loss: 0.174 | Acc: 94.000% (47000/50000)
+Using augment:None
+Loss: 0.793 | Acc: 78.540% (7854/10000)
+Saving..
+
+Epoch: 38
+Loss: 0.172 | Acc: 94.144% (47072/50000)
+Using augment:None
+Loss: 0.575 | Acc: 82.700% (8270/10000)
+Saving..
+BEST ACCURACY: 82.7ON EPOCH38
+
+Epoch: 39
+Loss: 0.170 | Acc: 94.154% (47077/50000)
+Using augment:None
+Loss: 0.661 | Acc: 80.810% (8081/10000)
+Saving..
+
+Epoch: 40
+Loss: 0.174 | Acc: 93.996% (46998/50000)
+Using augment:None
+Loss: 0.905 | Acc: 75.260% (7526/10000)
+Saving..
+
+Epoch: 41
+Loss: 0.166 | Acc: 94.342% (47171/50000)
+Using augment:None
+Loss: 0.521 | Acc: 84.760% (8476/10000)
+Saving..
+BEST ACCURACY: 84.76ON EPOCH41
+
+Epoch: 42
+Loss: 0.163 | Acc: 94.478% (47239/50000)
+Using augment:None
+Loss: 0.591 | Acc: 82.830% (8283/10000)
+Saving..
+
+Epoch: 43
+Loss: 0.169 | Acc: 94.150% (47075/50000)
+Using augment:None
+Loss: 0.678 | Acc: 79.570% (7957/10000)
+Saving..
+
+Epoch: 44
+Loss: 0.167 | Acc: 94.230% (47115/50000)
+Using augment:None
+Loss: 0.612 | Acc: 82.220% (8222/10000)
+Saving..
+
+Epoch: 45
+Loss: 0.166 | Acc: 94.426% (47213/50000)
+Using augment:None
+Loss: 0.593 | Acc: 82.290% (8229/10000)
+Saving..
+
+Epoch: 46
+Loss: 0.157 | Acc: 94.680% (47340/50000)
+Using augment:None
+Loss: 0.649 | Acc: 80.610% (8061/10000)
+Saving..
+
+Epoch: 47
+Loss: 0.161 | Acc: 94.484% (47242/50000)
+Using augment:None
+Loss: 0.786 | Acc: 77.770% (7777/10000)
+Saving..
+
+Epoch: 48
+Loss: 0.150 | Acc: 94.910% (47455/50000)
+Using augment:None
+Loss: 0.577 | Acc: 84.010% (8401/10000)
+Saving..
+
+Epoch: 49
+Loss: 0.165 | Acc: 94.326% (47163/50000)
+Using augment:None
+Loss: 0.581 | Acc: 82.000% (8200/10000)
+Saving..
+
+Epoch: 50
+Loss: 0.151 | Acc: 94.828% (47414/50000)
+Using augment:None
+Loss: 0.696 | Acc: 79.930% (7993/10000)
+Saving..
+
+Epoch: 51
+Loss: 0.159 | Acc: 94.464% (47232/50000)
+Using augment:None
+Loss: 0.768 | Acc: 79.150% (7915/10000)
+Saving..
+
+Epoch: 52
+Loss: 0.152 | Acc: 94.880% (47440/50000)
+Using augment:None
+Loss: 0.691 | Acc: 79.490% (7949/10000)
+Saving..
+
+Epoch: 53
+Loss: 0.148 | Acc: 94.968% (47484/50000)
+Using augment:None
+Loss: 0.680 | Acc: 80.730% (8073/10000)
+Saving..
+
+Epoch: 54
+Loss: 0.150 | Acc: 94.738% (47369/50000)
+Using augment:None
+Loss: 0.562 | Acc: 83.130% (8313/10000)
+Saving..
+
+Epoch: 55
+Loss: 0.142 | Acc: 95.112% (47556/50000)
+Using augment:None
+Loss: 0.495 | Acc: 85.040% (8504/10000)
+Saving..
+BEST ACCURACY: 85.04ON EPOCH55
+
+Epoch: 56
+Loss: 0.151 | Acc: 94.940% (47470/50000)
+Using augment:None
+Loss: 0.684 | Acc: 80.500% (8050/10000)
+Saving..
+
+Epoch: 57
+Loss: 0.142 | Acc: 95.152% (47576/50000)
+Using augment:None
+Loss: 0.569 | Acc: 82.880% (8288/10000)
+Saving..
+
+Epoch: 58
+Loss: 0.133 | Acc: 95.498% (47749/50000)
+Using augment:None
+Loss: 0.735 | Acc: 79.760% (7976/10000)
+Saving..
+
+Epoch: 59
+Loss: 0.139 | Acc: 95.210% (47605/50000)
+Using augment:None
+Loss: 0.628 | Acc: 81.970% (8197/10000)
+Saving..
+
+Epoch: 60
+Loss: 0.140 | Acc: 95.220% (47610/50000)
+Using augment:None
+Loss: 0.668 | Acc: 80.600% (8060/10000)
+Saving..
+
+Epoch: 61
+Loss: 0.136 | Acc: 95.328% (47664/50000)
+Using augment:None
+Loss: 0.650 | Acc: 82.270% (8227/10000)
+Saving..
+
+Epoch: 62
+Loss: 0.133 | Acc: 95.532% (47766/50000)
+Using augment:None
+Loss: 0.690 | Acc: 81.720% (8172/10000)
+Saving..
+
+Epoch: 63
+Loss: 0.133 | Acc: 95.562% (47781/50000)
+Using augment:None
+Loss: 0.585 | Acc: 82.600% (8260/10000)
+Saving..
+
+Epoch: 64
+Loss: 0.137 | Acc: 95.346% (47673/50000)
+Using augment:None
+Loss: 0.639 | Acc: 81.780% (8178/10000)
+Saving..
+
+Epoch: 65
+Loss: 0.130 | Acc: 95.574% (47787/50000)
+Using augment:None
+Loss: 0.702 | Acc: 81.190% (8119/10000)
+Saving..
+
+Epoch: 66
+Loss: 0.129 | Acc: 95.610% (47805/50000)
+Using augment:None
+Loss: 0.652 | Acc: 80.220% (8022/10000)
+Saving..
+
+Epoch: 67
+Loss: 0.126 | Acc: 95.686% (47843/50000)
+Using augment:None
+Loss: 0.734 | Acc: 79.580% (7958/10000)
+Saving..
+
+Epoch: 68
+Loss: 0.117 | Acc: 96.114% (48057/50000)
+Using augment:None
+Loss: 0.640 | Acc: 81.610% (8161/10000)
+Saving..
+
+Epoch: 69
+Loss: 0.135 | Acc: 95.348% (47674/50000)
+Using augment:None
+Loss: 0.622 | Acc: 82.420% (8242/10000)
+Saving..
+
+Epoch: 70
+Loss: 0.111 | Acc: 96.256% (48128/50000)
+Using augment:None
+Loss: 0.528 | Acc: 84.080% (8408/10000)
+Saving..
+
+Epoch: 71
+Loss: 0.118 | Acc: 96.048% (48024/50000)
+Using augment:None
+Loss: 0.616 | Acc: 82.290% (8229/10000)
+Saving..
+
+Epoch: 72
+Loss: 0.124 | Acc: 95.808% (47904/50000)
+Using augment:None
+Loss: 0.878 | Acc: 76.940% (7694/10000)
+Saving..
+
+Epoch: 73
+Loss: 0.120 | Acc: 95.848% (47924/50000)
+Using augment:None
+Loss: 0.510 | Acc: 84.840% (8484/10000)
+Saving..
+
+Epoch: 74
+Loss: 0.108 | Acc: 96.348% (48174/50000)
+Using augment:None
+Loss: 0.622 | Acc: 81.840% (8184/10000)
+Saving..
+
+Epoch: 75
+Loss: 0.122 | Acc: 95.930% (47965/50000)
+Using augment:None
+Loss: 0.671 | Acc: 80.640% (8064/10000)
+Saving..
+
+Epoch: 76
+Loss: 0.110 | Acc: 96.216% (48108/50000)
+Using augment:None
+Loss: 0.706 | Acc: 81.680% (8168/10000)
+Saving..
+
+Epoch: 77
+Loss: 0.112 | Acc: 96.192% (48096/50000)
+Using augment:None
+Loss: 0.582 | Acc: 83.670% (8367/10000)
+Saving..
+
+Epoch: 78
+Loss: 0.107 | Acc: 96.406% (48203/50000)
+Using augment:None
+Loss: 0.662 | Acc: 81.470% (8147/10000)
+Saving..
+
+Epoch: 79
+Loss: 0.104 | Acc: 96.530% (48265/50000)
+Using augment:None
+Loss: 0.643 | Acc: 81.170% (8117/10000)
+Saving..
+
+Epoch: 80
+Loss: 0.112 | Acc: 96.256% (48128/50000)
+Using augment:None
+Loss: 0.536 | Acc: 83.760% (8376/10000)
+Saving..
+
+Epoch: 81
+Loss: 0.096 | Acc: 96.702% (48351/50000)
+Using augment:None
+Loss: 0.645 | Acc: 82.480% (8248/10000)
+Saving..
+
+Epoch: 82
+Loss: 0.099 | Acc: 96.786% (48393/50000)
+Using augment:None
+Loss: 0.559 | Acc: 84.460% (8446/10000)
+Saving..
+
+Epoch: 83
+Loss: 0.106 | Acc: 96.406% (48203/50000)
+Using augment:None
+Loss: 0.707 | Acc: 80.730% (8073/10000)
+Saving..
+
+Epoch: 84
+Loss: 0.105 | Acc: 96.514% (48257/50000)
+Using augment:None
+Loss: 0.718 | Acc: 80.300% (8030/10000)
+Saving..
+
+Epoch: 85
+Loss: 0.095 | Acc: 96.822% (48411/50000)
+Using augment:None
+Loss: 0.570 | Acc: 83.540% (8354/10000)
+Saving..
+
+Epoch: 86
+Loss: 0.095 | Acc: 96.816% (48408/50000)
+Using augment:None
+Loss: 0.741 | Acc: 80.580% (8058/10000)
+Saving..
+
+Epoch: 87
+Loss: 0.095 | Acc: 96.836% (48418/50000)
+Using augment:None
+Loss: 0.857 | Acc: 78.580% (7858/10000)
+Saving..
+
+Epoch: 88
+Loss: 0.093 | Acc: 96.882% (48441/50000)
+Using augment:None
+Loss: 0.565 | Acc: 84.370% (8437/10000)
+Saving..
+
+Epoch: 89
+Loss: 0.093 | Acc: 96.864% (48432/50000)
+Using augment:None
+Loss: 0.763 | Acc: 79.110% (7911/10000)
+Saving..
+
+Epoch: 90
+Loss: 0.090 | Acc: 97.006% (48503/50000)
+Using augment:None
+Loss: 0.696 | Acc: 80.760% (8076/10000)
+Saving..
+
+Epoch: 91
+Loss: 0.090 | Acc: 96.996% (48498/50000)
+Using augment:None
+Loss: 0.520 | Acc: 85.230% (8523/10000)
+Saving..
+BEST ACCURACY: 85.23ON EPOCH91
+
+Epoch: 92
+Loss: 0.077 | Acc: 97.406% (48703/50000)
+Using augment:None
+Loss: 0.554 | Acc: 84.250% (8425/10000)
+Saving..
+
+Epoch: 93
+Loss: 0.085 | Acc: 97.198% (48599/50000)
+Using augment:None
+Loss: 0.570 | Acc: 84.650% (8465/10000)
+Saving..
+
+Epoch: 94
+Loss: 0.082 | Acc: 97.300% (48650/50000)
+Using augment:None
+Loss: 0.653 | Acc: 83.150% (8315/10000)
+Saving..
+
+Epoch: 95
+Loss: 0.081 | Acc: 97.148% (48574/50000)
+Using augment:None
+Loss: 0.611 | Acc: 83.960% (8396/10000)
+Saving..
+
+Epoch: 96
+Loss: 0.087 | Acc: 97.118% (48559/50000)
+Using augment:None
+Loss: 0.666 | Acc: 82.000% (8200/10000)
+Saving..
+
+Epoch: 97
+Loss: 0.070 | Acc: 97.692% (48846/50000)
+Using augment:None
+Loss: 0.633 | Acc: 83.690% (8369/10000)
+Saving..
+
+Epoch: 98
+Loss: 0.082 | Acc: 97.262% (48631/50000)
+Using augment:None
+Loss: 0.854 | Acc: 77.410% (7741/10000)
+Saving..
+
+Epoch: 99
+Loss: 0.080 | Acc: 97.262% (48631/50000)
+Using augment:None
+Loss: 0.650 | Acc: 81.860% (8186/10000)
+Saving..
+
+Epoch: 100
+Loss: 0.073 | Acc: 97.626% (48813/50000)
+Using augment:None
+Loss: 0.588 | Acc: 84.060% (8406/10000)
+Saving..
+
+Epoch: 101
+Loss: 0.073 | Acc: 97.574% (48787/50000)
+Using augment:None
+Loss: 0.656 | Acc: 82.840% (8284/10000)
+Saving..
+
+Epoch: 102
+Loss: 0.067 | Acc: 97.806% (48903/50000)
+Using augment:None
+Loss: 0.662 | Acc: 83.060% (8306/10000)
+Saving..
+
+Epoch: 103
+Loss: 0.066 | Acc: 97.838% (48919/50000)
+Using augment:None
+Loss: 0.715 | Acc: 80.850% (8085/10000)
+Saving..
+
+Epoch: 104
+Loss: 0.066 | Acc: 97.814% (48907/50000)
+Using augment:None
+Loss: 0.757 | Acc: 80.830% (8083/10000)
+Saving..
+
+Epoch: 105
+Loss: 0.071 | Acc: 97.692% (48846/50000)
+Using augment:None
+Loss: 0.649 | Acc: 81.700% (8170/10000)
+Saving..
+
+Epoch: 106
+Loss: 0.068 | Acc: 97.770% (48885/50000)
+Using augment:None
+Loss: 0.747 | Acc: 81.300% (8130/10000)
+Saving..
+
+Epoch: 107
+Loss: 0.059 | Acc: 98.172% (49086/50000)
+Using augment:None
+Loss: 0.745 | Acc: 80.990% (8099/10000)
+Saving..
+
+Epoch: 108
+Loss: 0.066 | Acc: 97.842% (48921/50000)
+Using augment:None
+Loss: 0.592 | Acc: 83.910% (8391/10000)
+Saving..
+
+Epoch: 109
+Loss: 0.059 | Acc: 98.088% (49044/50000)
+Using augment:None
+Loss: 0.535 | Acc: 85.480% (8548/10000)
+Saving..
+BEST ACCURACY: 85.48ON EPOCH109
+
+Epoch: 110
+Loss: 0.054 | Acc: 98.238% (49119/50000)
+Using augment:None
+Loss: 0.596 | Acc: 83.580% (8358/10000)
+Saving..
+
+Epoch: 111
+Loss: 0.059 | Acc: 98.108% (49054/50000)
+Using augment:None
+Loss: 0.619 | Acc: 84.050% (8405/10000)
+Saving..
+
+Epoch: 112
+Loss: 0.046 | Acc: 98.534% (49267/50000)
+Using augment:None
+Loss: 0.559 | Acc: 85.140% (8514/10000)
+Saving..
+
+Epoch: 113
+Loss: 0.052 | Acc: 98.346% (49173/50000)
+Using augment:None
+Loss: 0.537 | Acc: 85.530% (8553/10000)
+Saving..
+BEST ACCURACY: 85.53ON EPOCH113
+
+Epoch: 114
+Loss: 0.052 | Acc: 98.314% (49157/50000)
+Using augment:None
+Loss: 0.683 | Acc: 81.780% (8178/10000)
+Saving..
+
+Epoch: 115
+Loss: 0.061 | Acc: 98.004% (49002/50000)
+Using augment:None
+Loss: 0.571 | Acc: 84.240% (8424/10000)
+Saving..
+
+Epoch: 116
+Loss: 0.051 | Acc: 98.346% (49173/50000)
+Using augment:None
+Loss: 0.646 | Acc: 82.800% (8280/10000)
+Saving..
+
+Epoch: 117
+Loss: 0.048 | Acc: 98.478% (49239/50000)
+Using augment:None
+Loss: 0.666 | Acc: 83.600% (8360/10000)
+Saving..
+
+Epoch: 118
+Loss: 0.038 | Acc: 98.798% (49399/50000)
+Using augment:None
+Loss: 0.545 | Acc: 85.390% (8539/10000)
+Saving..
+
+Epoch: 119
+Loss: 0.044 | Acc: 98.602% (49301/50000)
+Using augment:None
+Loss: 0.514 | Acc: 85.850% (8585/10000)
+Saving..
+BEST ACCURACY: 85.85ON EPOCH119
+
+Epoch: 120
+Loss: 0.037 | Acc: 98.844% (49422/50000)
+Using augment:None
+Loss: 0.543 | Acc: 85.580% (8558/10000)
+Saving..
+
+Epoch: 121
+Loss: 0.045 | Acc: 98.562% (49281/50000)
+Using augment:None
+Loss: 0.676 | Acc: 82.390% (8239/10000)
+Saving..
+
+Epoch: 122
+Loss: 0.040 | Acc: 98.716% (49358/50000)
+Using augment:None
+Loss: 0.666 | Acc: 82.760% (8276/10000)
+Saving..
+
+Epoch: 123
+Loss: 0.041 | Acc: 98.714% (49357/50000)
+Using augment:None
+Loss: 0.592 | Acc: 84.560% (8456/10000)
+Saving..
+
+Epoch: 124
+Loss: 0.040 | Acc: 98.730% (49365/50000)
+Using augment:None
+Loss: 0.604 | Acc: 84.370% (8437/10000)
+Saving..
+
+Epoch: 125
+Loss: 0.043 | Acc: 98.632% (49316/50000)
+Using augment:None
+Loss: 0.590 | Acc: 84.680% (8468/10000)
+Saving..
+
+Epoch: 126
+Loss: 0.026 | Acc: 99.176% (49588/50000)
+Using augment:None
+Loss: 0.562 | Acc: 86.050% (8605/10000)
+Saving..
+BEST ACCURACY: 86.05ON EPOCH126
+
+Epoch: 127
+Loss: 0.022 | Acc: 99.350% (49675/50000)
+Using augment:None
+Loss: 0.622 | Acc: 84.200% (8420/10000)
+Saving..
+
+Epoch: 128
+Loss: 0.037 | Acc: 98.894% (49447/50000)
+Using augment:None
+Loss: 0.518 | Acc: 86.620% (8662/10000)
+Saving..
+BEST ACCURACY: 86.62ON EPOCH128
+
+Epoch: 129
+Loss: 0.034 | Acc: 98.962% (49481/50000)
+Using augment:None
+Loss: 0.543 | Acc: 84.980% (8498/10000)
+Saving..
+
+Epoch: 130
+Loss: 0.030 | Acc: 99.078% (49539/50000)
+Using augment:None
+Loss: 0.590 | Acc: 85.280% (8528/10000)
+Saving..
+
+Epoch: 131
+Loss: 0.024 | Acc: 99.316% (49658/50000)
+Using augment:None
+Loss: 0.514 | Acc: 86.700% (8670/10000)
+Saving..
+BEST ACCURACY: 86.7ON EPOCH131
+
+Epoch: 132
+Loss: 0.030 | Acc: 99.076% (49538/50000)
+Using augment:None
+Loss: 0.532 | Acc: 86.800% (8680/10000)
+Saving..
+BEST ACCURACY: 86.8ON EPOCH132
+
+Epoch: 133
+Loss: 0.021 | Acc: 99.356% (49678/50000)
+Using augment:None
+Loss: 0.501 | Acc: 87.070% (8707/10000)
+Saving..
+BEST ACCURACY: 87.07ON EPOCH133
+
+Epoch: 134
+Loss: 0.023 | Acc: 99.282% (49641/50000)
+Using augment:None
+Loss: 0.659 | Acc: 83.090% (8309/10000)
+Saving..
+
+Epoch: 135
+Loss: 0.025 | Acc: 99.242% (49621/50000)
+Using augment:None
+Loss: 0.723 | Acc: 82.960% (8296/10000)
+Saving..
+
+Epoch: 136
+Loss: 0.028 | Acc: 99.124% (49562/50000)
+Using augment:None
+Loss: 0.584 | Acc: 85.230% (8523/10000)
+Saving..
+
+Epoch: 137
+Loss: 0.023 | Acc: 99.334% (49667/50000)
+Using augment:None
+Loss: 0.557 | Acc: 85.430% (8543/10000)
+Saving..
+
+Epoch: 138
+Loss: 0.018 | Acc: 99.486% (49743/50000)
+Using augment:None
+Loss: 0.483 | Acc: 87.330% (8733/10000)
+Saving..
+BEST ACCURACY: 87.33ON EPOCH138
+
+Epoch: 139
+Loss: 0.010 | Acc: 99.748% (49874/50000)
+Using augment:None
+Loss: 0.469 | Acc: 87.430% (8743/10000)
+Saving..
+BEST ACCURACY: 87.43ON EPOCH139
+
+Epoch: 140
+Loss: 0.004 | Acc: 99.926% (49963/50000)
+Using augment:None
+Loss: 0.396 | Acc: 89.870% (8987/10000)
+Saving..
+BEST ACCURACY: 89.87ON EPOCH140
+
+Epoch: 141
+Loss: 0.002 | Acc: 99.980% (49990/50000)
+Using augment:None
+Loss: 0.383 | Acc: 89.590% (8959/10000)
+Saving..
+
+Epoch: 142
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.349 | Acc: 90.540% (9054/10000)
+Saving..
+BEST ACCURACY: 90.54ON EPOCH142
+
+Epoch: 143
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.338 | Acc: 90.650% (9065/10000)
+Saving..
+BEST ACCURACY: 90.65ON EPOCH143
+
+Epoch: 144
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.329 | Acc: 90.840% (9084/10000)
+Saving..
+BEST ACCURACY: 90.84ON EPOCH144
+
+Epoch: 145
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.325 | Acc: 90.720% (9072/10000)
+Saving..
+
+Epoch: 146
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.321 | Acc: 90.810% (9081/10000)
+Saving..
+
+Epoch: 147
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.318 | Acc: 90.810% (9081/10000)
+Saving..
+
+Epoch: 148
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.316 | Acc: 90.930% (9093/10000)
+Saving..
+BEST ACCURACY: 90.93ON EPOCH148
+
+Epoch: 149
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.313 | Acc: 90.920% (9092/10000)
+Saving..
+
+Epoch: 150
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.314 | Acc: 90.850% (9085/10000)
+Saving..
+
+Epoch: 151
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.312 | Acc: 90.900% (9090/10000)
+Saving..
+
+Epoch: 152
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.309 | Acc: 91.000% (9100/10000)
+Saving..
+BEST ACCURACY: 91.0ON EPOCH152
+
+Epoch: 153
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.311 | Acc: 90.890% (9089/10000)
+Saving..
+
+Epoch: 154
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.313 | Acc: 90.850% (9085/10000)
+Saving..
+
+Epoch: 155
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.312 | Acc: 91.030% (9103/10000)
+Saving..
+BEST ACCURACY: 91.03ON EPOCH155
+
+Epoch: 156
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.312 | Acc: 90.860% (9086/10000)
+Saving..
+
+Epoch: 157
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.312 | Acc: 90.880% (9088/10000)
+Saving..
+
+Epoch: 158
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.314 | Acc: 90.960% (9096/10000)
+Saving..
+
+Epoch: 159
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.315 | Acc: 90.890% (9089/10000)
+Saving..
+
+Epoch: 160
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.314 | Acc: 90.900% (9090/10000)
+Saving..
+
+Epoch: 161
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.314 | Acc: 90.850% (9085/10000)
+Saving..
+
+Epoch: 162
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.317 | Acc: 90.770% (9077/10000)
+Saving..
+
+Epoch: 163
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.316 | Acc: 90.900% (9090/10000)
+Saving..
+
+Epoch: 164
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.316 | Acc: 90.810% (9081/10000)
+Saving..
+
+Epoch: 165
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.317 | Acc: 90.790% (9079/10000)
+Saving..
+
+Epoch: 166
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.316 | Acc: 90.830% (9083/10000)
+Saving..
+
+Epoch: 167
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.320 | Acc: 90.690% (9069/10000)
+Saving..
+
+Epoch: 168
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.319 | Acc: 90.800% (9080/10000)
+Saving..
+
+Epoch: 169
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.319 | Acc: 90.870% (9087/10000)
+Saving..
+
+Epoch: 170
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.319 | Acc: 90.810% (9081/10000)
+Saving..
+
+Epoch: 171
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.320 | Acc: 90.790% (9079/10000)
+Saving..
+
+Epoch: 172
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.323 | Acc: 90.590% (9059/10000)
+Saving..
+
+Epoch: 173
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.322 | Acc: 90.860% (9086/10000)
+Saving..
+
+Epoch: 174
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.321 | Acc: 90.750% (9075/10000)
+Saving..
+
+Epoch: 175
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.323 | Acc: 90.730% (9073/10000)
+Saving..
+
+Epoch: 176
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.324 | Acc: 90.720% (9072/10000)
+Saving..
+
+Epoch: 177
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.324 | Acc: 90.750% (9075/10000)
+Saving..
+
+Epoch: 178
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.324 | Acc: 90.710% (9071/10000)
+Saving..
+
+Epoch: 179
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.322 | Acc: 90.790% (9079/10000)
+Saving..
+
+Epoch: 180
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.325 | Acc: 90.680% (9068/10000)
+Saving..
+
+Epoch: 181
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.325 | Acc: 90.640% (9064/10000)
+Saving..
+
+Epoch: 182
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.323 | Acc: 90.650% (9065/10000)
+Saving..
+
+Epoch: 183
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.327 | Acc: 90.610% (9061/10000)
+Saving..
+
+Epoch: 184
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.329 | Acc: 90.670% (9067/10000)
+Saving..
+
+Epoch: 185
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.332 | Acc: 90.730% (9073/10000)
+Saving..
+
+Epoch: 186
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.325 | Acc: 90.620% (9062/10000)
+Saving..
+
+Epoch: 187
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.327 | Acc: 90.740% (9074/10000)
+Saving..
+
+Epoch: 188
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.327 | Acc: 90.710% (9071/10000)
+Saving..
+
+Epoch: 189
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.326 | Acc: 90.780% (9078/10000)
+Saving..
+
+Epoch: 190
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.329 | Acc: 90.590% (9059/10000)
+Saving..
+
+Epoch: 191
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.324 | Acc: 90.700% (9070/10000)
+Saving..
+
+Epoch: 192
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.327 | Acc: 90.760% (9076/10000)
+Saving..
+
+Epoch: 193
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.329 | Acc: 90.660% (9066/10000)
+Saving..
+
+Epoch: 194
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.326 | Acc: 90.670% (9067/10000)
+Saving..
+
+Epoch: 195
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.327 | Acc: 90.570% (9057/10000)
+Saving..
+
+Epoch: 196
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.324 | Acc: 90.570% (9057/10000)
+Saving..
+
+Epoch: 197
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.328 | Acc: 90.700% (9070/10000)
+Saving..
+
+Epoch: 198
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.325 | Acc: 90.710% (9071/10000)
+Saving..
+
+Epoch: 199
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:None
+Loss: 0.326 | Acc: 90.720% (9072/10000)
+Saving..
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-14           [-1, 64, 32, 32]             128
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-17           [-1, 64, 32, 32]               0
+           Conv2d-18           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-19           [-1, 64, 32, 32]             128
+           Conv2d-20           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-21           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-22           [-1, 64, 32, 32]               0
+           Conv2d-23          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-24          [-1, 128, 16, 16]             256
+           Conv2d-25          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-26          [-1, 128, 16, 16]             256
+           Conv2d-27          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-28          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-29          [-1, 128, 16, 16]               0
+           Conv2d-30          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-31          [-1, 128, 16, 16]             256
+           Conv2d-32          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-33          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-36          [-1, 128, 16, 16]             256
+           Conv2d-37          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-38          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-39          [-1, 128, 16, 16]               0
+           Conv2d-40          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-41          [-1, 128, 16, 16]             256
+           Conv2d-42          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-43          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-44          [-1, 128, 16, 16]               0
+           Conv2d-45            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-46            [-1, 256, 8, 8]             512
+           Conv2d-47            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-48            [-1, 256, 8, 8]             512
+           Conv2d-49            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-50            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-51            [-1, 256, 8, 8]               0
+           Conv2d-52            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-53            [-1, 256, 8, 8]             512
+           Conv2d-54            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-55            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-56            [-1, 256, 8, 8]               0
+           Conv2d-57            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-58            [-1, 256, 8, 8]             512
+           Conv2d-59            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-60            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-61            [-1, 256, 8, 8]               0
+           Linear-62                   [-1, 10]           2,570
+   ModifiedResNet-63                   [-1, 10]               0
+================================================================
+Total params: 4,697,162
+Trainable params: 4,697,162
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 18.63
+Params size (MB): 17.92
+Estimated Total Size (MB): 36.56
+----------------------------------------------------------------
+
+Epoch: 0
+Loss: 1.695 | Acc: 36.350% (18175/50000)
+Using augment:RandomCrop
+Loss: 1.380 | Acc: 50.250% (5025/10000)
+Saving..
+
+Epoch: 1
+Loss: 1.145 | Acc: 59.016% (29508/50000)
+Using augment:RandomCrop
+Loss: 1.177 | Acc: 61.660% (6166/10000)
+Saving..
+
+Epoch: 2
+Loss: 0.851 | Acc: 70.164% (35082/50000)
+Using augment:RandomCrop
+Loss: 0.783 | Acc: 73.610% (7361/10000)
+Saving..
+
+Epoch: 3
+Loss: 0.685 | Acc: 76.168% (38084/50000)
+Using augment:RandomCrop
+Loss: 0.895 | Acc: 71.500% (7150/10000)
+Saving..
+
+Epoch: 4
+Loss: 0.607 | Acc: 79.164% (39582/50000)
+Using augment:RandomCrop
+Loss: 0.711 | Acc: 76.160% (7616/10000)
+Saving..
+
+Epoch: 5
+Loss: 0.548 | Acc: 81.202% (40601/50000)
+Using augment:RandomCrop
+Loss: 0.580 | Acc: 80.860% (8086/10000)
+Saving..
+
+Epoch: 6
+Loss: 0.508 | Acc: 82.570% (41285/50000)
+Using augment:RandomCrop
+Loss: 0.942 | Acc: 73.520% (7352/10000)
+Saving..
+
+Epoch: 7
+Loss: 0.487 | Acc: 83.538% (41769/50000)
+Using augment:RandomCrop
+Loss: 0.914 | Acc: 73.530% (7353/10000)
+Saving..
+
+Epoch: 8
+Loss: 0.451 | Acc: 84.658% (42329/50000)
+Using augment:RandomCrop
+Loss: 0.590 | Acc: 80.540% (8054/10000)
+Saving..
+
+Epoch: 9
+Loss: 0.433 | Acc: 85.210% (42605/50000)
+Using augment:RandomCrop
+Loss: 0.687 | Acc: 78.120% (7812/10000)
+Saving..
+
+Epoch: 10
+Loss: 0.421 | Acc: 85.684% (42842/50000)
+Using augment:RandomCrop
+Loss: 0.665 | Acc: 78.240% (7824/10000)
+Saving..
+
+Epoch: 11
+Loss: 0.403 | Acc: 86.192% (43096/50000)
+Using augment:RandomCrop
+Loss: 0.639 | Acc: 80.470% (8047/10000)
+Saving..
+
+Epoch: 12
+Loss: 0.389 | Acc: 86.772% (43386/50000)
+Using augment:RandomCrop
+Loss: 0.826 | Acc: 76.560% (7656/10000)
+Saving..
+
+Epoch: 13
+Loss: 0.375 | Acc: 87.202% (43601/50000)
+Using augment:RandomCrop
+Loss: 0.734 | Acc: 77.600% (7760/10000)
+Saving..
+
+Epoch: 14
+Loss: 0.369 | Acc: 87.288% (43644/50000)
+Using augment:RandomCrop
+Loss: 0.883 | Acc: 75.000% (7500/10000)
+Saving..
+
+Epoch: 15
+Loss: 0.359 | Acc: 87.884% (43942/50000)
+Using augment:RandomCrop
+Loss: 0.584 | Acc: 81.720% (8172/10000)
+Saving..
+
+Epoch: 16
+Loss: 0.347 | Acc: 88.434% (44217/50000)
+Using augment:RandomCrop
+Loss: 0.583 | Acc: 81.760% (8176/10000)
+Saving..
+
+Epoch: 17
+Loss: 0.341 | Acc: 88.316% (44158/50000)
+Using augment:RandomCrop
+Loss: 0.714 | Acc: 77.840% (7784/10000)
+Saving..
+
+Epoch: 18
+Loss: 0.332 | Acc: 88.698% (44349/50000)
+Using augment:RandomCrop
+Loss: 0.568 | Acc: 81.870% (8187/10000)
+Saving..
+
+Epoch: 19
+Loss: 0.329 | Acc: 88.740% (44370/50000)
+Using augment:RandomCrop
+Loss: 0.623 | Acc: 81.330% (8133/10000)
+Saving..
+
+Epoch: 20
+Loss: 0.325 | Acc: 88.842% (44421/50000)
+Using augment:RandomCrop
+Loss: 0.532 | Acc: 83.020% (8302/10000)
+Saving..
+
+Epoch: 21
+Loss: 0.320 | Acc: 89.190% (44595/50000)
+Using augment:RandomCrop
+Loss: 0.557 | Acc: 83.110% (8311/10000)
+Saving..
+
+Epoch: 22
+Loss: 0.314 | Acc: 89.228% (44614/50000)
+Using augment:RandomCrop
+Loss: 1.151 | Acc: 69.340% (6934/10000)
+Saving..
+
+Epoch: 23
+Loss: 0.307 | Acc: 89.526% (44763/50000)
+Using augment:RandomCrop
+Loss: 0.838 | Acc: 76.960% (7696/10000)
+Saving..
+
+Epoch: 24
+Loss: 0.302 | Acc: 89.812% (44906/50000)
+Using augment:RandomCrop
+Loss: 0.544 | Acc: 82.140% (8214/10000)
+Saving..
+
+Epoch: 25
+Loss: 0.302 | Acc: 89.762% (44881/50000)
+Using augment:RandomCrop
+Loss: 0.820 | Acc: 77.450% (7745/10000)
+Saving..
+
+Epoch: 26
+Loss: 0.301 | Acc: 89.818% (44909/50000)
+Using augment:RandomCrop
+Loss: 1.075 | Acc: 73.840% (7384/10000)
+Saving..
+
+Epoch: 27
+Loss: 0.292 | Acc: 89.974% (44987/50000)
+Using augment:RandomCrop
+Loss: 0.612 | Acc: 82.210% (8221/10000)
+Saving..
+
+Epoch: 28
+Loss: 0.288 | Acc: 90.230% (45115/50000)
+Using augment:RandomCrop
+Loss: 0.516 | Acc: 83.740% (8374/10000)
+Saving..
+
+Epoch: 29
+Loss: 0.297 | Acc: 89.826% (44913/50000)
+Using augment:RandomCrop
+Loss: 0.587 | Acc: 82.830% (8283/10000)
+Saving..
+
+Epoch: 30
+Loss: 0.287 | Acc: 90.180% (45090/50000)
+Using augment:RandomCrop
+Loss: 0.448 | Acc: 86.030% (8603/10000)
+Saving..
+
+Epoch: 31
+Loss: 0.278 | Acc: 90.528% (45264/50000)
+Using augment:RandomCrop
+Loss: 0.705 | Acc: 78.910% (7891/10000)
+Saving..
+
+Epoch: 32
+Loss: 0.275 | Acc: 90.620% (45310/50000)
+Using augment:RandomCrop
+Loss: 0.495 | Acc: 84.630% (8463/10000)
+Saving..
+
+Epoch: 33
+Loss: 0.278 | Acc: 90.358% (45179/50000)
+Using augment:RandomCrop
+Loss: 0.627 | Acc: 81.250% (8125/10000)
+Saving..
+
+Epoch: 34
+Loss: 0.272 | Acc: 90.708% (45354/50000)
+Using augment:RandomCrop
+Loss: 0.668 | Acc: 81.980% (8198/10000)
+Saving..
+
+Epoch: 35
+Loss: 0.268 | Acc: 90.770% (45385/50000)
+Using augment:RandomCrop
+Loss: 0.579 | Acc: 82.100% (8210/10000)
+Saving..
+
+Epoch: 36
+Loss: 0.271 | Acc: 90.778% (45389/50000)
+Using augment:RandomCrop
+Loss: 0.549 | Acc: 84.430% (8443/10000)
+Saving..
+
+Epoch: 37
+Loss: 0.268 | Acc: 90.810% (45405/50000)
+Using augment:RandomCrop
+Loss: 0.559 | Acc: 82.720% (8272/10000)
+Saving..
+
+Epoch: 38
+Loss: 0.263 | Acc: 91.090% (45545/50000)
+Using augment:RandomCrop
+Loss: 0.501 | Acc: 84.860% (8486/10000)
+Saving..
+
+Epoch: 39
+Loss: 0.257 | Acc: 91.366% (45683/50000)
+Using augment:RandomCrop
+Loss: 0.614 | Acc: 81.080% (8108/10000)
+Saving..
+
+Epoch: 40
+Loss: 0.261 | Acc: 91.116% (45558/50000)
+Using augment:RandomCrop
+Loss: 0.509 | Acc: 84.770% (8477/10000)
+Saving..
+
+Epoch: 41
+Loss: 0.260 | Acc: 91.086% (45543/50000)
+Using augment:RandomCrop
+Loss: 0.471 | Acc: 85.240% (8524/10000)
+Saving..
+
+Epoch: 42
+Loss: 0.252 | Acc: 91.292% (45646/50000)
+Using augment:RandomCrop
+Loss: 0.696 | Acc: 80.300% (8030/10000)
+Saving..
+
+Epoch: 43
+Loss: 0.255 | Acc: 91.368% (45684/50000)
+Using augment:RandomCrop
+Loss: 0.550 | Acc: 84.160% (8416/10000)
+Saving..
+
+Epoch: 44
+Loss: 0.254 | Acc: 91.370% (45685/50000)
+Using augment:RandomCrop
+Loss: 0.557 | Acc: 83.010% (8301/10000)
+Saving..
+
+Epoch: 45
+Loss: 0.251 | Acc: 91.300% (45650/50000)
+Using augment:RandomCrop
+Loss: 0.695 | Acc: 80.620% (8062/10000)
+Saving..
+
+Epoch: 46
+Loss: 0.244 | Acc: 91.638% (45819/50000)
+Using augment:RandomCrop
+Loss: 0.682 | Acc: 80.880% (8088/10000)
+Saving..
+
+Epoch: 47
+Loss: 0.247 | Acc: 91.574% (45787/50000)
+Using augment:RandomCrop
+Loss: 0.553 | Acc: 83.160% (8316/10000)
+Saving..
+
+Epoch: 48
+Loss: 0.232 | Acc: 92.220% (46110/50000)
+Using augment:RandomCrop
+Loss: 0.656 | Acc: 82.070% (8207/10000)
+Saving..
+
+Epoch: 49
+Loss: 0.246 | Acc: 91.704% (45852/50000)
+Using augment:RandomCrop
+Loss: 0.572 | Acc: 83.060% (8306/10000)
+Saving..
+
+Epoch: 50
+Loss: 0.230 | Acc: 92.256% (46128/50000)
+Using augment:RandomCrop
+Loss: 0.511 | Acc: 84.820% (8482/10000)
+Saving..
+
+Epoch: 51
+Loss: 0.236 | Acc: 91.950% (45975/50000)
+Using augment:RandomCrop
+Loss: 0.826 | Acc: 76.580% (7658/10000)
+Saving..
+
+Epoch: 52
+Loss: 0.234 | Acc: 92.052% (46026/50000)
+Using augment:RandomCrop
+Loss: 0.660 | Acc: 81.800% (8180/10000)
+Saving..
+
+Epoch: 53
+Loss: 0.232 | Acc: 92.102% (46051/50000)
+Using augment:RandomCrop
+Loss: 0.545 | Acc: 83.960% (8396/10000)
+Saving..
+
+Epoch: 54
+Loss: 0.232 | Acc: 91.950% (45975/50000)
+Using augment:RandomCrop
+Loss: 0.763 | Acc: 78.420% (7842/10000)
+Saving..
+
+Epoch: 55
+Loss: 0.229 | Acc: 92.116% (46058/50000)
+Using augment:RandomCrop
+Loss: 0.505 | Acc: 84.690% (8469/10000)
+Saving..
+
+Epoch: 56
+Loss: 0.227 | Acc: 92.426% (46213/50000)
+Using augment:RandomCrop
+Loss: 0.429 | Acc: 86.910% (8691/10000)
+Saving..
+
+Epoch: 57
+Loss: 0.220 | Acc: 92.476% (46238/50000)
+Using augment:RandomCrop
+Loss: 0.630 | Acc: 82.860% (8286/10000)
+Saving..
+
+Epoch: 58
+Loss: 0.224 | Acc: 92.348% (46174/50000)
+Using augment:RandomCrop
+Loss: 0.539 | Acc: 84.340% (8434/10000)
+Saving..
+
+Epoch: 59
+Loss: 0.217 | Acc: 92.526% (46263/50000)
+Using augment:RandomCrop
+Loss: 0.528 | Acc: 84.570% (8457/10000)
+Saving..
+
+Epoch: 60
+Loss: 0.220 | Acc: 92.392% (46196/50000)
+Using augment:RandomCrop
+Loss: 0.521 | Acc: 83.990% (8399/10000)
+Saving..
+
+Epoch: 61
+Loss: 0.215 | Acc: 92.676% (46338/50000)
+Using augment:RandomCrop
+Loss: 0.579 | Acc: 83.470% (8347/10000)
+Saving..
+
+Epoch: 62
+Loss: 0.211 | Acc: 92.758% (46379/50000)
+Using augment:RandomCrop
+Loss: 0.671 | Acc: 81.570% (8157/10000)
+Saving..
+
+Epoch: 63
+Loss: 0.215 | Acc: 92.608% (46304/50000)
+Using augment:RandomCrop
+Loss: 0.618 | Acc: 82.630% (8263/10000)
+Saving..
+
+Epoch: 64
+Loss: 0.208 | Acc: 92.958% (46479/50000)
+Using augment:RandomCrop
+Loss: 0.443 | Acc: 86.740% (8674/10000)
+Saving..
+
+Epoch: 65
+Loss: 0.205 | Acc: 93.024% (46512/50000)
+Using augment:RandomCrop
+Loss: 0.565 | Acc: 83.920% (8392/10000)
+Saving..
+
+Epoch: 66
+Loss: 0.207 | Acc: 92.904% (46452/50000)
+Using augment:RandomCrop
+Loss: 0.426 | Acc: 87.530% (8753/10000)
+Saving..
+
+Epoch: 67
+Loss: 0.199 | Acc: 93.222% (46611/50000)
+Using augment:RandomCrop
+Loss: 0.616 | Acc: 81.800% (8180/10000)
+Saving..
+
+Epoch: 68
+Loss: 0.200 | Acc: 93.190% (46595/50000)
+Using augment:RandomCrop
+Loss: 0.474 | Acc: 86.170% (8617/10000)
+Saving..
+
+Epoch: 69
+Loss: 0.192 | Acc: 93.450% (46725/50000)
+Using augment:RandomCrop
+Loss: 0.551 | Acc: 84.550% (8455/10000)
+Saving..
+
+Epoch: 70
+Loss: 0.198 | Acc: 93.252% (46626/50000)
+Using augment:RandomCrop
+Loss: 0.415 | Acc: 86.960% (8696/10000)
+Saving..
+
+Epoch: 71
+Loss: 0.195 | Acc: 93.386% (46693/50000)
+Using augment:RandomCrop
+Loss: 0.699 | Acc: 81.020% (8102/10000)
+Saving..
+
+Epoch: 72
+Loss: 0.197 | Acc: 93.252% (46626/50000)
+Using augment:RandomCrop
+Loss: 0.524 | Acc: 84.520% (8452/10000)
+Saving..
+
+Epoch: 73
+Loss: 0.186 | Acc: 93.574% (46787/50000)
+Using augment:RandomCrop
+Loss: 0.539 | Acc: 85.300% (8530/10000)
+Saving..
+
+Epoch: 74
+Loss: 0.186 | Acc: 93.580% (46790/50000)
+Using augment:RandomCrop
+Loss: 0.519 | Acc: 85.130% (8513/10000)
+Saving..
+
+Epoch: 75
+Loss: 0.189 | Acc: 93.566% (46783/50000)
+Using augment:RandomCrop
+Loss: 0.462 | Acc: 86.060% (8606/10000)
+Saving..
+
+Epoch: 76
+Loss: 0.177 | Acc: 94.062% (47031/50000)
+Using augment:RandomCrop
+Loss: 0.550 | Acc: 85.020% (8502/10000)
+Saving..
+
+Epoch: 77
+Loss: 0.178 | Acc: 93.788% (46894/50000)
+Using augment:RandomCrop
+Loss: 0.609 | Acc: 81.070% (8107/10000)
+Saving..
+
+Epoch: 78
+Loss: 0.182 | Acc: 93.886% (46943/50000)
+Using augment:RandomCrop
+Loss: 0.452 | Acc: 86.250% (8625/10000)
+Saving..
+
+Epoch: 79
+Loss: 0.177 | Acc: 93.914% (46957/50000)
+Using augment:RandomCrop
+Loss: 0.519 | Acc: 85.900% (8590/10000)
+Saving..
+
+Epoch: 80
+Loss: 0.170 | Acc: 94.204% (47102/50000)
+Using augment:RandomCrop
+Loss: 0.492 | Acc: 86.160% (8616/10000)
+Saving..
+
+Epoch: 81
+Loss: 0.174 | Acc: 93.956% (46978/50000)
+Using augment:RandomCrop
+Loss: 0.529 | Acc: 85.290% (8529/10000)
+Saving..
+
+Epoch: 82
+Loss: 0.165 | Acc: 94.428% (47214/50000)
+Using augment:RandomCrop
+Loss: 0.594 | Acc: 83.470% (8347/10000)
+Saving..
+
+Epoch: 83
+Loss: 0.167 | Acc: 94.248% (47124/50000)
+Using augment:RandomCrop
+Loss: 0.545 | Acc: 84.960% (8496/10000)
+Saving..
+
+Epoch: 84
+Loss: 0.167 | Acc: 94.326% (47163/50000)
+Using augment:RandomCrop
+Loss: 0.658 | Acc: 81.940% (8194/10000)
+Saving..
+
+Epoch: 85
+Loss: 0.160 | Acc: 94.604% (47302/50000)
+Using augment:RandomCrop
+Loss: 0.528 | Acc: 85.770% (8577/10000)
+Saving..
+
+Epoch: 86
+Loss: 0.157 | Acc: 94.668% (47334/50000)
+Using augment:RandomCrop
+Loss: 0.624 | Acc: 83.200% (8320/10000)
+Saving..
+
+Epoch: 87
+Loss: 0.159 | Acc: 94.676% (47338/50000)
+Using augment:RandomCrop
+Loss: 0.563 | Acc: 85.120% (8512/10000)
+Saving..
+
+Epoch: 88
+Loss: 0.156 | Acc: 94.772% (47386/50000)
+Using augment:RandomCrop
+Loss: 0.608 | Acc: 84.380% (8438/10000)
+Saving..
+
+Epoch: 89
+Loss: 0.156 | Acc: 94.702% (47351/50000)
+Using augment:RandomCrop
+Loss: 0.525 | Acc: 85.650% (8565/10000)
+Saving..
+
+Epoch: 90
+Loss: 0.155 | Acc: 94.782% (47391/50000)
+Using augment:RandomCrop
+Loss: 0.562 | Acc: 83.340% (8334/10000)
+Saving..
+
+Epoch: 91
+Loss: 0.143 | Acc: 95.156% (47578/50000)
+Using augment:RandomCrop
+Loss: 0.491 | Acc: 86.850% (8685/10000)
+Saving..
+
+Epoch: 92
+Loss: 0.144 | Acc: 95.102% (47551/50000)
+Using augment:RandomCrop
+Loss: 0.700 | Acc: 81.420% (8142/10000)
+Saving..
+
+Epoch: 93
+Loss: 0.145 | Acc: 95.060% (47530/50000)
+Using augment:RandomCrop
+Loss: 0.410 | Acc: 87.770% (8777/10000)
+Saving..
+
+Epoch: 94
+Loss: 0.136 | Acc: 95.400% (47700/50000)
+Using augment:RandomCrop
+Loss: 0.477 | Acc: 87.000% (8700/10000)
+Saving..
+
+Epoch: 95
+Loss: 0.134 | Acc: 95.438% (47719/50000)
+Using augment:RandomCrop
+Loss: 0.460 | Acc: 87.440% (8744/10000)
+Saving..
+
+Epoch: 96
+Loss: 0.143 | Acc: 95.072% (47536/50000)
+Using augment:RandomCrop
+Loss: 0.443 | Acc: 87.590% (8759/10000)
+Saving..
+
+Epoch: 97
+Loss: 0.131 | Acc: 95.574% (47787/50000)
+Using augment:RandomCrop
+Loss: 0.474 | Acc: 87.550% (8755/10000)
+Saving..
+
+Epoch: 98
+Loss: 0.132 | Acc: 95.486% (47743/50000)
+Using augment:RandomCrop
+Loss: 0.565 | Acc: 84.740% (8474/10000)
+Saving..
+
+Epoch: 99
+Loss: 0.130 | Acc: 95.624% (47812/50000)
+Using augment:RandomCrop
+Loss: 0.510 | Acc: 86.060% (8606/10000)
+Saving..
+
+Epoch: 100
+Loss: 0.123 | Acc: 95.756% (47878/50000)
+Using augment:RandomCrop
+Loss: 0.630 | Acc: 84.920% (8492/10000)
+Saving..
+
+Epoch: 101
+Loss: 0.119 | Acc: 96.092% (48046/50000)
+Using augment:RandomCrop
+Loss: 0.523 | Acc: 86.000% (8600/10000)
+Saving..
+
+Epoch: 102
+Loss: 0.128 | Acc: 95.768% (47884/50000)
+Using augment:RandomCrop
+Loss: 0.579 | Acc: 84.030% (8403/10000)
+Saving..
+
+Epoch: 103
+Loss: 0.121 | Acc: 95.902% (47951/50000)
+Using augment:RandomCrop
+Loss: 0.467 | Acc: 87.730% (8773/10000)
+Saving..
+
+Epoch: 104
+Loss: 0.118 | Acc: 96.034% (48017/50000)
+Using augment:RandomCrop
+Loss: 0.548 | Acc: 85.940% (8594/10000)
+Saving..
+
+Epoch: 105
+Loss: 0.109 | Acc: 96.388% (48194/50000)
+Using augment:RandomCrop
+Loss: 0.573 | Acc: 85.730% (8573/10000)
+Saving..
+
+Epoch: 106
+Loss: 0.118 | Acc: 95.956% (47978/50000)
+Using augment:RandomCrop
+Loss: 0.414 | Acc: 88.930% (8893/10000)
+Saving..
+
+Epoch: 107
+Loss: 0.111 | Acc: 96.174% (48087/50000)
+Using augment:RandomCrop
+Loss: 0.501 | Acc: 86.660% (8666/10000)
+Saving..
+
+Epoch: 108
+Loss: 0.107 | Acc: 96.372% (48186/50000)
+Using augment:RandomCrop
+Loss: 0.438 | Acc: 88.300% (8830/10000)
+Saving..
+
+Epoch: 109
+Loss: 0.104 | Acc: 96.520% (48260/50000)
+Using augment:RandomCrop
+Loss: 0.450 | Acc: 87.990% (8799/10000)
+Saving..
+
+Epoch: 110
+Loss: 0.107 | Acc: 96.404% (48202/50000)
+Using augment:RandomCrop
+Loss: 0.440 | Acc: 88.340% (8834/10000)
+Saving..
+
+Epoch: 111
+Loss: 0.097 | Acc: 96.782% (48391/50000)
+Using augment:RandomCrop
+Loss: 0.564 | Acc: 85.880% (8588/10000)
+Saving..
+
+Epoch: 112
+Loss: 0.096 | Acc: 96.804% (48402/50000)
+Using augment:RandomCrop
+Loss: 0.518 | Acc: 86.970% (8697/10000)
+Saving..
+
+Epoch: 113
+Loss: 0.098 | Acc: 96.702% (48351/50000)
+Using augment:RandomCrop
+Loss: 0.667 | Acc: 84.610% (8461/10000)
+Saving..
+
+Epoch: 114
+Loss: 0.094 | Acc: 96.788% (48394/50000)
+Using augment:RandomCrop
+Loss: 0.450 | Acc: 88.540% (8854/10000)
+Saving..
+
+Epoch: 115
+Loss: 0.087 | Acc: 97.116% (48558/50000)
+Using augment:RandomCrop
+Loss: 0.439 | Acc: 89.070% (8907/10000)
+Saving..
+
+Epoch: 116
+Loss: 0.088 | Acc: 97.126% (48563/50000)
+Using augment:RandomCrop
+Loss: 0.444 | Acc: 88.350% (8835/10000)
+Saving..
+
+Epoch: 117
+Loss: 0.088 | Acc: 97.094% (48547/50000)
+Using augment:RandomCrop
+Loss: 0.490 | Acc: 87.440% (8744/10000)
+Saving..
+
+Epoch: 118
+Loss: 0.089 | Acc: 97.024% (48512/50000)
+Using augment:RandomCrop
+Loss: 0.430 | Acc: 88.650% (8865/10000)
+Saving..
+
+Epoch: 119
+Loss: 0.079 | Acc: 97.388% (48694/50000)
+Using augment:RandomCrop
+Loss: 0.474 | Acc: 88.250% (8825/10000)
+Saving..
+
+Epoch: 120
+Loss: 0.082 | Acc: 97.234% (48617/50000)
+Using augment:RandomCrop
+Loss: 0.386 | Acc: 90.010% (9001/10000)
+Saving..
+
+Epoch: 121
+Loss: 0.075 | Acc: 97.582% (48791/50000)
+Using augment:RandomCrop
+Loss: 0.498 | Acc: 87.940% (8794/10000)
+Saving..
+
+Epoch: 122
+Loss: 0.079 | Acc: 97.306% (48653/50000)
+Using augment:RandomCrop
+Loss: 0.455 | Acc: 88.310% (8831/10000)
+Saving..
+
+Epoch: 123
+Loss: 0.065 | Acc: 97.808% (48904/50000)
+Using augment:RandomCrop
+Loss: 0.453 | Acc: 88.940% (8894/10000)
+Saving..
+
+Epoch: 124
+Loss: 0.069 | Acc: 97.734% (48867/50000)
+Using augment:RandomCrop
+Loss: 0.440 | Acc: 89.190% (8919/10000)
+Saving..
+
+Epoch: 125
+Loss: 0.071 | Acc: 97.632% (48816/50000)
+Using augment:RandomCrop
+Loss: 0.442 | Acc: 89.290% (8929/10000)
+Saving..
+
+Epoch: 126
+Loss: 0.070 | Acc: 97.692% (48846/50000)
+Using augment:RandomCrop
+Loss: 0.446 | Acc: 88.670% (8867/10000)
+Saving..
+
+Epoch: 127
+Loss: 0.065 | Acc: 97.838% (48919/50000)
+Using augment:RandomCrop
+Loss: 0.471 | Acc: 88.610% (8861/10000)
+Saving..
+
+Epoch: 128
+Loss: 0.052 | Acc: 98.318% (49159/50000)
+Using augment:RandomCrop
+Loss: 0.427 | Acc: 89.700% (8970/10000)
+Saving..
+
+Epoch: 129
+Loss: 0.067 | Acc: 97.798% (48899/50000)
+Using augment:RandomCrop
+Loss: 0.443 | Acc: 88.850% (8885/10000)
+Saving..
+
+Epoch: 130
+Loss: 0.060 | Acc: 98.022% (49011/50000)
+Using augment:RandomCrop
+Loss: 0.458 | Acc: 88.940% (8894/10000)
+Saving..
+
+Epoch: 131
+Loss: 0.054 | Acc: 98.242% (49121/50000)
+Using augment:RandomCrop
+Loss: 0.383 | Acc: 90.180% (9018/10000)
+Saving..
+
+Epoch: 132
+Loss: 0.050 | Acc: 98.394% (49197/50000)
+Using augment:RandomCrop
+Loss: 0.553 | Acc: 87.250% (8725/10000)
+Saving..
+
+Epoch: 133
+Loss: 0.051 | Acc: 98.300% (49150/50000)
+Using augment:RandomCrop
+Loss: 0.656 | Acc: 85.380% (8538/10000)
+Saving..
+
+Epoch: 134
+Loss: 0.049 | Acc: 98.376% (49188/50000)
+Using augment:RandomCrop
+Loss: 0.478 | Acc: 88.760% (8876/10000)
+Saving..
+
+Epoch: 135
+Loss: 0.046 | Acc: 98.496% (49248/50000)
+Using augment:RandomCrop
+Loss: 0.502 | Acc: 88.480% (8848/10000)
+Saving..
+
+Epoch: 136
+Loss: 0.041 | Acc: 98.752% (49376/50000)
+Using augment:RandomCrop
+Loss: 0.456 | Acc: 88.800% (8880/10000)
+Saving..
+
+Epoch: 137
+Loss: 0.047 | Acc: 98.526% (49263/50000)
+Using augment:RandomCrop
+Loss: 0.471 | Acc: 88.790% (8879/10000)
+Saving..
+
+Epoch: 138
+Loss: 0.042 | Acc: 98.606% (49303/50000)
+Using augment:RandomCrop
+Loss: 0.387 | Acc: 90.650% (9065/10000)
+Saving..
+
+Epoch: 139
+Loss: 0.035 | Acc: 98.944% (49472/50000)
+Using augment:RandomCrop
+Loss: 0.410 | Acc: 89.940% (8994/10000)
+Saving..
+
+Epoch: 140
+Loss: 0.045 | Acc: 98.490% (49245/50000)
+Using augment:RandomCrop
+Loss: 0.362 | Acc: 91.130% (9113/10000)
+Saving..
+BEST ACCURACY: 91.13ON EPOCH140
+
+Epoch: 141
+Loss: 0.034 | Acc: 98.956% (49478/50000)
+Using augment:RandomCrop
+Loss: 0.447 | Acc: 89.600% (8960/10000)
+Saving..
+
+Epoch: 142
+Loss: 0.030 | Acc: 99.114% (49557/50000)
+Using augment:RandomCrop
+Loss: 0.391 | Acc: 90.600% (9060/10000)
+Saving..
+
+Epoch: 143
+Loss: 0.032 | Acc: 99.044% (49522/50000)
+Using augment:RandomCrop
+Loss: 0.454 | Acc: 89.680% (8968/10000)
+Saving..
+
+Epoch: 144
+Loss: 0.028 | Acc: 99.126% (49563/50000)
+Using augment:RandomCrop
+Loss: 0.361 | Acc: 91.460% (9146/10000)
+Saving..
+BEST ACCURACY: 91.46ON EPOCH144
+
+Epoch: 145
+Loss: 0.025 | Acc: 99.234% (49617/50000)
+Using augment:RandomCrop
+Loss: 0.405 | Acc: 90.880% (9088/10000)
+Saving..
+
+Epoch: 146
+Loss: 0.021 | Acc: 99.390% (49695/50000)
+Using augment:RandomCrop
+Loss: 0.470 | Acc: 89.120% (8912/10000)
+Saving..
+
+Epoch: 147
+Loss: 0.029 | Acc: 99.058% (49529/50000)
+Using augment:RandomCrop
+Loss: 0.364 | Acc: 91.280% (9128/10000)
+Saving..
+
+Epoch: 148
+Loss: 0.022 | Acc: 99.318% (49659/50000)
+Using augment:RandomCrop
+Loss: 0.370 | Acc: 91.520% (9152/10000)
+Saving..
+BEST ACCURACY: 91.52ON EPOCH148
+
+Epoch: 149
+Loss: 0.018 | Acc: 99.456% (49728/50000)
+Using augment:RandomCrop
+Loss: 0.399 | Acc: 90.500% (9050/10000)
+Saving..
+
+Epoch: 150
+Loss: 0.022 | Acc: 99.336% (49668/50000)
+Using augment:RandomCrop
+Loss: 0.376 | Acc: 91.200% (9120/10000)
+Saving..
+
+Epoch: 151
+Loss: 0.018 | Acc: 99.494% (49747/50000)
+Using augment:RandomCrop
+Loss: 0.367 | Acc: 91.480% (9148/10000)
+Saving..
+
+Epoch: 152
+Loss: 0.013 | Acc: 99.656% (49828/50000)
+Using augment:RandomCrop
+Loss: 0.351 | Acc: 91.410% (9141/10000)
+Saving..
+
+Epoch: 153
+Loss: 0.011 | Acc: 99.688% (49844/50000)
+Using augment:RandomCrop
+Loss: 0.438 | Acc: 90.760% (9076/10000)
+Saving..
+
+Epoch: 154
+Loss: 0.013 | Acc: 99.622% (49811/50000)
+Using augment:RandomCrop
+Loss: 0.406 | Acc: 90.600% (9060/10000)
+Saving..
+
+Epoch: 155
+Loss: 0.012 | Acc: 99.682% (49841/50000)
+Using augment:RandomCrop
+Loss: 0.324 | Acc: 92.350% (9235/10000)
+Saving..
+BEST ACCURACY: 92.35ON EPOCH155
+
+Epoch: 156
+Loss: 0.006 | Acc: 99.866% (49933/50000)
+Using augment:RandomCrop
+Loss: 0.313 | Acc: 92.590% (9259/10000)
+Saving..
+BEST ACCURACY: 92.59ON EPOCH156
+
+Epoch: 157
+Loss: 0.004 | Acc: 99.918% (49959/50000)
+Using augment:RandomCrop
+Loss: 0.312 | Acc: 92.600% (9260/10000)
+Saving..
+BEST ACCURACY: 92.6ON EPOCH157
+
+Epoch: 158
+Loss: 0.003 | Acc: 99.968% (49984/50000)
+Using augment:RandomCrop
+Loss: 0.293 | Acc: 92.840% (9284/10000)
+Saving..
+BEST ACCURACY: 92.84ON EPOCH158
+
+Epoch: 159
+Loss: 0.002 | Acc: 99.978% (49989/50000)
+Using augment:RandomCrop
+Loss: 0.295 | Acc: 93.180% (9318/10000)
+Saving..
+BEST ACCURACY: 93.18ON EPOCH159
+
+Epoch: 160
+Loss: 0.002 | Acc: 99.982% (49991/50000)
+Using augment:RandomCrop
+Loss: 0.271 | Acc: 93.390% (9339/10000)
+Saving..
+BEST ACCURACY: 93.39ON EPOCH160
+
+Epoch: 161
+Loss: 0.001 | Acc: 99.994% (49997/50000)
+Using augment:RandomCrop
+Loss: 0.277 | Acc: 93.310% (9331/10000)
+Saving..
+
+Epoch: 162
+Loss: 0.001 | Acc: 99.992% (49996/50000)
+Using augment:RandomCrop
+Loss: 0.262 | Acc: 93.490% (9349/10000)
+Saving..
+BEST ACCURACY: 93.49ON EPOCH162
+
+Epoch: 163
+Loss: 0.001 | Acc: 99.988% (49994/50000)
+Using augment:RandomCrop
+Loss: 0.254 | Acc: 93.570% (9357/10000)
+Saving..
+BEST ACCURACY: 93.57ON EPOCH163
+
+Epoch: 164
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Using augment:RandomCrop
+Loss: 0.247 | Acc: 93.540% (9354/10000)
+Saving..
+
+Epoch: 165
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.239 | Acc: 93.880% (9388/10000)
+Saving..
+BEST ACCURACY: 93.88ON EPOCH165
+
+Epoch: 166
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.236 | Acc: 93.770% (9377/10000)
+Saving..
+
+Epoch: 167
+Loss: 0.001 | Acc: 99.996% (49998/50000)
+Using augment:RandomCrop
+Loss: 0.234 | Acc: 93.860% (9386/10000)
+Saving..
+
+Epoch: 168
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Using augment:RandomCrop
+Loss: 0.233 | Acc: 94.000% (9400/10000)
+Saving..
+BEST ACCURACY: 94.0ON EPOCH168
+
+Epoch: 169
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.232 | Acc: 93.870% (9387/10000)
+Saving..
+
+Epoch: 170
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.228 | Acc: 94.030% (9403/10000)
+Saving..
+BEST ACCURACY: 94.03ON EPOCH170
+
+Epoch: 171
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.228 | Acc: 93.950% (9395/10000)
+Saving..
+
+Epoch: 172
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.224 | Acc: 94.070% (9407/10000)
+Saving..
+BEST ACCURACY: 94.07ON EPOCH172
+
+Epoch: 173
+Loss: 0.001 | Acc: 99.996% (49998/50000)
+Using augment:RandomCrop
+Loss: 0.225 | Acc: 93.970% (9397/10000)
+Saving..
+
+Epoch: 174
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.223 | Acc: 93.900% (9390/10000)
+Saving..
+
+Epoch: 175
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Using augment:RandomCrop
+Loss: 0.222 | Acc: 93.990% (9399/10000)
+Saving..
+
+Epoch: 176
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.222 | Acc: 93.900% (9390/10000)
+Saving..
+
+Epoch: 177
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Using augment:RandomCrop
+Loss: 0.225 | Acc: 93.880% (9388/10000)
+Saving..
+
+Epoch: 178
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.222 | Acc: 94.070% (9407/10000)
+Saving..
+
+Epoch: 179
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.223 | Acc: 94.040% (9404/10000)
+Saving..
+
+Epoch: 180
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.220 | Acc: 93.970% (9397/10000)
+Saving..
+
+Epoch: 181
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.220 | Acc: 93.990% (9399/10000)
+Saving..
+
+Epoch: 182
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.219 | Acc: 94.060% (9406/10000)
+Saving..
+
+Epoch: 183
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.219 | Acc: 93.990% (9399/10000)
+Saving..
+
+Epoch: 184
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.219 | Acc: 94.020% (9402/10000)
+Saving..
+
+Epoch: 185
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.010% (9401/10000)
+Saving..
+
+Epoch: 186
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.050% (9405/10000)
+Saving..
+
+Epoch: 187
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 93.970% (9397/10000)
+Saving..
+
+Epoch: 188
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.220 | Acc: 94.110% (9411/10000)
+Saving..
+BEST ACCURACY: 94.11ON EPOCH188
+
+Epoch: 189
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.219 | Acc: 94.010% (9401/10000)
+Saving..
+
+Epoch: 190
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.150% (9415/10000)
+Saving..
+BEST ACCURACY: 94.15ON EPOCH190
+
+Epoch: 191
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.217 | Acc: 94.090% (9409/10000)
+Saving..
+
+Epoch: 192
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.090% (9409/10000)
+Saving..
+
+Epoch: 193
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.050% (9405/10000)
+Saving..
+
+Epoch: 194
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.217 | Acc: 94.010% (9401/10000)
+Saving..
+
+Epoch: 195
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.110% (9411/10000)
+Saving..
+
+Epoch: 196
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.217 | Acc: 94.050% (9405/10000)
+Saving..
+
+Epoch: 197
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.217 | Acc: 94.110% (9411/10000)
+Saving..
+
+Epoch: 198
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.020% (9402/10000)
+Saving..
+
+Epoch: 199
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:RandomCrop
+Loss: 0.218 | Acc: 94.100% (9410/10000)
+Saving..
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-14           [-1, 64, 32, 32]             128
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-17           [-1, 64, 32, 32]               0
+           Conv2d-18           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-19           [-1, 64, 32, 32]             128
+           Conv2d-20           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-21           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-22           [-1, 64, 32, 32]               0
+           Conv2d-23          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-24          [-1, 128, 16, 16]             256
+           Conv2d-25          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-26          [-1, 128, 16, 16]             256
+           Conv2d-27          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-28          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-29          [-1, 128, 16, 16]               0
+           Conv2d-30          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-31          [-1, 128, 16, 16]             256
+           Conv2d-32          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-33          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-36          [-1, 128, 16, 16]             256
+           Conv2d-37          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-38          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-39          [-1, 128, 16, 16]               0
+           Conv2d-40          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-41          [-1, 128, 16, 16]             256
+           Conv2d-42          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-43          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-44          [-1, 128, 16, 16]               0
+           Conv2d-45            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-46            [-1, 256, 8, 8]             512
+           Conv2d-47            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-48            [-1, 256, 8, 8]             512
+           Conv2d-49            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-50            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-51            [-1, 256, 8, 8]               0
+           Conv2d-52            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-53            [-1, 256, 8, 8]             512
+           Conv2d-54            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-55            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-56            [-1, 256, 8, 8]               0
+           Conv2d-57            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-58            [-1, 256, 8, 8]             512
+           Conv2d-59            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-60            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-61            [-1, 256, 8, 8]               0
+           Linear-62                   [-1, 10]           2,570
+   ModifiedResNet-63                   [-1, 10]               0
+================================================================
+Total params: 4,697,162
+Trainable params: 4,697,162
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 18.63
+Params size (MB): 17.92
+Estimated Total Size (MB): 36.56
+----------------------------------------------------------------
+
+Epoch: 0
+Loss: 1.634 | Acc: 39.126% (19563/50000)
+Using augment:HorizontalFlip
+Loss: 1.436 | Acc: 48.070% (4807/10000)
+Saving..
+
+Epoch: 1
+Loss: 1.077 | Acc: 61.444% (30722/50000)
+Using augment:HorizontalFlip
+Loss: 1.043 | Acc: 63.010% (6301/10000)
+Saving..
+
+Epoch: 2
+Loss: 0.781 | Acc: 72.630% (36315/50000)
+Using augment:HorizontalFlip
+Loss: 0.844 | Acc: 71.210% (7121/10000)
+Saving..
+
+Epoch: 3
+Loss: 0.626 | Acc: 78.386% (39193/50000)
+Using augment:HorizontalFlip
+Loss: 0.775 | Acc: 73.960% (7396/10000)
+Saving..
+
+Epoch: 4
+Loss: 0.530 | Acc: 81.914% (40957/50000)
+Using augment:HorizontalFlip
+Loss: 0.734 | Acc: 75.980% (7598/10000)
+Saving..
+
+Epoch: 5
+Loss: 0.477 | Acc: 83.552% (41776/50000)
+Using augment:HorizontalFlip
+Loss: 0.638 | Acc: 78.420% (7842/10000)
+Saving..
+
+Epoch: 6
+Loss: 0.443 | Acc: 84.796% (42398/50000)
+Using augment:HorizontalFlip
+Loss: 0.670 | Acc: 77.650% (7765/10000)
+Saving..
+
+Epoch: 7
+Loss: 0.419 | Acc: 85.748% (42874/50000)
+Using augment:HorizontalFlip
+Loss: 0.982 | Acc: 68.660% (6866/10000)
+Saving..
+
+Epoch: 8
+Loss: 0.394 | Acc: 86.596% (43298/50000)
+Using augment:HorizontalFlip
+Loss: 0.808 | Acc: 74.580% (7458/10000)
+Saving..
+
+Epoch: 9
+Loss: 0.376 | Acc: 87.146% (43573/50000)
+Using augment:HorizontalFlip
+Loss: 0.499 | Acc: 83.200% (8320/10000)
+Saving..
+
+Epoch: 10
+Loss: 0.363 | Acc: 87.410% (43705/50000)
+Using augment:HorizontalFlip
+Loss: 0.765 | Acc: 76.000% (7600/10000)
+Saving..
+
+Epoch: 11
+Loss: 0.343 | Acc: 88.072% (44036/50000)
+Using augment:HorizontalFlip
+Loss: 0.813 | Acc: 74.850% (7485/10000)
+Saving..
+
+Epoch: 12
+Loss: 0.338 | Acc: 88.350% (44175/50000)
+Using augment:HorizontalFlip
+Loss: 0.590 | Acc: 80.740% (8074/10000)
+Saving..
+
+Epoch: 13
+Loss: 0.319 | Acc: 89.036% (44518/50000)
+Using augment:HorizontalFlip
+Loss: 0.695 | Acc: 79.010% (7901/10000)
+Saving..
+
+Epoch: 14
+Loss: 0.317 | Acc: 89.116% (44558/50000)
+Using augment:HorizontalFlip
+Loss: 0.538 | Acc: 81.930% (8193/10000)
+Saving..
+
+Epoch: 15
+Loss: 0.306 | Acc: 89.438% (44719/50000)
+Using augment:HorizontalFlip
+Loss: 0.823 | Acc: 74.070% (7407/10000)
+Saving..
+
+Epoch: 16
+Loss: 0.300 | Acc: 89.694% (44847/50000)
+Using augment:HorizontalFlip
+Loss: 0.520 | Acc: 82.550% (8255/10000)
+Saving..
+
+Epoch: 17
+Loss: 0.287 | Acc: 90.162% (45081/50000)
+Using augment:HorizontalFlip
+Loss: 0.684 | Acc: 78.380% (7838/10000)
+Saving..
+
+Epoch: 18
+Loss: 0.289 | Acc: 89.998% (44999/50000)
+Using augment:HorizontalFlip
+Loss: 0.645 | Acc: 80.170% (8017/10000)
+Saving..
+
+Epoch: 19
+Loss: 0.288 | Acc: 90.096% (45048/50000)
+Using augment:HorizontalFlip
+Loss: 0.645 | Acc: 79.230% (7923/10000)
+Saving..
+
+Epoch: 20
+Loss: 0.275 | Acc: 90.740% (45370/50000)
+Using augment:HorizontalFlip
+Loss: 0.684 | Acc: 79.250% (7925/10000)
+Saving..
+
+Epoch: 21
+Loss: 0.273 | Acc: 90.550% (45275/50000)
+Using augment:HorizontalFlip
+Loss: 0.546 | Acc: 82.420% (8242/10000)
+Saving..
+
+Epoch: 22
+Loss: 0.270 | Acc: 90.702% (45351/50000)
+Using augment:HorizontalFlip
+Loss: 0.607 | Acc: 79.770% (7977/10000)
+Saving..
+
+Epoch: 23
+Loss: 0.268 | Acc: 90.658% (45329/50000)
+Using augment:HorizontalFlip
+Loss: 0.517 | Acc: 82.780% (8278/10000)
+Saving..
+
+Epoch: 24
+Loss: 0.260 | Acc: 91.052% (45526/50000)
+Using augment:HorizontalFlip
+Loss: 0.518 | Acc: 82.860% (8286/10000)
+Saving..
+
+Epoch: 25
+Loss: 0.259 | Acc: 91.144% (45572/50000)
+Using augment:HorizontalFlip
+Loss: 0.491 | Acc: 84.090% (8409/10000)
+Saving..
+
+Epoch: 26
+Loss: 0.248 | Acc: 91.368% (45684/50000)
+Using augment:HorizontalFlip
+Loss: 0.605 | Acc: 80.620% (8062/10000)
+Saving..
+
+Epoch: 27
+Loss: 0.255 | Acc: 91.100% (45550/50000)
+Using augment:HorizontalFlip
+Loss: 0.572 | Acc: 80.930% (8093/10000)
+Saving..
+
+Epoch: 28
+Loss: 0.247 | Acc: 91.482% (45741/50000)
+Using augment:HorizontalFlip
+Loss: 0.582 | Acc: 80.190% (8019/10000)
+Saving..
+
+Epoch: 29
+Loss: 0.246 | Acc: 91.526% (45763/50000)
+Using augment:HorizontalFlip
+Loss: 0.457 | Acc: 85.430% (8543/10000)
+Saving..
+
+Epoch: 30
+Loss: 0.235 | Acc: 91.896% (45948/50000)
+Using augment:HorizontalFlip
+Loss: 0.542 | Acc: 82.670% (8267/10000)
+Saving..
+
+Epoch: 31
+Loss: 0.244 | Acc: 91.490% (45745/50000)
+Using augment:HorizontalFlip
+Loss: 0.434 | Acc: 85.450% (8545/10000)
+Saving..
+
+Epoch: 32
+Loss: 0.235 | Acc: 92.018% (46009/50000)
+Using augment:HorizontalFlip
+Loss: 0.634 | Acc: 80.600% (8060/10000)
+Saving..
+
+Epoch: 33
+Loss: 0.245 | Acc: 91.602% (45801/50000)
+Using augment:HorizontalFlip
+Loss: 0.594 | Acc: 80.720% (8072/10000)
+Saving..
+
+Epoch: 34
+Loss: 0.235 | Acc: 91.882% (45941/50000)
+Using augment:HorizontalFlip
+Loss: 0.411 | Acc: 86.470% (8647/10000)
+Saving..
+
+Epoch: 35
+Loss: 0.229 | Acc: 92.224% (46112/50000)
+Using augment:HorizontalFlip
+Loss: 0.834 | Acc: 73.320% (7332/10000)
+Saving..
+
+Epoch: 36
+Loss: 0.228 | Acc: 92.118% (46059/50000)
+Using augment:HorizontalFlip
+Loss: 0.514 | Acc: 83.430% (8343/10000)
+Saving..
+
+Epoch: 37
+Loss: 0.229 | Acc: 92.104% (46052/50000)
+Using augment:HorizontalFlip
+Loss: 0.485 | Acc: 84.530% (8453/10000)
+Saving..
+
+Epoch: 38
+Loss: 0.226 | Acc: 92.280% (46140/50000)
+Using augment:HorizontalFlip
+Loss: 0.465 | Acc: 85.060% (8506/10000)
+Saving..
+
+Epoch: 39
+Loss: 0.224 | Acc: 92.164% (46082/50000)
+Using augment:HorizontalFlip
+Loss: 0.440 | Acc: 85.450% (8545/10000)
+Saving..
+
+Epoch: 40
+Loss: 0.223 | Acc: 92.348% (46174/50000)
+Using augment:HorizontalFlip
+Loss: 0.506 | Acc: 83.210% (8321/10000)
+Saving..
+
+Epoch: 41
+Loss: 0.216 | Acc: 92.594% (46297/50000)
+Using augment:HorizontalFlip
+Loss: 0.548 | Acc: 83.160% (8316/10000)
+Saving..
+
+Epoch: 42
+Loss: 0.222 | Acc: 92.444% (46222/50000)
+Using augment:HorizontalFlip
+Loss: 0.478 | Acc: 84.450% (8445/10000)
+Saving..
+
+Epoch: 43
+Loss: 0.220 | Acc: 92.496% (46248/50000)
+Using augment:HorizontalFlip
+Loss: 0.658 | Acc: 80.460% (8046/10000)
+Saving..
+
+Epoch: 44
+Loss: 0.209 | Acc: 92.784% (46392/50000)
+Using augment:HorizontalFlip
+Loss: 0.557 | Acc: 82.150% (8215/10000)
+Saving..
+
+Epoch: 45
+Loss: 0.215 | Acc: 92.566% (46283/50000)
+Using augment:HorizontalFlip
+Loss: 0.501 | Acc: 84.640% (8464/10000)
+Saving..
+
+Epoch: 46
+Loss: 0.210 | Acc: 92.824% (46412/50000)
+Using augment:HorizontalFlip
+Loss: 0.474 | Acc: 84.100% (8410/10000)
+Saving..
+
+Epoch: 47
+Loss: 0.205 | Acc: 93.014% (46507/50000)
+Using augment:HorizontalFlip
+Loss: 0.522 | Acc: 83.710% (8371/10000)
+Saving..
+
+Epoch: 48
+Loss: 0.208 | Acc: 92.836% (46418/50000)
+Using augment:HorizontalFlip
+Loss: 0.494 | Acc: 84.220% (8422/10000)
+Saving..
+
+Epoch: 49
+Loss: 0.207 | Acc: 92.870% (46435/50000)
+Using augment:HorizontalFlip
+Loss: 0.453 | Acc: 85.190% (8519/10000)
+Saving..
+
+Epoch: 50
+Loss: 0.208 | Acc: 92.782% (46391/50000)
+Using augment:HorizontalFlip
+Loss: 0.464 | Acc: 85.270% (8527/10000)
+Saving..
+
+Epoch: 51
+Loss: 0.203 | Acc: 92.936% (46468/50000)
+Using augment:HorizontalFlip
+Loss: 0.516 | Acc: 83.410% (8341/10000)
+Saving..
+
+Epoch: 52
+Loss: 0.194 | Acc: 93.316% (46658/50000)
+Using augment:HorizontalFlip
+Loss: 0.665 | Acc: 80.060% (8006/10000)
+Saving..
+
+Epoch: 53
+Loss: 0.204 | Acc: 93.058% (46529/50000)
+Using augment:HorizontalFlip
+Loss: 0.447 | Acc: 85.730% (8573/10000)
+Saving..
+
+Epoch: 54
+Loss: 0.197 | Acc: 93.222% (46611/50000)
+Using augment:HorizontalFlip
+Loss: 0.544 | Acc: 83.140% (8314/10000)
+Saving..
+
+Epoch: 55
+Loss: 0.201 | Acc: 93.106% (46553/50000)
+Using augment:HorizontalFlip
+Loss: 0.432 | Acc: 85.150% (8515/10000)
+Saving..
+
+Epoch: 56
+Loss: 0.189 | Acc: 93.554% (46777/50000)
+Using augment:HorizontalFlip
+Loss: 0.530 | Acc: 83.100% (8310/10000)
+Saving..
+
+Epoch: 57
+Loss: 0.190 | Acc: 93.588% (46794/50000)
+Using augment:HorizontalFlip
+Loss: 0.488 | Acc: 84.420% (8442/10000)
+Saving..
+
+Epoch: 58
+Loss: 0.186 | Acc: 93.666% (46833/50000)
+Using augment:HorizontalFlip
+Loss: 0.456 | Acc: 85.140% (8514/10000)
+Saving..
+
+Epoch: 59
+Loss: 0.184 | Acc: 93.668% (46834/50000)
+Using augment:HorizontalFlip
+Loss: 0.513 | Acc: 83.950% (8395/10000)
+Saving..
+
+Epoch: 60
+Loss: 0.187 | Acc: 93.532% (46766/50000)
+Using augment:HorizontalFlip
+Loss: 0.441 | Acc: 85.970% (8597/10000)
+Saving..
+
+Epoch: 61
+Loss: 0.189 | Acc: 93.484% (46742/50000)
+Using augment:HorizontalFlip
+Loss: 0.460 | Acc: 85.340% (8534/10000)
+Saving..
+
+Epoch: 62
+Loss: 0.184 | Acc: 93.676% (46838/50000)
+Using augment:HorizontalFlip
+Loss: 0.744 | Acc: 77.580% (7758/10000)
+Saving..
+
+Epoch: 63
+Loss: 0.175 | Acc: 94.020% (47010/50000)
+Using augment:HorizontalFlip
+Loss: 0.414 | Acc: 86.530% (8653/10000)
+Saving..
+
+Epoch: 64
+Loss: 0.182 | Acc: 93.660% (46830/50000)
+Using augment:HorizontalFlip
+Loss: 0.436 | Acc: 85.910% (8591/10000)
+Saving..
+
+Epoch: 65
+Loss: 0.175 | Acc: 93.966% (46983/50000)
+Using augment:HorizontalFlip
+Loss: 0.557 | Acc: 83.000% (8300/10000)
+Saving..
+
+Epoch: 66
+Loss: 0.171 | Acc: 94.194% (47097/50000)
+Using augment:HorizontalFlip
+Loss: 0.671 | Acc: 81.340% (8134/10000)
+Saving..
+
+Epoch: 67
+Loss: 0.173 | Acc: 94.072% (47036/50000)
+Using augment:HorizontalFlip
+Loss: 0.506 | Acc: 84.280% (8428/10000)
+Saving..
+
+Epoch: 68
+Loss: 0.173 | Acc: 94.220% (47110/50000)
+Using augment:HorizontalFlip
+Loss: 0.456 | Acc: 85.150% (8515/10000)
+Saving..
+
+Epoch: 69
+Loss: 0.167 | Acc: 94.278% (47139/50000)
+Using augment:HorizontalFlip
+Loss: 0.366 | Acc: 87.870% (8787/10000)
+Saving..
+
+Epoch: 70
+Loss: 0.166 | Acc: 94.258% (47129/50000)
+Using augment:HorizontalFlip
+Loss: 0.403 | Acc: 87.150% (8715/10000)
+Saving..
+
+Epoch: 71
+Loss: 0.163 | Acc: 94.418% (47209/50000)
+Using augment:HorizontalFlip
+Loss: 0.440 | Acc: 85.980% (8598/10000)
+Saving..
+
+Epoch: 72
+Loss: 0.168 | Acc: 94.296% (47148/50000)
+Using augment:HorizontalFlip
+Loss: 0.451 | Acc: 85.460% (8546/10000)
+Saving..
+
+Epoch: 73
+Loss: 0.161 | Acc: 94.422% (47211/50000)
+Using augment:HorizontalFlip
+Loss: 0.634 | Acc: 81.430% (8143/10000)
+Saving..
+
+Epoch: 74
+Loss: 0.156 | Acc: 94.734% (47367/50000)
+Using augment:HorizontalFlip
+Loss: 0.402 | Acc: 87.270% (8727/10000)
+Saving..
+
+Epoch: 75
+Loss: 0.158 | Acc: 94.690% (47345/50000)
+Using augment:HorizontalFlip
+Loss: 0.528 | Acc: 83.910% (8391/10000)
+Saving..
+
+Epoch: 76
+Loss: 0.162 | Acc: 94.436% (47218/50000)
+Using augment:HorizontalFlip
+Loss: 0.500 | Acc: 83.570% (8357/10000)
+Saving..
+
+Epoch: 77
+Loss: 0.156 | Acc: 94.638% (47319/50000)
+Using augment:HorizontalFlip
+Loss: 0.439 | Acc: 86.430% (8643/10000)
+Saving..
+
+Epoch: 78
+Loss: 0.150 | Acc: 94.884% (47442/50000)
+Using augment:HorizontalFlip
+Loss: 0.495 | Acc: 84.500% (8450/10000)
+Saving..
+
+Epoch: 79
+Loss: 0.150 | Acc: 94.862% (47431/50000)
+Using augment:HorizontalFlip
+Loss: 0.442 | Acc: 86.200% (8620/10000)
+Saving..
+
+Epoch: 80
+Loss: 0.142 | Acc: 95.174% (47587/50000)
+Using augment:HorizontalFlip
+Loss: 0.447 | Acc: 86.000% (8600/10000)
+Saving..
+
+Epoch: 81
+Loss: 0.144 | Acc: 95.074% (47537/50000)
+Using augment:HorizontalFlip
+Loss: 0.520 | Acc: 84.750% (8475/10000)
+Saving..
+
+Epoch: 82
+Loss: 0.142 | Acc: 95.126% (47563/50000)
+Using augment:HorizontalFlip
+Loss: 0.445 | Acc: 86.810% (8681/10000)
+Saving..
+
+Epoch: 83
+Loss: 0.142 | Acc: 95.230% (47615/50000)
+Using augment:HorizontalFlip
+Loss: 0.570 | Acc: 83.580% (8358/10000)
+Saving..
+
+Epoch: 84
+Loss: 0.136 | Acc: 95.380% (47690/50000)
+Using augment:HorizontalFlip
+Loss: 0.425 | Acc: 86.740% (8674/10000)
+Saving..
+
+Epoch: 85
+Loss: 0.139 | Acc: 95.228% (47614/50000)
+Using augment:HorizontalFlip
+Loss: 0.435 | Acc: 86.220% (8622/10000)
+Saving..
+
+Epoch: 86
+Loss: 0.134 | Acc: 95.396% (47698/50000)
+Using augment:HorizontalFlip
+Loss: 0.436 | Acc: 86.960% (8696/10000)
+Saving..
+
+Epoch: 87
+Loss: 0.133 | Acc: 95.532% (47766/50000)
+Using augment:HorizontalFlip
+Loss: 0.754 | Acc: 80.280% (8028/10000)
+Saving..
+
+Epoch: 88
+Loss: 0.127 | Acc: 95.690% (47845/50000)
+Using augment:HorizontalFlip
+Loss: 0.380 | Acc: 88.110% (8811/10000)
+Saving..
+
+Epoch: 89
+Loss: 0.129 | Acc: 95.576% (47788/50000)
+Using augment:HorizontalFlip
+Loss: 0.402 | Acc: 87.110% (8711/10000)
+Saving..
+
+Epoch: 90
+Loss: 0.129 | Acc: 95.684% (47842/50000)
+Using augment:HorizontalFlip
+Loss: 0.441 | Acc: 86.380% (8638/10000)
+Saving..
+
+Epoch: 91
+Loss: 0.124 | Acc: 95.784% (47892/50000)
+Using augment:HorizontalFlip
+Loss: 0.392 | Acc: 87.600% (8760/10000)
+Saving..
+
+Epoch: 92
+Loss: 0.124 | Acc: 95.746% (47873/50000)
+Using augment:HorizontalFlip
+Loss: 0.507 | Acc: 85.460% (8546/10000)
+Saving..
+
+Epoch: 93
+Loss: 0.125 | Acc: 95.690% (47845/50000)
+Using augment:HorizontalFlip
+Loss: 0.507 | Acc: 85.090% (8509/10000)
+Saving..
+
+Epoch: 94
+Loss: 0.115 | Acc: 96.038% (48019/50000)
+Using augment:HorizontalFlip
+Loss: 0.417 | Acc: 87.660% (8766/10000)
+Saving..
+
+Epoch: 95
+Loss: 0.111 | Acc: 96.202% (48101/50000)
+Using augment:HorizontalFlip
+Loss: 0.442 | Acc: 86.460% (8646/10000)
+Saving..
+
+Epoch: 96
+Loss: 0.119 | Acc: 95.918% (47959/50000)
+Using augment:HorizontalFlip
+Loss: 0.502 | Acc: 85.870% (8587/10000)
+Saving..
+
+Epoch: 97
+Loss: 0.113 | Acc: 96.132% (48066/50000)
+Using augment:HorizontalFlip
+Loss: 0.563 | Acc: 84.080% (8408/10000)
+Saving..
+
+Epoch: 98
+Loss: 0.110 | Acc: 96.256% (48128/50000)
+Using augment:HorizontalFlip
+Loss: 0.382 | Acc: 88.260% (8826/10000)
+Saving..
+
+Epoch: 99
+Loss: 0.111 | Acc: 96.216% (48108/50000)
+Using augment:HorizontalFlip
+Loss: 0.390 | Acc: 88.310% (8831/10000)
+Saving..
+
+Epoch: 100
+Loss: 0.100 | Acc: 96.586% (48293/50000)
+Using augment:HorizontalFlip
+Loss: 0.386 | Acc: 88.010% (8801/10000)
+Saving..
+
+Epoch: 101
+Loss: 0.102 | Acc: 96.540% (48270/50000)
+Using augment:HorizontalFlip
+Loss: 0.446 | Acc: 86.350% (8635/10000)
+Saving..
+
+Epoch: 102
+Loss: 0.099 | Acc: 96.632% (48316/50000)
+Using augment:HorizontalFlip
+Loss: 0.560 | Acc: 83.500% (8350/10000)
+Saving..
+
+Epoch: 103
+Loss: 0.106 | Acc: 96.390% (48195/50000)
+Using augment:HorizontalFlip
+Loss: 0.452 | Acc: 86.890% (8689/10000)
+Saving..
+
+Epoch: 104
+Loss: 0.093 | Acc: 96.852% (48426/50000)
+Using augment:HorizontalFlip
+Loss: 0.403 | Acc: 87.890% (8789/10000)
+Saving..
+
+Epoch: 105
+Loss: 0.100 | Acc: 96.592% (48296/50000)
+Using augment:HorizontalFlip
+Loss: 0.393 | Acc: 88.430% (8843/10000)
+Saving..
+
+Epoch: 106
+Loss: 0.096 | Acc: 96.850% (48425/50000)
+Using augment:HorizontalFlip
+Loss: 0.489 | Acc: 85.970% (8597/10000)
+Saving..
+
+Epoch: 107
+Loss: 0.088 | Acc: 97.052% (48526/50000)
+Using augment:HorizontalFlip
+Loss: 0.396 | Acc: 88.470% (8847/10000)
+Saving..
+
+Epoch: 108
+Loss: 0.085 | Acc: 97.176% (48588/50000)
+Using augment:HorizontalFlip
+Loss: 0.509 | Acc: 84.780% (8478/10000)
+Saving..
+
+Epoch: 109
+Loss: 0.088 | Acc: 96.982% (48491/50000)
+Using augment:HorizontalFlip
+Loss: 0.388 | Acc: 88.140% (8814/10000)
+Saving..
+
+Epoch: 110
+Loss: 0.086 | Acc: 97.110% (48555/50000)
+Using augment:HorizontalFlip
+Loss: 0.498 | Acc: 85.890% (8589/10000)
+Saving..
+
+Epoch: 111
+Loss: 0.085 | Acc: 97.172% (48586/50000)
+Using augment:HorizontalFlip
+Loss: 0.379 | Acc: 88.470% (8847/10000)
+Saving..
+
+Epoch: 112
+Loss: 0.074 | Acc: 97.676% (48838/50000)
+Using augment:HorizontalFlip
+Loss: 0.448 | Acc: 86.280% (8628/10000)
+Saving..
+
+Epoch: 113
+Loss: 0.080 | Acc: 97.388% (48694/50000)
+Using augment:HorizontalFlip
+Loss: 0.420 | Acc: 87.830% (8783/10000)
+Saving..
+
+Epoch: 114
+Loss: 0.076 | Acc: 97.542% (48771/50000)
+Using augment:HorizontalFlip
+Loss: 0.374 | Acc: 89.240% (8924/10000)
+Saving..
+
+Epoch: 115
+Loss: 0.078 | Acc: 97.384% (48692/50000)
+Using augment:HorizontalFlip
+Loss: 0.408 | Acc: 87.760% (8776/10000)
+Saving..
+
+Epoch: 116
+Loss: 0.071 | Acc: 97.710% (48855/50000)
+Using augment:HorizontalFlip
+Loss: 0.398 | Acc: 88.820% (8882/10000)
+Saving..
+
+Epoch: 117
+Loss: 0.073 | Acc: 97.554% (48777/50000)
+Using augment:HorizontalFlip
+Loss: 0.367 | Acc: 89.300% (8930/10000)
+Saving..
+
+Epoch: 118
+Loss: 0.069 | Acc: 97.730% (48865/50000)
+Using augment:HorizontalFlip
+Loss: 0.409 | Acc: 88.040% (8804/10000)
+Saving..
+
+Epoch: 119
+Loss: 0.065 | Acc: 97.820% (48910/50000)
+Using augment:HorizontalFlip
+Loss: 0.377 | Acc: 88.760% (8876/10000)
+Saving..
+
+Epoch: 120
+Loss: 0.063 | Acc: 97.972% (48986/50000)
+Using augment:HorizontalFlip
+Loss: 0.389 | Acc: 88.770% (8877/10000)
+Saving..
+
+Epoch: 121
+Loss: 0.058 | Acc: 98.118% (49059/50000)
+Using augment:HorizontalFlip
+Loss: 0.473 | Acc: 87.410% (8741/10000)
+Saving..
+
+Epoch: 122
+Loss: 0.061 | Acc: 98.026% (49013/50000)
+Using augment:HorizontalFlip
+Loss: 0.423 | Acc: 87.820% (8782/10000)
+Saving..
+
+Epoch: 123
+Loss: 0.061 | Acc: 97.994% (48997/50000)
+Using augment:HorizontalFlip
+Loss: 0.375 | Acc: 89.030% (8903/10000)
+Saving..
+
+Epoch: 124
+Loss: 0.052 | Acc: 98.344% (49172/50000)
+Using augment:HorizontalFlip
+Loss: 0.370 | Acc: 89.410% (8941/10000)
+Saving..
+
+Epoch: 125
+Loss: 0.052 | Acc: 98.362% (49181/50000)
+Using augment:HorizontalFlip
+Loss: 0.517 | Acc: 86.640% (8664/10000)
+Saving..
+
+Epoch: 126
+Loss: 0.052 | Acc: 98.290% (49145/50000)
+Using augment:HorizontalFlip
+Loss: 0.393 | Acc: 88.800% (8880/10000)
+Saving..
+
+Epoch: 127
+Loss: 0.058 | Acc: 98.140% (49070/50000)
+Using augment:HorizontalFlip
+Loss: 0.518 | Acc: 85.860% (8586/10000)
+Saving..
+
+Epoch: 128
+Loss: 0.046 | Acc: 98.538% (49269/50000)
+Using augment:HorizontalFlip
+Loss: 0.372 | Acc: 89.470% (8947/10000)
+Saving..
+
+Epoch: 129
+Loss: 0.051 | Acc: 98.380% (49190/50000)
+Using augment:HorizontalFlip
+Loss: 0.349 | Acc: 89.730% (8973/10000)
+Saving..
+
+Epoch: 130
+Loss: 0.039 | Acc: 98.798% (49399/50000)
+Using augment:HorizontalFlip
+Loss: 0.396 | Acc: 88.980% (8898/10000)
+Saving..
+
+Epoch: 131
+Loss: 0.037 | Acc: 98.820% (49410/50000)
+Using augment:HorizontalFlip
+Loss: 0.399 | Acc: 88.920% (8892/10000)
+Saving..
+
+Epoch: 132
+Loss: 0.041 | Acc: 98.676% (49338/50000)
+Using augment:HorizontalFlip
+Loss: 0.374 | Acc: 89.450% (8945/10000)
+Saving..
+
+Epoch: 133
+Loss: 0.034 | Acc: 98.976% (49488/50000)
+Using augment:HorizontalFlip
+Loss: 0.344 | Acc: 89.860% (8986/10000)
+Saving..
+
+Epoch: 134
+Loss: 0.037 | Acc: 98.862% (49431/50000)
+Using augment:HorizontalFlip
+Loss: 0.402 | Acc: 88.820% (8882/10000)
+Saving..
+
+Epoch: 135
+Loss: 0.034 | Acc: 98.886% (49443/50000)
+Using augment:HorizontalFlip
+Loss: 0.382 | Acc: 89.090% (8909/10000)
+Saving..
+
+Epoch: 136
+Loss: 0.033 | Acc: 98.984% (49492/50000)
+Using augment:HorizontalFlip
+Loss: 0.389 | Acc: 89.390% (8939/10000)
+Saving..
+
+Epoch: 137
+Loss: 0.032 | Acc: 99.014% (49507/50000)
+Using augment:HorizontalFlip
+Loss: 0.326 | Acc: 90.530% (9053/10000)
+Saving..
+
+Epoch: 138
+Loss: 0.031 | Acc: 99.096% (49548/50000)
+Using augment:HorizontalFlip
+Loss: 0.430 | Acc: 88.270% (8827/10000)
+Saving..
+
+Epoch: 139
+Loss: 0.027 | Acc: 99.230% (49615/50000)
+Using augment:HorizontalFlip
+Loss: 0.329 | Acc: 90.590% (9059/10000)
+Saving..
+
+Epoch: 140
+Loss: 0.017 | Acc: 99.550% (49775/50000)
+Using augment:HorizontalFlip
+Loss: 0.311 | Acc: 91.640% (9164/10000)
+Saving..
+
+Epoch: 141
+Loss: 0.011 | Acc: 99.750% (49875/50000)
+Using augment:HorizontalFlip
+Loss: 0.323 | Acc: 90.980% (9098/10000)
+Saving..
+
+Epoch: 142
+Loss: 0.011 | Acc: 99.768% (49884/50000)
+Using augment:HorizontalFlip
+Loss: 0.280 | Acc: 92.140% (9214/10000)
+Saving..
+
+Epoch: 143
+Loss: 0.005 | Acc: 99.908% (49954/50000)
+Using augment:HorizontalFlip
+Loss: 0.295 | Acc: 91.800% (9180/10000)
+Saving..
+
+Epoch: 144
+Loss: 0.004 | Acc: 99.960% (49980/50000)
+Using augment:HorizontalFlip
+Loss: 0.267 | Acc: 92.510% (9251/10000)
+Saving..
+
+Epoch: 145
+Loss: 0.003 | Acc: 99.972% (49986/50000)
+Using augment:HorizontalFlip
+Loss: 0.246 | Acc: 93.010% (9301/10000)
+Saving..
+
+Epoch: 146
+Loss: 0.002 | Acc: 99.994% (49997/50000)
+Using augment:HorizontalFlip
+Loss: 0.232 | Acc: 93.450% (9345/10000)
+Saving..
+
+Epoch: 147
+Loss: 0.001 | Acc: 99.994% (49997/50000)
+Using augment:HorizontalFlip
+Loss: 0.227 | Acc: 93.760% (9376/10000)
+Saving..
+
+Epoch: 148
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.220 | Acc: 93.640% (9364/10000)
+Saving..
+
+Epoch: 149
+Loss: 0.001 | Acc: 99.998% (49999/50000)
+Using augment:HorizontalFlip
+Loss: 0.216 | Acc: 93.640% (9364/10000)
+Saving..
+
+Epoch: 150
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.218 | Acc: 93.680% (9368/10000)
+Saving..
+
+Epoch: 151
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.215 | Acc: 93.620% (9362/10000)
+Saving..
+
+Epoch: 152
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.214 | Acc: 93.680% (9368/10000)
+Saving..
+
+Epoch: 153
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.211 | Acc: 93.620% (9362/10000)
+Saving..
+
+Epoch: 154
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.213 | Acc: 93.650% (9365/10000)
+Saving..
+
+Epoch: 155
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.214 | Acc: 93.650% (9365/10000)
+Saving..
+
+Epoch: 156
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.211 | Acc: 93.560% (9356/10000)
+Saving..
+
+Epoch: 157
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.212 | Acc: 93.540% (9354/10000)
+Saving..
+
+Epoch: 158
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.210 | Acc: 93.550% (9355/10000)
+Saving..
+
+Epoch: 159
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.211 | Acc: 93.670% (9367/10000)
+Saving..
+
+Epoch: 160
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.210 | Acc: 93.830% (9383/10000)
+Saving..
+
+Epoch: 161
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.210 | Acc: 93.750% (9375/10000)
+Saving..
+
+Epoch: 162
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.211 | Acc: 93.670% (9367/10000)
+Saving..
+
+Epoch: 163
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.214 | Acc: 93.540% (9354/10000)
+Saving..
+
+Epoch: 164
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.215 | Acc: 93.460% (9346/10000)
+Saving..
+
+Epoch: 165
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.214 | Acc: 93.510% (9351/10000)
+Saving..
+
+Epoch: 166
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.216 | Acc: 93.630% (9363/10000)
+Saving..
+
+Epoch: 167
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.214 | Acc: 93.610% (9361/10000)
+Saving..
+
+Epoch: 168
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.217 | Acc: 93.370% (9337/10000)
+Saving..
+
+Epoch: 169
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.217 | Acc: 93.540% (9354/10000)
+Saving..
+
+Epoch: 170
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.217 | Acc: 93.580% (9358/10000)
+Saving..
+
+Epoch: 171
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.217 | Acc: 93.390% (9339/10000)
+Saving..
+
+Epoch: 172
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.217 | Acc: 93.500% (9350/10000)
+Saving..
+
+Epoch: 173
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.218 | Acc: 93.450% (9345/10000)
+Saving..
+
+Epoch: 174
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.219 | Acc: 93.400% (9340/10000)
+Saving..
+
+Epoch: 175
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.218 | Acc: 93.540% (9354/10000)
+Saving..
+
+Epoch: 176
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.219 | Acc: 93.470% (9347/10000)
+Saving..
+
+Epoch: 177
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.219 | Acc: 93.500% (9350/10000)
+Saving..
+
+Epoch: 178
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.220 | Acc: 93.460% (9346/10000)
+Saving..
+
+Epoch: 179
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.350% (9335/10000)
+Saving..
+
+Epoch: 180
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.410% (9341/10000)
+Saving..
+
+Epoch: 181
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.220 | Acc: 93.420% (9342/10000)
+Saving..
+
+Epoch: 182
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.430% (9343/10000)
+Saving..
+
+Epoch: 183
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.470% (9347/10000)
+Saving..
+
+Epoch: 184
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.520% (9352/10000)
+Saving..
+
+Epoch: 185
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.430% (9343/10000)
+Saving..
+
+Epoch: 186
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.480% (9348/10000)
+Saving..
+
+Epoch: 187
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.223 | Acc: 93.400% (9340/10000)
+Saving..
+
+Epoch: 188
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.450% (9345/10000)
+Saving..
+
+Epoch: 189
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.220 | Acc: 93.480% (9348/10000)
+Saving..
+
+Epoch: 190
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.410% (9341/10000)
+Saving..
+
+Epoch: 191
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.360% (9336/10000)
+Saving..
+
+Epoch: 192
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.450% (9345/10000)
+Saving..
+
+Epoch: 193
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.480% (9348/10000)
+Saving..
+
+Epoch: 194
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.490% (9349/10000)
+Saving..
+
+Epoch: 195
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.390% (9339/10000)
+Saving..
+
+Epoch: 196
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.221 | Acc: 93.480% (9348/10000)
+Saving..
+
+Epoch: 197
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.223 | Acc: 93.500% (9350/10000)
+Saving..
+
+Epoch: 198
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.224 | Acc: 93.400% (9340/10000)
+Saving..
+
+Epoch: 199
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:HorizontalFlip
+Loss: 0.222 | Acc: 93.390% (9339/10000)
+Saving..
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-14           [-1, 64, 32, 32]             128
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-17           [-1, 64, 32, 32]               0
+           Conv2d-18           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-19           [-1, 64, 32, 32]             128
+           Conv2d-20           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-21           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-22           [-1, 64, 32, 32]               0
+           Conv2d-23          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-24          [-1, 128, 16, 16]             256
+           Conv2d-25          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-26          [-1, 128, 16, 16]             256
+           Conv2d-27          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-28          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-29          [-1, 128, 16, 16]               0
+           Conv2d-30          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-31          [-1, 128, 16, 16]             256
+           Conv2d-32          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-33          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-36          [-1, 128, 16, 16]             256
+           Conv2d-37          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-38          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-39          [-1, 128, 16, 16]               0
+           Conv2d-40          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-41          [-1, 128, 16, 16]             256
+           Conv2d-42          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-43          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-44          [-1, 128, 16, 16]               0
+           Conv2d-45            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-46            [-1, 256, 8, 8]             512
+           Conv2d-47            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-48            [-1, 256, 8, 8]             512
+           Conv2d-49            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-50            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-51            [-1, 256, 8, 8]               0
+           Conv2d-52            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-53            [-1, 256, 8, 8]             512
+           Conv2d-54            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-55            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-56            [-1, 256, 8, 8]               0
+           Conv2d-57            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-58            [-1, 256, 8, 8]             512
+           Conv2d-59            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-60            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-61            [-1, 256, 8, 8]               0
+           Linear-62                   [-1, 10]           2,570
+   ModifiedResNet-63                   [-1, 10]               0
+================================================================
+Total params: 4,697,162
+Trainable params: 4,697,162
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 18.63
+Params size (MB): 17.92
+Estimated Total Size (MB): 36.56
+----------------------------------------------------------------
+
+Epoch: 0
+Loss: 1.703 | Acc: 37.516% (18758/50000)
+Using augment:Normalization_0.49
+Loss: 1.461 | Acc: 47.500% (4750/10000)
+Saving..
+
+Epoch: 1
+Loss: 1.204 | Acc: 56.722% (28361/50000)
+Using augment:Normalization_0.49
+Loss: 1.129 | Acc: 59.490% (5949/10000)
+Saving..
+
+Epoch: 2
+Loss: 0.894 | Acc: 68.570% (34285/50000)
+Using augment:Normalization_0.49
+Loss: 1.262 | Acc: 58.670% (5867/10000)
+Saving..
+
+Epoch: 3
+Loss: 0.688 | Acc: 75.946% (37973/50000)
+Using augment:Normalization_0.49
+Loss: 0.702 | Acc: 75.720% (7572/10000)
+Saving..
+
+Epoch: 4
+Loss: 0.558 | Acc: 80.548% (40274/50000)
+Using augment:Normalization_0.49
+Loss: 0.680 | Acc: 76.850% (7685/10000)
+Saving..
+
+Epoch: 5
+Loss: 0.480 | Acc: 83.230% (41615/50000)
+Using augment:Normalization_0.49
+Loss: 0.597 | Acc: 79.490% (7949/10000)
+Saving..
+
+Epoch: 6
+Loss: 0.426 | Acc: 85.374% (42687/50000)
+Using augment:Normalization_0.49
+Loss: 0.577 | Acc: 80.370% (8037/10000)
+Saving..
+
+Epoch: 7
+Loss: 0.383 | Acc: 86.794% (43397/50000)
+Using augment:Normalization_0.49
+Loss: 0.645 | Acc: 78.750% (7875/10000)
+Saving..
+
+Epoch: 8
+Loss: 0.352 | Acc: 87.924% (43962/50000)
+Using augment:Normalization_0.49
+Loss: 0.701 | Acc: 77.040% (7704/10000)
+Saving..
+
+Epoch: 9
+Loss: 0.319 | Acc: 88.994% (44497/50000)
+Using augment:Normalization_0.49
+Loss: 0.572 | Acc: 81.460% (8146/10000)
+Saving..
+
+Epoch: 10
+Loss: 0.296 | Acc: 89.754% (44877/50000)
+Using augment:Normalization_0.49
+Loss: 0.733 | Acc: 77.190% (7719/10000)
+Saving..
+
+Epoch: 11
+Loss: 0.283 | Acc: 90.072% (45036/50000)
+Using augment:Normalization_0.49
+Loss: 0.621 | Acc: 80.310% (8031/10000)
+Saving..
+
+Epoch: 12
+Loss: 0.266 | Acc: 90.828% (45414/50000)
+Using augment:Normalization_0.49
+Loss: 0.796 | Acc: 77.640% (7764/10000)
+Saving..
+
+Epoch: 13
+Loss: 0.249 | Acc: 91.534% (45767/50000)
+Using augment:Normalization_0.49
+Loss: 0.501 | Acc: 83.900% (8390/10000)
+Saving..
+
+Epoch: 14
+Loss: 0.241 | Acc: 91.708% (45854/50000)
+Using augment:Normalization_0.49
+Loss: 0.532 | Acc: 83.770% (8377/10000)
+Saving..
+
+Epoch: 15
+Loss: 0.233 | Acc: 91.756% (45878/50000)
+Using augment:Normalization_0.49
+Loss: 0.568 | Acc: 82.020% (8202/10000)
+Saving..
+
+Epoch: 16
+Loss: 0.227 | Acc: 92.164% (46082/50000)
+Using augment:Normalization_0.49
+Loss: 0.536 | Acc: 82.980% (8298/10000)
+Saving..
+
+Epoch: 17
+Loss: 0.217 | Acc: 92.674% (46337/50000)
+Using augment:Normalization_0.49
+Loss: 0.674 | Acc: 79.740% (7974/10000)
+Saving..
+
+Epoch: 18
+Loss: 0.212 | Acc: 92.694% (46347/50000)
+Using augment:Normalization_0.49
+Loss: 0.537 | Acc: 83.680% (8368/10000)
+Saving..
+
+Epoch: 19
+Loss: 0.204 | Acc: 92.938% (46469/50000)
+Using augment:Normalization_0.49
+Loss: 0.679 | Acc: 80.070% (8007/10000)
+Saving..
+
+Epoch: 20
+Loss: 0.202 | Acc: 93.006% (46503/50000)
+Using augment:Normalization_0.49
+Loss: 0.664 | Acc: 80.360% (8036/10000)
+Saving..
+
+Epoch: 21
+Loss: 0.194 | Acc: 93.180% (46590/50000)
+Using augment:Normalization_0.49
+Loss: 0.592 | Acc: 81.270% (8127/10000)
+Saving..
+
+Epoch: 22
+Loss: 0.198 | Acc: 93.238% (46619/50000)
+Using augment:Normalization_0.49
+Loss: 0.637 | Acc: 81.730% (8173/10000)
+Saving..
+
+Epoch: 23
+Loss: 0.185 | Acc: 93.708% (46854/50000)
+Using augment:Normalization_0.49
+Loss: 0.485 | Acc: 84.000% (8400/10000)
+Saving..
+
+Epoch: 24
+Loss: 0.192 | Acc: 93.368% (46684/50000)
+Using augment:Normalization_0.49
+Loss: 0.681 | Acc: 80.820% (8082/10000)
+Saving..
+
+Epoch: 25
+Loss: 0.186 | Acc: 93.692% (46846/50000)
+Using augment:Normalization_0.49
+Loss: 0.650 | Acc: 80.620% (8062/10000)
+Saving..
+
+Epoch: 26
+Loss: 0.176 | Acc: 93.930% (46965/50000)
+Using augment:Normalization_0.49
+Loss: 0.685 | Acc: 80.230% (8023/10000)
+Saving..
+
+Epoch: 27
+Loss: 0.184 | Acc: 93.676% (46838/50000)
+Using augment:Normalization_0.49
+Loss: 0.524 | Acc: 83.220% (8322/10000)
+Saving..
+
+Epoch: 28
+Loss: 0.178 | Acc: 93.896% (46948/50000)
+Using augment:Normalization_0.49
+Loss: 0.594 | Acc: 81.350% (8135/10000)
+Saving..
+
+Epoch: 29
+Loss: 0.174 | Acc: 94.078% (47039/50000)
+Using augment:Normalization_0.49
+Loss: 0.609 | Acc: 81.560% (8156/10000)
+Saving..
+
+Epoch: 30
+Loss: 0.176 | Acc: 93.934% (46967/50000)
+Using augment:Normalization_0.49
+Loss: 0.612 | Acc: 81.230% (8123/10000)
+Saving..
+
+Epoch: 31
+Loss: 0.164 | Acc: 94.486% (47243/50000)
+Using augment:Normalization_0.49
+Loss: 0.617 | Acc: 82.360% (8236/10000)
+Saving..
+
+Epoch: 32
+Loss: 0.175 | Acc: 94.062% (47031/50000)
+Using augment:Normalization_0.49
+Loss: 0.541 | Acc: 83.530% (8353/10000)
+Saving..
+
+Epoch: 33
+Loss: 0.172 | Acc: 94.122% (47061/50000)
+Using augment:Normalization_0.49
+Loss: 0.558 | Acc: 81.940% (8194/10000)
+Saving..
+
+Epoch: 34
+Loss: 0.170 | Acc: 94.084% (47042/50000)
+Using augment:Normalization_0.49
+Loss: 0.535 | Acc: 83.900% (8390/10000)
+Saving..
+
+Epoch: 35
+Loss: 0.161 | Acc: 94.548% (47274/50000)
+Using augment:Normalization_0.49
+Loss: 0.614 | Acc: 81.620% (8162/10000)
+Saving..
+
+Epoch: 36
+Loss: 0.165 | Acc: 94.396% (47198/50000)
+Using augment:Normalization_0.49
+Loss: 0.741 | Acc: 79.390% (7939/10000)
+Saving..
+
+Epoch: 37
+Loss: 0.169 | Acc: 94.114% (47057/50000)
+Using augment:Normalization_0.49
+Loss: 0.537 | Acc: 83.190% (8319/10000)
+Saving..
+
+Epoch: 38
+Loss: 0.155 | Acc: 94.724% (47362/50000)
+Using augment:Normalization_0.49
+Loss: 0.688 | Acc: 80.710% (8071/10000)
+Saving..
+
+Epoch: 39
+Loss: 0.157 | Acc: 94.498% (47249/50000)
+Using augment:Normalization_0.49
+Loss: 0.643 | Acc: 81.030% (8103/10000)
+Saving..
+
+Epoch: 40
+Loss: 0.158 | Acc: 94.608% (47304/50000)
+Using augment:Normalization_0.49
+Loss: 0.545 | Acc: 83.530% (8353/10000)
+Saving..
+
+Epoch: 41
+Loss: 0.159 | Acc: 94.628% (47314/50000)
+Using augment:Normalization_0.49
+Loss: 0.739 | Acc: 79.180% (7918/10000)
+Saving..
+
+Epoch: 42
+Loss: 0.152 | Acc: 94.848% (47424/50000)
+Using augment:Normalization_0.49
+Loss: 0.703 | Acc: 78.550% (7855/10000)
+Saving..
+
+Epoch: 43
+Loss: 0.154 | Acc: 94.656% (47328/50000)
+Using augment:Normalization_0.49
+Loss: 0.634 | Acc: 81.540% (8154/10000)
+Saving..
+
+Epoch: 44
+Loss: 0.149 | Acc: 94.864% (47432/50000)
+Using augment:Normalization_0.49
+Loss: 0.909 | Acc: 76.700% (7670/10000)
+Saving..
+
+Epoch: 45
+Loss: 0.150 | Acc: 94.976% (47488/50000)
+Using augment:Normalization_0.49
+Loss: 0.595 | Acc: 82.950% (8295/10000)
+Saving..
+
+Epoch: 46
+Loss: 0.148 | Acc: 94.920% (47460/50000)
+Using augment:Normalization_0.49
+Loss: 0.658 | Acc: 79.880% (7988/10000)
+Saving..
+
+Epoch: 47
+Loss: 0.144 | Acc: 95.098% (47549/50000)
+Using augment:Normalization_0.49
+Loss: 0.516 | Acc: 83.790% (8379/10000)
+Saving..
+
+Epoch: 48
+Loss: 0.144 | Acc: 95.038% (47519/50000)
+Using augment:Normalization_0.49
+Loss: 0.595 | Acc: 81.920% (8192/10000)
+Saving..
+
+Epoch: 49
+Loss: 0.147 | Acc: 94.950% (47475/50000)
+Using augment:Normalization_0.49
+Loss: 0.574 | Acc: 83.030% (8303/10000)
+Saving..
+
+Epoch: 50
+Loss: 0.140 | Acc: 95.154% (47577/50000)
+Using augment:Normalization_0.49
+Loss: 0.773 | Acc: 79.430% (7943/10000)
+Saving..
+
+Epoch: 51
+Loss: 0.140 | Acc: 95.232% (47616/50000)
+Using augment:Normalization_0.49
+Loss: 0.563 | Acc: 82.540% (8254/10000)
+Saving..
+
+Epoch: 52
+Loss: 0.144 | Acc: 95.224% (47612/50000)
+Using augment:Normalization_0.49
+Loss: 0.640 | Acc: 81.700% (8170/10000)
+Saving..
+
+Epoch: 53
+Loss: 0.137 | Acc: 95.300% (47650/50000)
+Using augment:Normalization_0.49
+Loss: 0.720 | Acc: 81.160% (8116/10000)
+Saving..
+
+Epoch: 54
+Loss: 0.130 | Acc: 95.558% (47779/50000)
+Using augment:Normalization_0.49
+Loss: 0.823 | Acc: 77.400% (7740/10000)
+Saving..
+
+Epoch: 55
+Loss: 0.140 | Acc: 95.264% (47632/50000)
+Using augment:Normalization_0.49
+Loss: 0.580 | Acc: 82.540% (8254/10000)
+Saving..
+
+Epoch: 56
+Loss: 0.133 | Acc: 95.370% (47685/50000)
+Using augment:Normalization_0.49
+Loss: 0.606 | Acc: 82.320% (8232/10000)
+Saving..
+
+Epoch: 57
+Loss: 0.130 | Acc: 95.580% (47790/50000)
+Using augment:Normalization_0.49
+Loss: 0.609 | Acc: 82.390% (8239/10000)
+Saving..
+
+Epoch: 58
+Loss: 0.132 | Acc: 95.530% (47765/50000)
+Using augment:Normalization_0.49
+Loss: 0.678 | Acc: 81.400% (8140/10000)
+Saving..
+
+Epoch: 59
+Loss: 0.126 | Acc: 95.742% (47871/50000)
+Using augment:Normalization_0.49
+Loss: 0.864 | Acc: 76.830% (7683/10000)
+Saving..
+
+Epoch: 60
+Loss: 0.120 | Acc: 95.928% (47964/50000)
+Using augment:Normalization_0.49
+Loss: 0.626 | Acc: 82.390% (8239/10000)
+Saving..
+
+Epoch: 61
+Loss: 0.123 | Acc: 95.930% (47965/50000)
+Using augment:Normalization_0.49
+Loss: 0.626 | Acc: 81.810% (8181/10000)
+Saving..
+
+Epoch: 62
+Loss: 0.124 | Acc: 95.826% (47913/50000)
+Using augment:Normalization_0.49
+Loss: 0.504 | Acc: 84.480% (8448/10000)
+Saving..
+
+Epoch: 63
+Loss: 0.120 | Acc: 95.978% (47989/50000)
+Using augment:Normalization_0.49
+Loss: 0.546 | Acc: 84.120% (8412/10000)
+Saving..
+
+Epoch: 64
+Loss: 0.128 | Acc: 95.718% (47859/50000)
+Using augment:Normalization_0.49
+Loss: 0.528 | Acc: 84.340% (8434/10000)
+Saving..
+
+Epoch: 65
+Loss: 0.113 | Acc: 96.210% (48105/50000)
+Using augment:Normalization_0.49
+Loss: 0.649 | Acc: 82.030% (8203/10000)
+Saving..
+
+Epoch: 66
+Loss: 0.111 | Acc: 96.268% (48134/50000)
+Using augment:Normalization_0.49
+Loss: 0.929 | Acc: 76.590% (7659/10000)
+Saving..
+
+Epoch: 67
+Loss: 0.124 | Acc: 95.904% (47952/50000)
+Using augment:Normalization_0.49
+Loss: 0.536 | Acc: 84.000% (8400/10000)
+Saving..
+
+Epoch: 68
+Loss: 0.109 | Acc: 96.352% (48176/50000)
+Using augment:Normalization_0.49
+Loss: 0.495 | Acc: 85.100% (8510/10000)
+Saving..
+
+Epoch: 69
+Loss: 0.116 | Acc: 96.040% (48020/50000)
+Using augment:Normalization_0.49
+Loss: 0.822 | Acc: 78.260% (7826/10000)
+Saving..
+
+Epoch: 70
+Loss: 0.116 | Acc: 96.084% (48042/50000)
+Using augment:Normalization_0.49
+Loss: 0.675 | Acc: 82.120% (8212/10000)
+Saving..
+
+Epoch: 71
+Loss: 0.105 | Acc: 96.524% (48262/50000)
+Using augment:Normalization_0.49
+Loss: 0.628 | Acc: 83.210% (8321/10000)
+Saving..
+
+Epoch: 72
+Loss: 0.107 | Acc: 96.390% (48195/50000)
+Using augment:Normalization_0.49
+Loss: 0.570 | Acc: 84.390% (8439/10000)
+Saving..
+
+Epoch: 73
+Loss: 0.102 | Acc: 96.606% (48303/50000)
+Using augment:Normalization_0.49
+Loss: 0.857 | Acc: 78.870% (7887/10000)
+Saving..
+
+Epoch: 74
+Loss: 0.112 | Acc: 96.276% (48138/50000)
+Using augment:Normalization_0.49
+Loss: 0.670 | Acc: 80.920% (8092/10000)
+Saving..
+
+Epoch: 75
+Loss: 0.102 | Acc: 96.540% (48270/50000)
+Using augment:Normalization_0.49
+Loss: 0.500 | Acc: 85.400% (8540/10000)
+Saving..
+
+Epoch: 76
+Loss: 0.105 | Acc: 96.500% (48250/50000)
+Using augment:Normalization_0.49
+Loss: 0.548 | Acc: 83.810% (8381/10000)
+Saving..
+
+Epoch: 77
+Loss: 0.091 | Acc: 97.030% (48515/50000)
+Using augment:Normalization_0.49
+Loss: 0.606 | Acc: 82.910% (8291/10000)
+Saving..
+
+Epoch: 78
+Loss: 0.104 | Acc: 96.430% (48215/50000)
+Using augment:Normalization_0.49
+Loss: 0.630 | Acc: 82.510% (8251/10000)
+Saving..
+
+Epoch: 79
+Loss: 0.102 | Acc: 96.534% (48267/50000)
+Using augment:Normalization_0.49
+Loss: 0.742 | Acc: 80.590% (8059/10000)
+Saving..
+
+Epoch: 80
+Loss: 0.096 | Acc: 96.820% (48410/50000)
+Using augment:Normalization_0.49
+Loss: 0.808 | Acc: 80.050% (8005/10000)
+Saving..
+
+Epoch: 81
+Loss: 0.099 | Acc: 96.630% (48315/50000)
+Using augment:Normalization_0.49
+Loss: 0.532 | Acc: 84.050% (8405/10000)
+Saving..
+
+Epoch: 82
+Loss: 0.093 | Acc: 96.906% (48453/50000)
+Using augment:Normalization_0.49
+Loss: 0.654 | Acc: 82.730% (8273/10000)
+Saving..
+
+Epoch: 83
+Loss: 0.088 | Acc: 97.134% (48567/50000)
+Using augment:Normalization_0.49
+Loss: 0.607 | Acc: 83.520% (8352/10000)
+Saving..
+
+Epoch: 84
+Loss: 0.092 | Acc: 96.940% (48470/50000)
+Using augment:Normalization_0.49
+Loss: 0.570 | Acc: 84.010% (8401/10000)
+Saving..
+
+Epoch: 85
+Loss: 0.089 | Acc: 97.056% (48528/50000)
+Using augment:Normalization_0.49
+Loss: 0.775 | Acc: 80.010% (8001/10000)
+Saving..
+
+Epoch: 86
+Loss: 0.088 | Acc: 97.058% (48529/50000)
+Using augment:Normalization_0.49
+Loss: 0.681 | Acc: 82.420% (8242/10000)
+Saving..
+
+Epoch: 87
+Loss: 0.087 | Acc: 97.276% (48638/50000)
+Using augment:Normalization_0.49
+Loss: 0.608 | Acc: 83.470% (8347/10000)
+Saving..
+
+Epoch: 88
+Loss: 0.085 | Acc: 97.158% (48579/50000)
+Using augment:Normalization_0.49
+Loss: 0.567 | Acc: 84.090% (8409/10000)
+Saving..
+
+Epoch: 89
+Loss: 0.078 | Acc: 97.478% (48739/50000)
+Using augment:Normalization_0.49
+Loss: 0.553 | Acc: 84.180% (8418/10000)
+Saving..
+
+Epoch: 90
+Loss: 0.080 | Acc: 97.362% (48681/50000)
+Using augment:Normalization_0.49
+Loss: 0.628 | Acc: 82.630% (8263/10000)
+Saving..
+
+Epoch: 91
+Loss: 0.078 | Acc: 97.402% (48701/50000)
+Using augment:Normalization_0.49
+Loss: 0.573 | Acc: 83.420% (8342/10000)
+Saving..
+
+Epoch: 92
+Loss: 0.085 | Acc: 97.232% (48616/50000)
+Using augment:Normalization_0.49
+Loss: 0.522 | Acc: 85.080% (8508/10000)
+Saving..
+
+Epoch: 93
+Loss: 0.066 | Acc: 97.838% (48919/50000)
+Using augment:Normalization_0.49
+Loss: 0.490 | Acc: 86.190% (8619/10000)
+Saving..
+
+Epoch: 94
+Loss: 0.082 | Acc: 97.238% (48619/50000)
+Using augment:Normalization_0.49
+Loss: 0.527 | Acc: 84.130% (8413/10000)
+Saving..
+
+Epoch: 95
+Loss: 0.079 | Acc: 97.422% (48711/50000)
+Using augment:Normalization_0.49
+Loss: 0.581 | Acc: 83.670% (8367/10000)
+Saving..
+
+Epoch: 96
+Loss: 0.069 | Acc: 97.790% (48895/50000)
+Using augment:Normalization_0.49
+Loss: 0.534 | Acc: 84.930% (8493/10000)
+Saving..
+
+Epoch: 97
+Loss: 0.069 | Acc: 97.798% (48899/50000)
+Using augment:Normalization_0.49
+Loss: 0.597 | Acc: 84.470% (8447/10000)
+Saving..
+
+Epoch: 98
+Loss: 0.073 | Acc: 97.604% (48802/50000)
+Using augment:Normalization_0.49
+Loss: 0.580 | Acc: 84.050% (8405/10000)
+Saving..
+
+Epoch: 99
+Loss: 0.061 | Acc: 97.970% (48985/50000)
+Using augment:Normalization_0.49
+Loss: 0.586 | Acc: 84.090% (8409/10000)
+Saving..
+
+Epoch: 100
+Loss: 0.069 | Acc: 97.750% (48875/50000)
+Using augment:Normalization_0.49
+Loss: 0.640 | Acc: 82.300% (8230/10000)
+Saving..
+
+Epoch: 101
+Loss: 0.068 | Acc: 97.790% (48895/50000)
+Using augment:Normalization_0.49
+Loss: 0.564 | Acc: 84.030% (8403/10000)
+Saving..
+
+Epoch: 102
+Loss: 0.059 | Acc: 98.120% (49060/50000)
+Using augment:Normalization_0.49
+Loss: 0.588 | Acc: 83.410% (8341/10000)
+Saving..
+
+Epoch: 103
+Loss: 0.062 | Acc: 98.032% (49016/50000)
+Using augment:Normalization_0.49
+Loss: 0.635 | Acc: 83.810% (8381/10000)
+Saving..
+
+Epoch: 104
+Loss: 0.057 | Acc: 98.124% (49062/50000)
+Using augment:Normalization_0.49
+Loss: 0.573 | Acc: 84.160% (8416/10000)
+Saving..
+
+Epoch: 105
+Loss: 0.066 | Acc: 97.864% (48932/50000)
+Using augment:Normalization_0.49
+Loss: 0.482 | Acc: 85.760% (8576/10000)
+Saving..
+
+Epoch: 106
+Loss: 0.056 | Acc: 98.220% (49110/50000)
+Using augment:Normalization_0.49
+Loss: 0.701 | Acc: 82.550% (8255/10000)
+Saving..
+
+Epoch: 107
+Loss: 0.053 | Acc: 98.296% (49148/50000)
+Using augment:Normalization_0.49
+Loss: 0.479 | Acc: 86.110% (8611/10000)
+Saving..
+
+Epoch: 108
+Loss: 0.051 | Acc: 98.376% (49188/50000)
+Using augment:Normalization_0.49
+Loss: 0.523 | Acc: 85.860% (8586/10000)
+Saving..
+
+Epoch: 109
+Loss: 0.049 | Acc: 98.508% (49254/50000)
+Using augment:Normalization_0.49
+Loss: 0.685 | Acc: 82.300% (8230/10000)
+Saving..
+
+Epoch: 110
+Loss: 0.067 | Acc: 97.852% (48926/50000)
+Using augment:Normalization_0.49
+Loss: 0.616 | Acc: 84.510% (8451/10000)
+Saving..
+
+Epoch: 111
+Loss: 0.041 | Acc: 98.736% (49368/50000)
+Using augment:Normalization_0.49
+Loss: 0.580 | Acc: 84.130% (8413/10000)
+Saving..
+
+Epoch: 112
+Loss: 0.046 | Acc: 98.556% (49278/50000)
+Using augment:Normalization_0.49
+Loss: 0.505 | Acc: 86.230% (8623/10000)
+Saving..
+
+Epoch: 113
+Loss: 0.048 | Acc: 98.448% (49224/50000)
+Using augment:Normalization_0.49
+Loss: 0.502 | Acc: 86.300% (8630/10000)
+Saving..
+
+Epoch: 114
+Loss: 0.058 | Acc: 98.094% (49047/50000)
+Using augment:Normalization_0.49
+Loss: 0.540 | Acc: 85.250% (8525/10000)
+Saving..
+
+Epoch: 115
+Loss: 0.034 | Acc: 98.958% (49479/50000)
+Using augment:Normalization_0.49
+Loss: 0.487 | Acc: 86.290% (8629/10000)
+Saving..
+
+Epoch: 116
+Loss: 0.027 | Acc: 99.184% (49592/50000)
+Using augment:Normalization_0.49
+Loss: 0.617 | Acc: 83.870% (8387/10000)
+Saving..
+
+Epoch: 117
+Loss: 0.038 | Acc: 98.892% (49446/50000)
+Using augment:Normalization_0.49
+Loss: 0.600 | Acc: 83.590% (8359/10000)
+Saving..
+
+Epoch: 118
+Loss: 0.051 | Acc: 98.372% (49186/50000)
+Using augment:Normalization_0.49
+Loss: 0.618 | Acc: 83.670% (8367/10000)
+Saving..
+
+Epoch: 119
+Loss: 0.052 | Acc: 98.350% (49175/50000)
+Using augment:Normalization_0.49
+Loss: 0.565 | Acc: 85.520% (8552/10000)
+Saving..
+
+Epoch: 120
+Loss: 0.038 | Acc: 98.874% (49437/50000)
+Using augment:Normalization_0.49
+Loss: 0.599 | Acc: 84.540% (8454/10000)
+Saving..
+
+Epoch: 121
+Loss: 0.027 | Acc: 99.212% (49606/50000)
+Using augment:Normalization_0.49
+Loss: 0.532 | Acc: 85.360% (8536/10000)
+Saving..
+
+Epoch: 122
+Loss: 0.031 | Acc: 99.042% (49521/50000)
+Using augment:Normalization_0.49
+Loss: 0.525 | Acc: 85.390% (8539/10000)
+Saving..
+
+Epoch: 123
+Loss: 0.019 | Acc: 99.470% (49735/50000)
+Using augment:Normalization_0.49
+Loss: 0.492 | Acc: 86.690% (8669/10000)
+Saving..
+
+Epoch: 124
+Loss: 0.023 | Acc: 99.340% (49670/50000)
+Using augment:Normalization_0.49
+Loss: 0.518 | Acc: 85.840% (8584/10000)
+Saving..
+
+Epoch: 125
+Loss: 0.042 | Acc: 98.748% (49374/50000)
+Using augment:Normalization_0.49
+Loss: 0.840 | Acc: 79.770% (7977/10000)
+Saving..
+
+Epoch: 126
+Loss: 0.050 | Acc: 98.442% (49221/50000)
+Using augment:Normalization_0.49
+Loss: 0.618 | Acc: 83.920% (8392/10000)
+Saving..
+
+Epoch: 127
+Loss: 0.028 | Acc: 99.162% (49581/50000)
+Using augment:Normalization_0.49
+Loss: 0.616 | Acc: 84.160% (8416/10000)
+Saving..
+
+Epoch: 128
+Loss: 0.032 | Acc: 99.066% (49533/50000)
+Using augment:Normalization_0.49
+Loss: 0.499 | Acc: 86.780% (8678/10000)
+Saving..
+
+Epoch: 129
+Loss: 0.011 | Acc: 99.778% (49889/50000)
+Using augment:Normalization_0.49
+Loss: 0.403 | Acc: 89.100% (8910/10000)
+Saving..
+
+Epoch: 130
+Loss: 0.002 | Acc: 99.988% (49994/50000)
+Using augment:Normalization_0.49
+Loss: 0.354 | Acc: 90.350% (9035/10000)
+Saving..
+
+Epoch: 131
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.334 | Acc: 90.560% (9056/10000)
+Saving..
+
+Epoch: 132
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.322 | Acc: 90.620% (9062/10000)
+Saving..
+
+Epoch: 133
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.314 | Acc: 90.810% (9081/10000)
+Saving..
+
+Epoch: 134
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.309 | Acc: 90.830% (9083/10000)
+Saving..
+
+Epoch: 135
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.306 | Acc: 90.820% (9082/10000)
+Saving..
+
+Epoch: 136
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.304 | Acc: 90.930% (9093/10000)
+Saving..
+
+Epoch: 137
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.301 | Acc: 90.910% (9091/10000)
+Saving..
+
+Epoch: 138
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.301 | Acc: 90.750% (9075/10000)
+Saving..
+
+Epoch: 139
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.299 | Acc: 91.050% (9105/10000)
+Saving..
+
+Epoch: 140
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.303 | Acc: 90.810% (9081/10000)
+Saving..
+
+Epoch: 141
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.300 | Acc: 91.020% (9102/10000)
+Saving..
+
+Epoch: 142
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.301 | Acc: 90.820% (9082/10000)
+Saving..
+
+Epoch: 143
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.303 | Acc: 90.790% (9079/10000)
+Saving..
+
+Epoch: 144
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.304 | Acc: 90.660% (9066/10000)
+Saving..
+
+Epoch: 145
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.306 | Acc: 90.760% (9076/10000)
+Saving..
+
+Epoch: 146
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.307 | Acc: 90.600% (9060/10000)
+Saving..
+
+Epoch: 147
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.306 | Acc: 90.870% (9087/10000)
+Saving..
+
+Epoch: 148
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.306 | Acc: 90.860% (9086/10000)
+Saving..
+
+Epoch: 149
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.313 | Acc: 90.660% (9066/10000)
+Saving..
+
+Epoch: 150
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.316 | Acc: 90.540% (9054/10000)
+Saving..
+
+Epoch: 151
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.315 | Acc: 90.560% (9056/10000)
+Saving..
+
+Epoch: 152
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.315 | Acc: 90.540% (9054/10000)
+Saving..
+
+Epoch: 153
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.320 | Acc: 90.390% (9039/10000)
+Saving..
+
+Epoch: 154
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.326 | Acc: 90.350% (9035/10000)
+Saving..
+
+Epoch: 155
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.326 | Acc: 90.350% (9035/10000)
+Saving..
+
+Epoch: 156
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.323 | Acc: 90.490% (9049/10000)
+Saving..
+
+Epoch: 157
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.330 | Acc: 90.390% (9039/10000)
+Saving..
+
+Epoch: 158
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.329 | Acc: 90.380% (9038/10000)
+Saving..
+
+Epoch: 159
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.333 | Acc: 90.190% (9019/10000)
+Saving..
+
+Epoch: 160
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.333 | Acc: 90.280% (9028/10000)
+Saving..
+
+Epoch: 161
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.337 | Acc: 90.270% (9027/10000)
+Saving..
+
+Epoch: 162
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.340 | Acc: 90.160% (9016/10000)
+Saving..
+
+Epoch: 163
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.340 | Acc: 90.090% (9009/10000)
+Saving..
+
+Epoch: 164
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.342 | Acc: 90.220% (9022/10000)
+Saving..
+
+Epoch: 165
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.342 | Acc: 89.860% (8986/10000)
+Saving..
+
+Epoch: 166
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.348 | Acc: 89.920% (8992/10000)
+Saving..
+
+Epoch: 167
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.352 | Acc: 89.850% (8985/10000)
+Saving..
+
+Epoch: 168
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.347 | Acc: 89.900% (8990/10000)
+Saving..
+
+Epoch: 169
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.351 | Acc: 89.940% (8994/10000)
+Saving..
+
+Epoch: 170
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.355 | Acc: 89.660% (8966/10000)
+Saving..
+
+Epoch: 171
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.350 | Acc: 89.840% (8984/10000)
+Saving..
+
+Epoch: 172
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.352 | Acc: 89.690% (8969/10000)
+Saving..
+
+Epoch: 173
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.356 | Acc: 89.880% (8988/10000)
+Saving..
+
+Epoch: 174
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.354 | Acc: 89.840% (8984/10000)
+Saving..
+
+Epoch: 175
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.353 | Acc: 89.880% (8988/10000)
+Saving..
+
+Epoch: 176
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.354 | Acc: 89.860% (8986/10000)
+Saving..
+
+Epoch: 177
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.358 | Acc: 89.670% (8967/10000)
+Saving..
+
+Epoch: 178
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.356 | Acc: 89.680% (8968/10000)
+Saving..
+
+Epoch: 179
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.359 | Acc: 89.700% (8970/10000)
+Saving..
+
+Epoch: 180
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.361 | Acc: 89.490% (8949/10000)
+Saving..
+
+Epoch: 181
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.358 | Acc: 89.640% (8964/10000)
+Saving..
+
+Epoch: 182
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.360 | Acc: 89.680% (8968/10000)
+Saving..
+
+Epoch: 183
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.361 | Acc: 89.700% (8970/10000)
+Saving..
+
+Epoch: 184
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.360 | Acc: 89.670% (8967/10000)
+Saving..
+
+Epoch: 185
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.360 | Acc: 89.840% (8984/10000)
+Saving..
+
+Epoch: 186
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.363 | Acc: 89.600% (8960/10000)
+Saving..
+
+Epoch: 187
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.364 | Acc: 89.610% (8961/10000)
+Saving..
+
+Epoch: 188
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.361 | Acc: 89.600% (8960/10000)
+Saving..
+
+Epoch: 189
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.360 | Acc: 89.740% (8974/10000)
+Saving..
+
+Epoch: 190
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.361 | Acc: 89.600% (8960/10000)
+Saving..
+
+Epoch: 191
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.361 | Acc: 89.720% (8972/10000)
+Saving..
+
+Epoch: 192
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.362 | Acc: 89.620% (8962/10000)
+Saving..
+
+Epoch: 193
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.367 | Acc: 89.450% (8945/10000)
+Saving..
+
+Epoch: 194
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.364 | Acc: 89.550% (8955/10000)
+Saving..
+
+Epoch: 195
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.364 | Acc: 89.580% (8958/10000)
+Saving..
+
+Epoch: 196
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.363 | Acc: 89.530% (8953/10000)
+Saving..
+
+Epoch: 197
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.363 | Acc: 89.490% (8949/10000)
+Saving..
+
+Epoch: 198
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.361 | Acc: 89.600% (8960/10000)
+Saving..
+
+Epoch: 199
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.49
+Loss: 0.369 | Acc: 89.360% (8936/10000)
+Saving..
+==> Preparing data..
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model..
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-14           [-1, 64, 32, 32]             128
+           Conv2d-15           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-16           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-17           [-1, 64, 32, 32]               0
+           Conv2d-18           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-19           [-1, 64, 32, 32]             128
+           Conv2d-20           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-21           [-1, 64, 32, 32]             128
+ModifiedBasicBlock-22           [-1, 64, 32, 32]               0
+           Conv2d-23          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-24          [-1, 128, 16, 16]             256
+           Conv2d-25          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-26          [-1, 128, 16, 16]             256
+           Conv2d-27          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-28          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-29          [-1, 128, 16, 16]               0
+           Conv2d-30          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-31          [-1, 128, 16, 16]             256
+           Conv2d-32          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-33          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-34          [-1, 128, 16, 16]               0
+           Conv2d-35          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-36          [-1, 128, 16, 16]             256
+           Conv2d-37          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-38          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-39          [-1, 128, 16, 16]               0
+           Conv2d-40          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-41          [-1, 128, 16, 16]             256
+           Conv2d-42          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-43          [-1, 128, 16, 16]             256
+ModifiedBasicBlock-44          [-1, 128, 16, 16]               0
+           Conv2d-45            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-46            [-1, 256, 8, 8]             512
+           Conv2d-47            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-48            [-1, 256, 8, 8]             512
+           Conv2d-49            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-50            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-51            [-1, 256, 8, 8]               0
+           Conv2d-52            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-53            [-1, 256, 8, 8]             512
+           Conv2d-54            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-55            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-56            [-1, 256, 8, 8]               0
+           Conv2d-57            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-58            [-1, 256, 8, 8]             512
+           Conv2d-59            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-60            [-1, 256, 8, 8]             512
+ModifiedBasicBlock-61            [-1, 256, 8, 8]               0
+           Linear-62                   [-1, 10]           2,570
+   ModifiedResNet-63                   [-1, 10]               0
+================================================================
+Total params: 4,697,162
+Trainable params: 4,697,162
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 18.63
+Params size (MB): 17.92
+Estimated Total Size (MB): 36.56
+----------------------------------------------------------------
+
+Epoch: 0
+Loss: 1.669 | Acc: 38.494% (19247/50000)
+Using augment:Normalization_0.5
+Loss: 1.402 | Acc: 50.220% (5022/10000)
+Saving..
+
+Epoch: 1
+Loss: 1.117 | Acc: 59.942% (29971/50000)
+Using augment:Normalization_0.5
+Loss: 1.142 | Acc: 58.960% (5896/10000)
+Saving..
+
+Epoch: 2
+Loss: 0.797 | Acc: 72.040% (36020/50000)
+Using augment:Normalization_0.5
+Loss: 0.809 | Acc: 72.230% (7223/10000)
+Saving..
+
+Epoch: 3
+Loss: 0.627 | Acc: 78.020% (39010/50000)
+Using augment:Normalization_0.5
+Loss: 0.930 | Acc: 70.030% (7003/10000)
+Saving..
+
+Epoch: 4
+Loss: 0.523 | Acc: 81.960% (40980/50000)
+Using augment:Normalization_0.5
+Loss: 0.713 | Acc: 75.880% (7588/10000)
+Saving..
+
+Epoch: 5
+Loss: 0.458 | Acc: 84.368% (42184/50000)
+Using augment:Normalization_0.5
+Loss: 0.666 | Acc: 76.720% (7672/10000)
+Saving..
+
+Epoch: 6
+Loss: 0.403 | Acc: 86.038% (43019/50000)
+Using augment:Normalization_0.5
+Loss: 0.659 | Acc: 79.080% (7908/10000)
+Saving..
+
+Epoch: 7
+Loss: 0.372 | Acc: 87.234% (43617/50000)
+Using augment:Normalization_0.5
+Loss: 0.623 | Acc: 78.800% (7880/10000)
+Saving..
+
+Epoch: 8
+Loss: 0.342 | Acc: 88.132% (44066/50000)
+Using augment:Normalization_0.5
+Loss: 0.766 | Acc: 75.020% (7502/10000)
+Saving..
+
+Epoch: 9
+Loss: 0.317 | Acc: 89.034% (44517/50000)
+Using augment:Normalization_0.5
+Loss: 0.602 | Acc: 80.370% (8037/10000)
+Saving..
+
+Epoch: 10
+Loss: 0.293 | Acc: 90.062% (45031/50000)
+Using augment:Normalization_0.5
+Loss: 0.757 | Acc: 77.300% (7730/10000)
+Saving..
+
+Epoch: 11
+Loss: 0.279 | Acc: 90.420% (45210/50000)
+Using augment:Normalization_0.5
+Loss: 0.581 | Acc: 81.270% (8127/10000)
+Saving..
+
+Epoch: 12
+Loss: 0.263 | Acc: 90.928% (45464/50000)
+Using augment:Normalization_0.5
+Loss: 0.549 | Acc: 82.400% (8240/10000)
+Saving..
+
+Epoch: 13
+Loss: 0.249 | Acc: 91.312% (45656/50000)
+Using augment:Normalization_0.5
+Loss: 0.654 | Acc: 80.000% (8000/10000)
+Saving..
+
+Epoch: 14
+Loss: 0.242 | Acc: 91.652% (45826/50000)
+Using augment:Normalization_0.5
+Loss: 0.566 | Acc: 81.770% (8177/10000)
+Saving..
+
+Epoch: 15
+Loss: 0.233 | Acc: 92.046% (46023/50000)
+Using augment:Normalization_0.5
+Loss: 0.615 | Acc: 81.730% (8173/10000)
+Saving..
+
+Epoch: 16
+Loss: 0.228 | Acc: 92.058% (46029/50000)
+Using augment:Normalization_0.5
+Loss: 0.734 | Acc: 77.810% (7781/10000)
+Saving..
+
+Epoch: 17
+Loss: 0.224 | Acc: 92.228% (46114/50000)
+Using augment:Normalization_0.5
+Loss: 0.744 | Acc: 78.420% (7842/10000)
+Saving..
+
+Epoch: 18
+Loss: 0.212 | Acc: 92.684% (46342/50000)
+Using augment:Normalization_0.5
+Loss: 0.612 | Acc: 81.230% (8123/10000)
+Saving..
+
+Epoch: 19
+Loss: 0.211 | Acc: 92.670% (46335/50000)
+Using augment:Normalization_0.5
+Loss: 0.600 | Acc: 81.580% (8158/10000)
+Saving..
+
+Epoch: 20
+Loss: 0.203 | Acc: 93.066% (46533/50000)
+Using augment:Normalization_0.5
+Loss: 0.775 | Acc: 77.530% (7753/10000)
+Saving..
+
+Epoch: 21
+Loss: 0.210 | Acc: 92.642% (46321/50000)
+Using augment:Normalization_0.5
+Loss: 0.726 | Acc: 79.220% (7922/10000)
+Saving..
+
+Epoch: 22
+Loss: 0.193 | Acc: 93.468% (46734/50000)
+Using augment:Normalization_0.5
+Loss: 0.902 | Acc: 74.930% (7493/10000)
+Saving..
+
+Epoch: 23
+Loss: 0.187 | Acc: 93.542% (46771/50000)
+Using augment:Normalization_0.5
+Loss: 0.708 | Acc: 80.360% (8036/10000)
+Saving..
+
+Epoch: 24
+Loss: 0.200 | Acc: 93.052% (46526/50000)
+Using augment:Normalization_0.5
+Loss: 0.639 | Acc: 81.270% (8127/10000)
+Saving..
+
+Epoch: 25
+Loss: 0.184 | Acc: 93.690% (46845/50000)
+Using augment:Normalization_0.5
+Loss: 0.624 | Acc: 81.210% (8121/10000)
+Saving..
+
+Epoch: 26
+Loss: 0.182 | Acc: 93.892% (46946/50000)
+Using augment:Normalization_0.5
+Loss: 0.705 | Acc: 79.180% (7918/10000)
+Saving..
+
+Epoch: 27
+Loss: 0.193 | Acc: 93.308% (46654/50000)
+Using augment:Normalization_0.5
+Loss: 0.680 | Acc: 80.060% (8006/10000)
+Saving..
+
+Epoch: 28
+Loss: 0.185 | Acc: 93.632% (46816/50000)
+Using augment:Normalization_0.5
+Loss: 0.661 | Acc: 81.300% (8130/10000)
+Saving..
+
+Epoch: 29
+Loss: 0.184 | Acc: 93.660% (46830/50000)
+Using augment:Normalization_0.5
+Loss: 0.740 | Acc: 79.600% (7960/10000)
+Saving..
+
+Epoch: 30
+Loss: 0.180 | Acc: 93.830% (46915/50000)
+Using augment:Normalization_0.5
+Loss: 0.635 | Acc: 81.480% (8148/10000)
+Saving..
+
+Epoch: 31
+Loss: 0.173 | Acc: 94.094% (47047/50000)
+Using augment:Normalization_0.5
+Loss: 0.751 | Acc: 80.300% (8030/10000)
+Saving..
+
+Epoch: 32
+Loss: 0.181 | Acc: 93.784% (46892/50000)
+Using augment:Normalization_0.5
+Loss: 0.561 | Acc: 83.320% (8332/10000)
+Saving..
+
+Epoch: 33
+Loss: 0.173 | Acc: 94.010% (47005/50000)
+Using augment:Normalization_0.5
+Loss: 0.791 | Acc: 78.650% (7865/10000)
+Saving..
+
+Epoch: 34
+Loss: 0.164 | Acc: 94.438% (47219/50000)
+Using augment:Normalization_0.5
+Loss: 0.575 | Acc: 81.970% (8197/10000)
+Saving..
+
+Epoch: 35
+Loss: 0.172 | Acc: 94.086% (47043/50000)
+Using augment:Normalization_0.5
+Loss: 0.876 | Acc: 76.850% (7685/10000)
+Saving..
+
+Epoch: 36
+Loss: 0.170 | Acc: 94.162% (47081/50000)
+Using augment:Normalization_0.5
+Loss: 0.581 | Acc: 82.860% (8286/10000)
+Saving..
+
+Epoch: 37
+Loss: 0.161 | Acc: 94.472% (47236/50000)
+Using augment:Normalization_0.5
+Loss: 0.629 | Acc: 81.570% (8157/10000)
+Saving..
+
+Epoch: 38
+Loss: 0.162 | Acc: 94.402% (47201/50000)
+Using augment:Normalization_0.5
+Loss: 0.551 | Acc: 82.910% (8291/10000)
+Saving..
+
+Epoch: 39
+Loss: 0.165 | Acc: 94.314% (47157/50000)
+Using augment:Normalization_0.5
+Loss: 0.539 | Acc: 83.600% (8360/10000)
+Saving..
+
+Epoch: 40
+Loss: 0.159 | Acc: 94.618% (47309/50000)
+Using augment:Normalization_0.5
+Loss: 0.794 | Acc: 76.370% (7637/10000)
+Saving..
+
+Epoch: 41
+Loss: 0.156 | Acc: 94.664% (47332/50000)
+Using augment:Normalization_0.5
+Loss: 0.644 | Acc: 81.520% (8152/10000)
+Saving..
+
+Epoch: 42
+Loss: 0.159 | Acc: 94.570% (47285/50000)
+Using augment:Normalization_0.5
+Loss: 0.550 | Acc: 82.740% (8274/10000)
+Saving..
+
+Epoch: 43
+Loss: 0.149 | Acc: 94.904% (47452/50000)
+Using augment:Normalization_0.5
+Loss: 0.553 | Acc: 83.470% (8347/10000)
+Saving..
+
+Epoch: 44
+Loss: 0.150 | Acc: 94.946% (47473/50000)
+Using augment:Normalization_0.5
+Loss: 0.549 | Acc: 83.890% (8389/10000)
+Saving..
+
+Epoch: 45
+Loss: 0.157 | Acc: 94.598% (47299/50000)
+Using augment:Normalization_0.5
+Loss: 0.791 | Acc: 79.280% (7928/10000)
+Saving..
+
+Epoch: 46
+Loss: 0.150 | Acc: 94.854% (47427/50000)
+Using augment:Normalization_0.5
+Loss: 0.590 | Acc: 82.360% (8236/10000)
+Saving..
+
+Epoch: 47
+Loss: 0.150 | Acc: 94.852% (47426/50000)
+Using augment:Normalization_0.5
+Loss: 0.733 | Acc: 80.080% (8008/10000)
+Saving..
+
+Epoch: 48
+Loss: 0.148 | Acc: 95.024% (47512/50000)
+Using augment:Normalization_0.5
+Loss: 0.538 | Acc: 83.560% (8356/10000)
+Saving..
+
+Epoch: 49
+Loss: 0.141 | Acc: 95.230% (47615/50000)
+Using augment:Normalization_0.5
+Loss: 0.779 | Acc: 78.950% (7895/10000)
+Saving..
+
+Epoch: 50
+Loss: 0.144 | Acc: 95.216% (47608/50000)
+Using augment:Normalization_0.5
+Loss: 0.627 | Acc: 82.720% (8272/10000)
+Saving..
+
+Epoch: 51
+Loss: 0.144 | Acc: 95.008% (47504/50000)
+Using augment:Normalization_0.5
+Loss: 0.845 | Acc: 77.200% (7720/10000)
+Saving..
+
+Epoch: 52
+Loss: 0.149 | Acc: 94.964% (47482/50000)
+Using augment:Normalization_0.5
+Loss: 0.747 | Acc: 79.030% (7903/10000)
+Saving..
+
+Epoch: 53
+Loss: 0.144 | Acc: 95.132% (47566/50000)
+Using augment:Normalization_0.5
+Loss: 0.586 | Acc: 81.820% (8182/10000)
+Saving..
+
+Epoch: 54
+Loss: 0.131 | Acc: 95.628% (47814/50000)
+Using augment:Normalization_0.5
+Loss: 0.704 | Acc: 80.220% (8022/10000)
+Saving..
+
+Epoch: 55
+Loss: 0.142 | Acc: 95.126% (47563/50000)
+Using augment:Normalization_0.5
+Loss: 0.760 | Acc: 79.260% (7926/10000)
+Saving..
+
+Epoch: 56
+Loss: 0.139 | Acc: 95.278% (47639/50000)
+Using augment:Normalization_0.5
+Loss: 0.614 | Acc: 82.240% (8224/10000)
+Saving..
+
+Epoch: 57
+Loss: 0.133 | Acc: 95.506% (47753/50000)
+Using augment:Normalization_0.5
+Loss: 0.619 | Acc: 82.520% (8252/10000)
+Saving..
+
+Epoch: 58
+Loss: 0.134 | Acc: 95.450% (47725/50000)
+Using augment:Normalization_0.5
+Loss: 0.738 | Acc: 80.500% (8050/10000)
+Saving..
+
+Epoch: 59
+Loss: 0.133 | Acc: 95.534% (47767/50000)
+Using augment:Normalization_0.5
+Loss: 0.649 | Acc: 81.450% (8145/10000)
+Saving..
+
+Epoch: 60
+Loss: 0.123 | Acc: 95.840% (47920/50000)
+Using augment:Normalization_0.5
+Loss: 0.618 | Acc: 82.520% (8252/10000)
+Saving..
+
+Epoch: 61
+Loss: 0.131 | Acc: 95.544% (47772/50000)
+Using augment:Normalization_0.5
+Loss: 1.291 | Acc: 69.800% (6980/10000)
+Saving..
+
+Epoch: 62
+Loss: 0.130 | Acc: 95.548% (47774/50000)
+Using augment:Normalization_0.5
+Loss: 0.527 | Acc: 83.920% (8392/10000)
+Saving..
+
+Epoch: 63
+Loss: 0.109 | Acc: 96.440% (48220/50000)
+Using augment:Normalization_0.5
+Loss: 0.708 | Acc: 82.110% (8211/10000)
+Saving..
+
+Epoch: 64
+Loss: 0.130 | Acc: 95.606% (47803/50000)
+Using augment:Normalization_0.5
+Loss: 0.556 | Acc: 84.140% (8414/10000)
+Saving..
+
+Epoch: 65
+Loss: 0.119 | Acc: 95.964% (47982/50000)
+Using augment:Normalization_0.5
+Loss: 0.889 | Acc: 77.380% (7738/10000)
+Saving..
+
+Epoch: 66
+Loss: 0.130 | Acc: 95.600% (47800/50000)
+Using augment:Normalization_0.5
+Loss: 0.522 | Acc: 83.930% (8393/10000)
+Saving..
+
+Epoch: 67
+Loss: 0.109 | Acc: 96.360% (48180/50000)
+Using augment:Normalization_0.5
+Loss: 0.619 | Acc: 82.030% (8203/10000)
+Saving..
+
+Epoch: 68
+Loss: 0.119 | Acc: 95.964% (47982/50000)
+Using augment:Normalization_0.5
+Loss: 0.518 | Acc: 84.950% (8495/10000)
+Saving..
+
+Epoch: 69
+Loss: 0.110 | Acc: 96.322% (48161/50000)
+Using augment:Normalization_0.5
+Loss: 0.572 | Acc: 83.980% (8398/10000)
+Saving..
+
+Epoch: 70
+Loss: 0.122 | Acc: 95.878% (47939/50000)
+Using augment:Normalization_0.5
+Loss: 0.677 | Acc: 81.630% (8163/10000)
+Saving..
+
+Epoch: 71
+Loss: 0.104 | Acc: 96.518% (48259/50000)
+Using augment:Normalization_0.5
+Loss: 0.671 | Acc: 81.970% (8197/10000)
+Saving..
+
+Epoch: 72
+Loss: 0.112 | Acc: 96.182% (48091/50000)
+Using augment:Normalization_0.5
+Loss: 0.678 | Acc: 80.600% (8060/10000)
+Saving..
+
+Epoch: 73
+Loss: 0.118 | Acc: 96.022% (48011/50000)
+Using augment:Normalization_0.5
+Loss: 0.549 | Acc: 83.770% (8377/10000)
+Saving..
+
+Epoch: 74
+Loss: 0.098 | Acc: 96.732% (48366/50000)
+Using augment:Normalization_0.5
+Loss: 0.762 | Acc: 79.460% (7946/10000)
+Saving..
+
+Epoch: 75
+Loss: 0.106 | Acc: 96.488% (48244/50000)
+Using augment:Normalization_0.5
+Loss: 0.761 | Acc: 78.890% (7889/10000)
+Saving..
+
+Epoch: 76
+Loss: 0.113 | Acc: 96.174% (48087/50000)
+Using augment:Normalization_0.5
+Loss: 0.617 | Acc: 82.830% (8283/10000)
+Saving..
+
+Epoch: 77
+Loss: 0.101 | Acc: 96.562% (48281/50000)
+Using augment:Normalization_0.5
+Loss: 0.563 | Acc: 83.220% (8322/10000)
+Saving..
+
+Epoch: 78
+Loss: 0.094 | Acc: 96.850% (48425/50000)
+Using augment:Normalization_0.5
+Loss: 0.651 | Acc: 82.010% (8201/10000)
+Saving..
+
+Epoch: 79
+Loss: 0.100 | Acc: 96.612% (48306/50000)
+Using augment:Normalization_0.5
+Loss: 0.750 | Acc: 79.420% (7942/10000)
+Saving..
+
+Epoch: 80
+Loss: 0.100 | Acc: 96.670% (48335/50000)
+Using augment:Normalization_0.5
+Loss: 0.666 | Acc: 81.790% (8179/10000)
+Saving..
+
+Epoch: 81
+Loss: 0.097 | Acc: 96.756% (48378/50000)
+Using augment:Normalization_0.5
+Loss: 0.714 | Acc: 81.340% (8134/10000)
+Saving..
+
+Epoch: 82
+Loss: 0.099 | Acc: 96.758% (48379/50000)
+Using augment:Normalization_0.5
+Loss: 0.564 | Acc: 84.210% (8421/10000)
+Saving..
+
+Epoch: 83
+Loss: 0.088 | Acc: 97.134% (48567/50000)
+Using augment:Normalization_0.5
+Loss: 0.619 | Acc: 83.200% (8320/10000)
+Saving..
+
+Epoch: 84
+Loss: 0.096 | Acc: 96.802% (48401/50000)
+Using augment:Normalization_0.5
+Loss: 0.667 | Acc: 81.400% (8140/10000)
+Saving..
+
+Epoch: 85
+Loss: 0.092 | Acc: 96.948% (48474/50000)
+Using augment:Normalization_0.5
+Loss: 0.511 | Acc: 85.700% (8570/10000)
+Saving..
+
+Epoch: 86
+Loss: 0.088 | Acc: 97.038% (48519/50000)
+Using augment:Normalization_0.5
+Loss: 0.654 | Acc: 81.680% (8168/10000)
+Saving..
+
+Epoch: 87
+Loss: 0.088 | Acc: 97.100% (48550/50000)
+Using augment:Normalization_0.5
+Loss: 0.596 | Acc: 84.210% (8421/10000)
+Saving..
+
+Epoch: 88
+Loss: 0.087 | Acc: 97.050% (48525/50000)
+Using augment:Normalization_0.5
+Loss: 0.565 | Acc: 83.800% (8380/10000)
+Saving..
+
+Epoch: 89
+Loss: 0.082 | Acc: 97.284% (48642/50000)
+Using augment:Normalization_0.5
+Loss: 0.714 | Acc: 81.340% (8134/10000)
+Saving..
+
+Epoch: 90
+Loss: 0.083 | Acc: 97.270% (48635/50000)
+Using augment:Normalization_0.5
+Loss: 0.656 | Acc: 81.310% (8131/10000)
+Saving..
+
+Epoch: 91
+Loss: 0.080 | Acc: 97.390% (48695/50000)
+Using augment:Normalization_0.5
+Loss: 0.641 | Acc: 82.610% (8261/10000)
+Saving..
+
+Epoch: 92
+Loss: 0.079 | Acc: 97.372% (48686/50000)
+Using augment:Normalization_0.5
+Loss: 0.631 | Acc: 82.770% (8277/10000)
+Saving..
+
+Epoch: 93
+Loss: 0.075 | Acc: 97.480% (48740/50000)
+Using augment:Normalization_0.5
+Loss: 0.629 | Acc: 82.490% (8249/10000)
+Saving..
+
+Epoch: 94
+Loss: 0.079 | Acc: 97.354% (48677/50000)
+Using augment:Normalization_0.5
+Loss: 0.606 | Acc: 82.910% (8291/10000)
+Saving..
+
+Epoch: 95
+Loss: 0.076 | Acc: 97.496% (48748/50000)
+Using augment:Normalization_0.5
+Loss: 0.756 | Acc: 81.570% (8157/10000)
+Saving..
+
+Epoch: 96
+Loss: 0.066 | Acc: 97.892% (48946/50000)
+Using augment:Normalization_0.5
+Loss: 0.531 | Acc: 85.730% (8573/10000)
+Saving..
+
+Epoch: 97
+Loss: 0.079 | Acc: 97.388% (48694/50000)
+Using augment:Normalization_0.5
+Loss: 0.664 | Acc: 80.550% (8055/10000)
+Saving..
+
+Epoch: 98
+Loss: 0.066 | Acc: 97.930% (48965/50000)
+Using augment:Normalization_0.5
+Loss: 0.690 | Acc: 82.240% (8224/10000)
+Saving..
+
+Epoch: 99
+Loss: 0.065 | Acc: 97.972% (48986/50000)
+Using augment:Normalization_0.5
+Loss: 0.591 | Acc: 83.650% (8365/10000)
+Saving..
+
+Epoch: 100
+Loss: 0.074 | Acc: 97.616% (48808/50000)
+Using augment:Normalization_0.5
+Loss: 0.575 | Acc: 84.500% (8450/10000)
+Saving..
+
+Epoch: 101
+Loss: 0.064 | Acc: 97.892% (48946/50000)
+Using augment:Normalization_0.5
+Loss: 0.582 | Acc: 84.030% (8403/10000)
+Saving..
+
+Epoch: 102
+Loss: 0.069 | Acc: 97.764% (48882/50000)
+Using augment:Normalization_0.5
+Loss: 0.592 | Acc: 83.930% (8393/10000)
+Saving..
+
+Epoch: 103
+Loss: 0.064 | Acc: 97.870% (48935/50000)
+Using augment:Normalization_0.5
+Loss: 0.844 | Acc: 80.240% (8024/10000)
+Saving..
+
+Epoch: 104
+Loss: 0.063 | Acc: 97.932% (48966/50000)
+Using augment:Normalization_0.5
+Loss: 0.711 | Acc: 81.630% (8163/10000)
+Saving..
+
+Epoch: 105
+Loss: 0.062 | Acc: 97.972% (48986/50000)
+Using augment:Normalization_0.5
+Loss: 0.773 | Acc: 80.570% (8057/10000)
+Saving..
+
+Epoch: 106
+Loss: 0.053 | Acc: 98.272% (49136/50000)
+Using augment:Normalization_0.5
+Loss: 0.556 | Acc: 85.200% (8520/10000)
+Saving..
+
+Epoch: 107
+Loss: 0.059 | Acc: 98.076% (49038/50000)
+Using augment:Normalization_0.5
+Loss: 0.693 | Acc: 81.060% (8106/10000)
+Saving..
+
+Epoch: 108
+Loss: 0.056 | Acc: 98.192% (49096/50000)
+Using augment:Normalization_0.5
+Loss: 0.572 | Acc: 85.130% (8513/10000)
+Saving..
+
+Epoch: 109
+Loss: 0.052 | Acc: 98.276% (49138/50000)
+Using augment:Normalization_0.5
+Loss: 0.633 | Acc: 83.470% (8347/10000)
+Saving..
+
+Epoch: 110
+Loss: 0.045 | Acc: 98.662% (49331/50000)
+Using augment:Normalization_0.5
+Loss: 0.642 | Acc: 84.050% (8405/10000)
+Saving..
+
+Epoch: 111
+Loss: 0.053 | Acc: 98.294% (49147/50000)
+Using augment:Normalization_0.5
+Loss: 0.699 | Acc: 81.420% (8142/10000)
+Saving..
+
+Epoch: 112
+Loss: 0.050 | Acc: 98.412% (49206/50000)
+Using augment:Normalization_0.5
+Loss: 0.611 | Acc: 83.210% (8321/10000)
+Saving..
+
+Epoch: 113
+Loss: 0.054 | Acc: 98.248% (49124/50000)
+Using augment:Normalization_0.5
+Loss: 0.700 | Acc: 83.270% (8327/10000)
+Saving..
+
+Epoch: 114
+Loss: 0.041 | Acc: 98.686% (49343/50000)
+Using augment:Normalization_0.5
+Loss: 0.554 | Acc: 85.360% (8536/10000)
+Saving..
+
+Epoch: 115
+Loss: 0.047 | Acc: 98.564% (49282/50000)
+Using augment:Normalization_0.5
+Loss: 0.778 | Acc: 81.580% (8158/10000)
+Saving..
+
+Epoch: 116
+Loss: 0.042 | Acc: 98.636% (49318/50000)
+Using augment:Normalization_0.5
+Loss: 0.798 | Acc: 81.720% (8172/10000)
+Saving..
+
+Epoch: 117
+Loss: 0.043 | Acc: 98.648% (49324/50000)
+Using augment:Normalization_0.5
+Loss: 0.613 | Acc: 83.920% (8392/10000)
+Saving..
+
+Epoch: 118
+Loss: 0.042 | Acc: 98.698% (49349/50000)
+Using augment:Normalization_0.5
+Loss: 0.584 | Acc: 85.070% (8507/10000)
+Saving..
+
+Epoch: 119
+Loss: 0.047 | Acc: 98.468% (49234/50000)
+Using augment:Normalization_0.5
+Loss: 0.607 | Acc: 84.120% (8412/10000)
+Saving..
+
+Epoch: 120
+Loss: 0.031 | Acc: 99.092% (49546/50000)
+Using augment:Normalization_0.5
+Loss: 0.503 | Acc: 86.260% (8626/10000)
+Saving..
+
+Epoch: 121
+Loss: 0.026 | Acc: 99.226% (49613/50000)
+Using augment:Normalization_0.5
+Loss: 0.533 | Acc: 85.170% (8517/10000)
+Saving..
+
+Epoch: 122
+Loss: 0.020 | Acc: 99.468% (49734/50000)
+Using augment:Normalization_0.5
+Loss: 0.613 | Acc: 83.970% (8397/10000)
+Saving..
+
+Epoch: 123
+Loss: 0.039 | Acc: 98.840% (49420/50000)
+Using augment:Normalization_0.5
+Loss: 0.587 | Acc: 84.510% (8451/10000)
+Saving..
+
+Epoch: 124
+Loss: 0.050 | Acc: 98.416% (49208/50000)
+Using augment:Normalization_0.5
+Loss: 0.549 | Acc: 84.520% (8452/10000)
+Saving..
+
+Epoch: 125
+Loss: 0.038 | Acc: 98.846% (49423/50000)
+Using augment:Normalization_0.5
+Loss: 0.594 | Acc: 84.040% (8404/10000)
+Saving..
+
+Epoch: 126
+Loss: 0.032 | Acc: 99.026% (49513/50000)
+Using augment:Normalization_0.5
+Loss: 0.487 | Acc: 87.110% (8711/10000)
+Saving..
+
+Epoch: 127
+Loss: 0.018 | Acc: 99.530% (49765/50000)
+Using augment:Normalization_0.5
+Loss: 0.488 | Acc: 86.820% (8682/10000)
+Saving..
+
+Epoch: 128
+Loss: 0.010 | Acc: 99.756% (49878/50000)
+Using augment:Normalization_0.5
+Loss: 0.482 | Acc: 86.980% (8698/10000)
+Saving..
+
+Epoch: 129
+Loss: 0.004 | Acc: 99.948% (49974/50000)
+Using augment:Normalization_0.5
+Loss: 0.386 | Acc: 89.710% (8971/10000)
+Saving..
+
+Epoch: 130
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.354 | Acc: 90.230% (9023/10000)
+Saving..
+
+Epoch: 131
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.343 | Acc: 90.340% (9034/10000)
+Saving..
+
+Epoch: 132
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.337 | Acc: 90.380% (9038/10000)
+Saving..
+
+Epoch: 133
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.329 | Acc: 90.380% (9038/10000)
+Saving..
+
+Epoch: 134
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.324 | Acc: 90.540% (9054/10000)
+Saving..
+
+Epoch: 135
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.323 | Acc: 90.330% (9033/10000)
+Saving..
+
+Epoch: 136
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.319 | Acc: 90.450% (9045/10000)
+Saving..
+
+Epoch: 137
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.318 | Acc: 90.440% (9044/10000)
+Saving..
+
+Epoch: 138
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.318 | Acc: 90.410% (9041/10000)
+Saving..
+
+Epoch: 139
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.318 | Acc: 90.530% (9053/10000)
+Saving..
+
+Epoch: 140
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.315 | Acc: 90.650% (9065/10000)
+Saving..
+
+Epoch: 141
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.317 | Acc: 90.470% (9047/10000)
+Saving..
+
+Epoch: 142
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.318 | Acc: 90.560% (9056/10000)
+Saving..
+
+Epoch: 143
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.319 | Acc: 90.460% (9046/10000)
+Saving..
+
+Epoch: 144
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.322 | Acc: 90.370% (9037/10000)
+Saving..
+
+Epoch: 145
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.322 | Acc: 90.390% (9039/10000)
+Saving..
+
+Epoch: 146
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.323 | Acc: 90.380% (9038/10000)
+Saving..
+
+Epoch: 147
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.333 | Acc: 90.050% (9005/10000)
+Saving..
+
+Epoch: 148
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.326 | Acc: 90.350% (9035/10000)
+Saving..
+
+Epoch: 149
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.330 | Acc: 90.080% (9008/10000)
+Saving..
+
+Epoch: 150
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.332 | Acc: 90.110% (9011/10000)
+Saving..
+
+Epoch: 151
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.338 | Acc: 90.060% (9006/10000)
+Saving..
+
+Epoch: 152
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.341 | Acc: 89.970% (8997/10000)
+Saving..
+
+Epoch: 153
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.338 | Acc: 89.970% (8997/10000)
+Saving..
+
+Epoch: 154
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.339 | Acc: 90.050% (9005/10000)
+Saving..
+
+Epoch: 155
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.346 | Acc: 89.980% (8998/10000)
+Saving..
+
+Epoch: 156
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.342 | Acc: 89.980% (8998/10000)
+Saving..
+
+Epoch: 157
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.346 | Acc: 89.920% (8992/10000)
+Saving..
+
+Epoch: 158
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.348 | Acc: 89.950% (8995/10000)
+Saving..
+
+Epoch: 159
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.348 | Acc: 89.880% (8988/10000)
+Saving..
+
+Epoch: 160
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.350 | Acc: 89.920% (8992/10000)
+Saving..
+
+Epoch: 161
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.356 | Acc: 89.640% (8964/10000)
+Saving..
+
+Epoch: 162
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.357 | Acc: 89.730% (8973/10000)
+Saving..
+
+Epoch: 163
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.357 | Acc: 89.710% (8971/10000)
+Saving..
+
+Epoch: 164
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.356 | Acc: 89.740% (8974/10000)
+Saving..
+
+Epoch: 165
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.363 | Acc: 89.490% (8949/10000)
+Saving..
+
+Epoch: 166
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.362 | Acc: 89.590% (8959/10000)
+Saving..
+
+Epoch: 167
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.367 | Acc: 89.470% (8947/10000)
+Saving..
+
+Epoch: 168
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.362 | Acc: 89.550% (8955/10000)
+Saving..
+
+Epoch: 169
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.371 | Acc: 89.480% (8948/10000)
+Saving..
+
+Epoch: 170
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.370 | Acc: 89.440% (8944/10000)
+Saving..
+
+Epoch: 171
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.369 | Acc: 89.450% (8945/10000)
+Saving..
+
+Epoch: 172
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.373 | Acc: 89.310% (8931/10000)
+Saving..
+
+Epoch: 173
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.371 | Acc: 89.510% (8951/10000)
+Saving..
+
+Epoch: 174
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.372 | Acc: 89.390% (8939/10000)
+Saving..
+
+Epoch: 175
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.371 | Acc: 89.360% (8936/10000)
+Saving..
+
+Epoch: 176
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.371 | Acc: 89.260% (8926/10000)
+Saving..
+
+Epoch: 177
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.373 | Acc: 89.410% (8941/10000)
+Saving..
+
+Epoch: 178
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.374 | Acc: 89.300% (8930/10000)
+Saving..
+
+Epoch: 179
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.377 | Acc: 89.310% (8931/10000)
+Saving..
+
+Epoch: 180
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.374 | Acc: 89.260% (8926/10000)
+Saving..
+
+Epoch: 181
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.376 | Acc: 89.230% (8923/10000)
+Saving..
+
+Epoch: 182
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.378 | Acc: 89.120% (8912/10000)
+Saving..
+
+Epoch: 183
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.378 | Acc: 89.260% (8926/10000)
+Saving..
+
+Epoch: 184
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.376 | Acc: 89.250% (8925/10000)
+Saving..
+
+Epoch: 185
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.378 | Acc: 89.240% (8924/10000)
+Saving..
+
+Epoch: 186
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.377 | Acc: 89.130% (8913/10000)
+Saving..
+
+Epoch: 187
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.380 | Acc: 89.190% (8919/10000)
+Saving..
+
+Epoch: 188
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.380 | Acc: 89.200% (8920/10000)
+Saving..
+
+Epoch: 189
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.379 | Acc: 89.180% (8918/10000)
+Saving..
+
+Epoch: 190
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.380 | Acc: 89.160% (8916/10000)
+Saving..
+
+Epoch: 191
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.379 | Acc: 89.190% (8919/10000)
+Saving..
+
+Epoch: 192
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.379 | Acc: 89.180% (8918/10000)
+Saving..
+
+Epoch: 193
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.383 | Acc: 89.080% (8908/10000)
+Saving..
+
+Epoch: 194
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.379 | Acc: 89.190% (8919/10000)
+Saving..
+
+Epoch: 195
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.376 | Acc: 89.170% (8917/10000)
+Saving..
+
+Epoch: 196
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.380 | Acc: 89.270% (8927/10000)
+Saving..
+
+Epoch: 197
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.383 | Acc: 89.180% (8918/10000)
+Saving..
+
+Epoch: 198
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.379 | Acc: 89.290% (8929/10000)
+Saving..
+
+Epoch: 199
+Loss: 0.001 | Acc: 100.000% (50000/50000)
+Using augment:Normalization_0.5
+Loss: 0.383 | Acc: 89.150% (8915/10000)
+Saving..
