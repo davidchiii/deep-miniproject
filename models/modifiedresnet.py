@@ -7,14 +7,14 @@ class ModifiedBasicBlock(nn.Module):
     def __init__(self, in_planes, planes, stride=1):
         super(ModifiedBasicBlock, self).__init__()
  
-         # Initialize first convolutional layer       
+        # Initialize first convolutional layer       
         self.conv1 = nn.Conv2d(
             in_planes, planes, kernel_size=3, stride=stride, padding=1, bias=False)
 
         # Initialize first batch normalization layer
         self.bn1 = nn.BatchNorm2d(planes)
 
-         # Initialize first convolutional layer       
+        # Initialize first convolutional layer       
         self.conv2 = nn.Conv2d(planes, planes, kernel_size=3,
                                stride=1, padding=1, bias=False)
         
@@ -31,9 +31,16 @@ class ModifiedBasicBlock(nn.Module):
             )
 
     def forward(self, x):
+        # Apply convolutional layer, batch normalization, and ReLU activation
         out = F.relu(self.bn1(self.conv1(x)))
+        
+        # Apply convolutional layer, batch normalization, and ReLU activation
         out = self.bn2(self.conv2(out))
+        
+        # Add the residual connection
         out += self.shortcut(x)
+        
+        # Final ReLU activation
         out = F.relu(out)
         return out
     
