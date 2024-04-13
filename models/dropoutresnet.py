@@ -32,11 +32,14 @@ class DropoutResNet(nn.Module):
         # Create a list of strides with the given stride value and 1s for the remaining blocks
         strides = [stride] + [1]*(num_blocks-1)
         layers = []
+        
         for stride in strides:
             # Append a block to the layers list
             layers.append(block(self.in_planes, planes, stride))
+            
             # Update the value of in_planes for the next block
             self.in_planes = planes * block.expansion
+        
         # Return the layers as a sequential container
         return nn.Sequential(*layers)
 

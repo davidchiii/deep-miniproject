@@ -9,4 +9,4 @@ To train and use our best model, look at best_model.py or final.ipynb. Our highe
 
 To see our hyperparameter tuning experiments, go check out our git branches.
 
-All checkpoints were trained on HPC, so use GPU to run the notebooks and python files.
+All checkpoints were trained on HPC, so use NVIDIA GPU to run the notebooks and python files.
