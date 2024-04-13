@@ -95,7 +95,7 @@ class ModifiedResNet(nn.Module):
         # Reshape the tensor     
         out = out.view(out.size(0), -1)
 
-        # Apply dropout
+        # Apply fully connected layer
         out = self.linear(out)
         return out
     
