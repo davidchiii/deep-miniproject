@@ -5,7 +5,9 @@ The best model reported in the paper is final_best_3.pth. See kaggle.ipynb or ka
 
 Our best model architecture is in dropoutresnet.py. Our baseline model architecture is in modifiedresnet.py.
 
-To train and use our best model, look at best_model.py or final.ipynb. Our highest score on the test batch was 0.961.
+To see the results of our best model (96.10%), look at best_model.ipynb.
+
+To train and use our best model, look at best_model_train.py or best_model_train.ipynb.
 
 To see our hyperparameter tuning experiments, go check out our git branches.
 
