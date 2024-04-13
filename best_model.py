@@ -67,7 +67,7 @@ def test(epoch):
         }
         if not os.path.isdir('checkpoint'):
             os.mkdir('checkpoint')
-        torch.save(state, './checkpoint/best_epoch_4.pth')
+        torch.save(state, './checkpoint/best_epoch_3.pth')
         best_acc = acc
     if epoch == 199:
         state = {
@@ -75,7 +75,7 @@ def test(epoch):
             'acc': acc,
             'epoch': epoch,
         }
-        torch.save(state, './checkpoint/final_best_4.pth')
+        torch.save(state, './checkpoint/final_best_3.pth')
 
 
 
@@ -96,12 +96,10 @@ if __name__ == '__main__':
         transforms.RandomCrop(32, padding=4),
         transforms.RandomHorizontalFlip(),
         transforms.ToTensor(),
-        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
     ])
 
     transform_test = transforms.Compose([
         transforms.ToTensor(),
-        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
     ])
     trainset = torchvision.datasets.CIFAR10(
         root='./deep-learning-mini-project-spring-24-nyu/cifar-10-python', train=True, download=True, transform=transform_train)
@@ -128,7 +126,7 @@ if __name__ == '__main__':
         # Load checkpoint.
         print('==> Resuming from checkpoint..')
         assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
-        checkpoint = torch.load('./checkpoint/best_epoch_4.pth')
+        checkpoint = torch.load('./checkpoint/best_epoch_3.pth')
         net.load_state_dict(checkpoint['net'])
         best_acc = checkpoint['acc']
         start_epoch = checkpoint['epoch']

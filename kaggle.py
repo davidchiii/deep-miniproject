@@ -20,6 +20,7 @@ def load_cifar_batch(file):
 
 transform_test = transforms.Compose([
     transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010)),
+    # transforms.Normalize((0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)),
 ])
 
 cifar10_batch = load_cifar_batch('./deep-learning-mini-project-spring-24-nyu/cifar_test_nolabels.pkl')
@@ -27,7 +28,7 @@ cifar10_batch = load_cifar_batch('./deep-learning-mini-project-spring-24-nyu/cif
 images = torch.from_numpy(cifar10_batch[b'data'])
 images = images.reshape((10000, 3, 32, 32))
 images = images.float()
-images = transform_test(images)
+# images = transform_test(images)
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
@@ -39,7 +40,7 @@ if device == 'cuda':
     cudnn.benchmark = True
 
 assert os.path.isdir('checkpoint'), 'Error: no checkpoint directory found!'
-checkpoint = torch.load('./checkpoint/best_epoch_4.pth', map_location=device)
+checkpoint = torch.load('./checkpoint/best_epoch_3.pth', map_location=device)
 # print(checkpoint['acc'])
 # checkpoint = torch.load('./checkpoint/ckpt_dropout_0.4.pth', map_location=device)
 # checkpoint = torch.load('./checkpoint/pool.pth', map_location=device)
